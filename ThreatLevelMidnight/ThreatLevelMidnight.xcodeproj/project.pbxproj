@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670C24A8D71F00E857F7 /* AppDelegate.swift */; };
+		418B670F24A8D71F00E857F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670E24A8D71F00E857F7 /* SceneDelegate.swift */; };
+		418B671124A8D71F00E857F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B671024A8D71F00E857F7 /* ViewController.swift */; };
+		418B671424A8D71F00E857F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671224A8D71F00E857F7 /* Main.storyboard */; };
+		418B671624A8D72000E857F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418B671524A8D72000E857F7 /* Assets.xcassets */; };
+		418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671724A8D72000E857F7 /* LaunchScreen.storyboard */; };
+		418B672424A8D72000E857F7 /* ThreatLevelMidnightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */; };
+		418B672F24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		418B672024A8D72000E857F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 418B670124A8D71F00E857F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418B670824A8D71F00E857F7;
+			remoteInfo = ThreatLevelMidnight;
+		};
+		418B672B24A8D72000E857F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 418B670124A8D71F00E857F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418B670824A8D71F00E857F7;
+			remoteInfo = ThreatLevelMidnight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreatLevelMidnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		418B670C24A8D71F00E857F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		418B670E24A8D71F00E857F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		418B671024A8D71F00E857F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		418B671324A8D71F00E857F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		418B671524A8D72000E857F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		418B671824A8D72000E857F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		418B671A24A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418B671F24A8D72000E857F7 /* ThreatLevelMidnightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreatLevelMidnightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatLevelMidnightTests.swift; sourceTree = "<group>"; };
+		418B672524A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418B672A24A8D72000E857F7 /* ThreatLevelMidnightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreatLevelMidnightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatLevelMidnightUITests.swift; sourceTree = "<group>"; };
+		418B673024A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		418B670624A8D71F00E857F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B671C24A8D72000E857F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B672724A8D72000E857F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		418B670024A8D71F00E857F7 = {
+			isa = PBXGroup;
+			children = (
+				418B670B24A8D71F00E857F7 /* ThreatLevelMidnight */,
+				418B672224A8D72000E857F7 /* ThreatLevelMidnightTests */,
+				418B672D24A8D72000E857F7 /* ThreatLevelMidnightUITests */,
+				418B670A24A8D71F00E857F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		418B670A24A8D71F00E857F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */,
+				418B671F24A8D72000E857F7 /* ThreatLevelMidnightTests.xctest */,
+				418B672A24A8D72000E857F7 /* ThreatLevelMidnightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418B670B24A8D71F00E857F7 /* ThreatLevelMidnight */ = {
+			isa = PBXGroup;
+			children = (
+				418B670C24A8D71F00E857F7 /* AppDelegate.swift */,
+				418B670E24A8D71F00E857F7 /* SceneDelegate.swift */,
+				418B671024A8D71F00E857F7 /* ViewController.swift */,
+				418B671224A8D71F00E857F7 /* Main.storyboard */,
+				418B671524A8D72000E857F7 /* Assets.xcassets */,
+				418B671724A8D72000E857F7 /* LaunchScreen.storyboard */,
+				418B671A24A8D72000E857F7 /* Info.plist */,
+			);
+			path = ThreatLevelMidnight;
+			sourceTree = "<group>";
+		};
+		418B672224A8D72000E857F7 /* ThreatLevelMidnightTests */ = {
+			isa = PBXGroup;
+			children = (
+				418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */,
+				418B672524A8D72000E857F7 /* Info.plist */,
+			);
+			path = ThreatLevelMidnightTests;
+			sourceTree = "<group>";
+		};
+		418B672D24A8D72000E857F7 /* ThreatLevelMidnightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */,
+				418B673024A8D72000E857F7 /* Info.plist */,
+			);
+			path = ThreatLevelMidnightUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		418B670824A8D71F00E857F7 /* ThreatLevelMidnight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418B673324A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnight" */;
+			buildPhases = (
+				418B670524A8D71F00E857F7 /* Sources */,
+				418B670624A8D71F00E857F7 /* Frameworks */,
+				418B670724A8D71F00E857F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreatLevelMidnight;
+			productName = ThreatLevelMidnight;
+			productReference = 418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		418B671E24A8D72000E857F7 /* ThreatLevelMidnightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418B673624A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnightTests" */;
+			buildPhases = (
+				418B671B24A8D72000E857F7 /* Sources */,
+				418B671C24A8D72000E857F7 /* Frameworks */,
+				418B671D24A8D72000E857F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				418B672124A8D72000E857F7 /* PBXTargetDependency */,
+			);
+			name = ThreatLevelMidnightTests;
+			productName = ThreatLevelMidnightTests;
+			productReference = 418B671F24A8D72000E857F7 /* ThreatLevelMidnightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		418B672924A8D72000E857F7 /* ThreatLevelMidnightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418B673924A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnightUITests" */;
+			buildPhases = (
+				418B672624A8D72000E857F7 /* Sources */,
+				418B672724A8D72000E857F7 /* Frameworks */,
+				418B672824A8D72000E857F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				418B672C24A8D72000E857F7 /* PBXTargetDependency */,
+			);
+			name = ThreatLevelMidnightUITests;
+			productName = ThreatLevelMidnightUITests;
+			productReference = 418B672A24A8D72000E857F7 /* ThreatLevelMidnightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		418B670124A8D71F00E857F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = mag;
+				TargetAttributes = {
+					418B670824A8D71F00E857F7 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					418B671E24A8D72000E857F7 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 418B670824A8D71F00E857F7;
+					};
+					418B672924A8D72000E857F7 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 418B670824A8D71F00E857F7;
+					};
+				};
+			};
+			buildConfigurationList = 418B670424A8D71F00E857F7 /* Build configuration list for PBXProject "ThreatLevelMidnight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 418B670024A8D71F00E857F7;
+			productRefGroup = 418B670A24A8D71F00E857F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				418B670824A8D71F00E857F7 /* ThreatLevelMidnight */,
+				418B671E24A8D72000E857F7 /* ThreatLevelMidnightTests */,
+				418B672924A8D72000E857F7 /* ThreatLevelMidnightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		418B670724A8D71F00E857F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */,
+				418B671624A8D72000E857F7 /* Assets.xcassets in Resources */,
+				418B671424A8D71F00E857F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B671D24A8D72000E857F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B672824A8D72000E857F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418B670524A8D71F00E857F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418B671124A8D71F00E857F7 /* ViewController.swift in Sources */,
+				418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */,
+				418B670F24A8D71F00E857F7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B671B24A8D72000E857F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418B672424A8D72000E857F7 /* ThreatLevelMidnightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B672624A8D72000E857F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418B672F24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		418B672124A8D72000E857F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418B670824A8D71F00E857F7 /* ThreatLevelMidnight */;
+			targetProxy = 418B672024A8D72000E857F7 /* PBXContainerItemProxy */;
+		};
+		418B672C24A8D72000E857F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418B670824A8D71F00E857F7 /* ThreatLevelMidnight */;
+			targetProxy = 418B672B24A8D72000E857F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		418B671224A8D71F00E857F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418B671324A8D71F00E857F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		418B671724A8D72000E857F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418B671824A8D72000E857F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		418B673124A8D72000E857F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		418B673224A8D72000E857F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418B673424A8D72000E857F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LV394V58Y3;
+				INFOPLIST_FILE = ThreatLevelMidnight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mag.ThreatLevelMidnight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		418B673524A8D72000E857F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LV394V58Y3;
+				INFOPLIST_FILE = ThreatLevelMidnight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mag.ThreatLevelMidnight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		418B673724A8D72000E857F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LV394V58Y3;
+				INFOPLIST_FILE = ThreatLevelMidnightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mag.ThreatLevelMidnightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreatLevelMidnight.app/ThreatLevelMidnight";
+			};
+			name = Debug;
+		};
+		418B673824A8D72000E857F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LV394V58Y3;
+				INFOPLIST_FILE = ThreatLevelMidnightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mag.ThreatLevelMidnightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreatLevelMidnight.app/ThreatLevelMidnight";
+			};
+			name = Release;
+		};
+		418B673A24A8D72000E857F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LV394V58Y3;
+				INFOPLIST_FILE = ThreatLevelMidnightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mag.ThreatLevelMidnightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThreatLevelMidnight;
+			};
+			name = Debug;
+		};
+		418B673B24A8D72000E857F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LV394V58Y3;
+				INFOPLIST_FILE = ThreatLevelMidnightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mag.ThreatLevelMidnightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThreatLevelMidnight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		418B670424A8D71F00E857F7 /* Build configuration list for PBXProject "ThreatLevelMidnight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B673124A8D72000E857F7 /* Debug */,
+				418B673224A8D72000E857F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418B673324A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B673424A8D72000E857F7 /* Debug */,
+				418B673524A8D72000E857F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418B673624A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B673724A8D72000E857F7 /* Debug */,
+				418B673824A8D72000E857F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418B673924A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B673A24A8D72000E857F7 /* Debug */,
+				418B673B24A8D72000E857F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 418B670124A8D71F00E857F7 /* Project object */;
+}
