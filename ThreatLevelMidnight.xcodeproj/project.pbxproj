@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC90DF1896A350A6329E2A8 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */; };
 		418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670C24A8D71F00E857F7 /* AppDelegate.swift */; };
 		418B670F24A8D71F00E857F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670E24A8D71F00E857F7 /* SceneDelegate.swift */; };
 		418B671124A8D71F00E857F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B671024A8D71F00E857F7 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671724A8D72000E857F7 /* LaunchScreen.storyboard */; };
 		418B672424A8D72000E857F7 /* ThreatLevelMidnightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */; };
 		418B672F24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */; };
+		92523FDDAF689F54762B04AB /* Pods_ThreatLevelMidnight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */; };
+		C8A34E76625910DDFD577314 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57E7DADE1E2254C7DC943F3 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnightTests.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnightTests/Pods-ThreatLevelMidnightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreatLevelMidnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B670C24A8D71F00E857F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		418B670E24A8D71F00E857F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		418B672A24A8D72000E857F7 /* ThreatLevelMidnightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreatLevelMidnightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatLevelMidnightUITests.swift; sourceTree = "<group>"; };
 		418B673024A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BF214EC99E698EDC53DEC4 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.release.xcconfig"; sourceTree = "<group>"; };
+		87AB1CA6B51BD77D7B8D9A80 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.debug.xcconfig"; sourceTree = "<group>"; };
+		B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnightTests.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnightTests/Pods-ThreatLevelMidnightTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57E7DADE1E2254C7DC943F3 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92523FDDAF689F54762B04AB /* Pods_ThreatLevelMidnight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC90DF1896A350A6329E2A8 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A34E76625910DDFD577314 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10E3F043E6C1C243B895EF16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */,
+				F57E7DADE1E2254C7DC943F3 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework */,
+				3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		418B670024A8D71F00E857F7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				418B672224A8D72000E857F7 /* ThreatLevelMidnightTests */,
 				418B672D24A8D72000E857F7 /* ThreatLevelMidnightUITests */,
 				418B670A24A8D71F00E857F7 /* Products */,
+				A96BE099D8F0D74A71BE774C /* Pods */,
+				10E3F043E6C1C243B895EF16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,19 @@
 			path = ThreatLevelMidnightUITests;
 			sourceTree = "<group>";
 		};
+		A96BE099D8F0D74A71BE774C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */,
+				5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */,
+				87AB1CA6B51BD77D7B8D9A80 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig */,
+				44BF214EC99E698EDC53DEC4 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig */,
+				26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */,
+				B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +175,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418B673324A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnight" */;
 			buildPhases = (
+				C897B7781E7ED605851D8E3C /* [CP] Check Pods Manifest.lock */,
+				410F134F24A9703B0040971D /* R.Swift */,
 				418B670524A8D71F00E857F7 /* Sources */,
 				418B670624A8D71F00E857F7 /* Frameworks */,
 				418B670724A8D71F00E857F7 /* Resources */,
 				410F134E24A959220040971D /* SwiftLint */,
+				B082C0BD29236AEC5E5FDC43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418B673624A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnightTests" */;
 			buildPhases = (
+				C20D0A8A07231CDEE9C1EC58 /* [CP] Check Pods Manifest.lock */,
 				418B671B24A8D72000E857F7 /* Sources */,
 				418B671C24A8D72000E857F7 /* Frameworks */,
 				418B671D24A8D72000E857F7 /* Resources */,
@@ -171,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418B673924A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnightUITests" */;
 			buildPhases = (
+				2D58C846E93C916C99E0D558 /* [CP] Check Pods Manifest.lock */,
 				418B672624A8D72000E857F7 /* Sources */,
 				418B672724A8D72000E857F7 /* Frameworks */,
 				418B672824A8D72000E857F7 /* Resources */,
+				67CF9ACF1FEC38C1618C683F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +302,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2D58C846E93C916C99E0D558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		410F134E24A959220040971D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +341,104 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		410F134F24A9703B0040971D /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		67CF9ACF1FEC38C1618C683F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B082C0BD29236AEC5E5FDC43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20D0A8A07231CDEE9C1EC58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThreatLevelMidnightTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C897B7781E7ED605851D8E3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThreatLevelMidnight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -454,6 +620,7 @@
 		};
 		418B673424A8D72000E857F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +639,7 @@
 		};
 		418B673524A8D72000E857F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +658,7 @@
 		};
 		418B673724A8D72000E857F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +681,7 @@
 		};
 		418B673824A8D72000E857F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +704,7 @@
 		};
 		418B673A24A8D72000E857F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87AB1CA6B51BD77D7B8D9A80 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +725,7 @@
 		};
 		418B673B24A8D72000E857F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BF214EC99E698EDC53DEC4 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
