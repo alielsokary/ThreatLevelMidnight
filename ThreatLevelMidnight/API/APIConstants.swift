@@ -15,6 +15,8 @@ struct APIConstants {
 	static let version = "3"
 	static let type = "tv"
 	static let theOfficeId = "2316"
+	static let season = "season"
+	static let episode = "episode"
 	static let tmdbURL = "https://api.themoviedb.org/\(version)"
 
 	enum ParameterKey: String {

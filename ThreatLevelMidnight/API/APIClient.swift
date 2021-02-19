@@ -48,4 +48,12 @@ class APIClient {
 	static func getTVShow() -> Observable<TVShow> {
 		return request(TMDBRouter.getShow)
 	}
+	
+	static func getSeason(season: Int) -> Observable<Season> {
+		return request(TMDBRouter.getSeason(season: season))
+	}
+	
+	static func getEpisode(season: Int, episode: Int) -> Observable<Episode> {
+		return request(TMDBRouter.getEpisode(season: season, episode: episode))
+	}
 }
