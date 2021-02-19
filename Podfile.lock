@@ -3,6 +3,7 @@ PODS:
   - AlamofireNetworkActivityLogger (3.0.0):
     - Alamofire (~> 5.0.0-rc.2)
   - Differentiator (4.0.1)
+  - Keys (1.0.1)
   - Kingfisher (5.12.0):
     - Kingfisher/Core (= 5.12.0)
   - Kingfisher/Core (5.12.0)
@@ -47,6 +48,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.5)
   - AlamofireNetworkActivityLogger (~> 3.0)
+  - Keys (from `Pods/CocoaPodsKeys`)
   - Kingfisher (~> 5.0)
   - NVActivityIndicatorView
   - R.swift
@@ -70,10 +72,15 @@ SPEC REPOS:
     - RxSwift
     - SwifterSwift
 
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
   Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
@@ -84,6 +91,6 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
 
-PODFILE CHECKSUM: be4d4bf92585c32c8e7377c351fdb1594311bcb0
+PODFILE CHECKSUM: cee5c302d58a9f4da4ef18b61bfbe13c90c4d07e
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.10.1
