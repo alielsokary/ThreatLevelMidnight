@@ -11,14 +11,13 @@ import Keys
 
 struct APIConstants {
 
-	static let apiKey = ThreatLevelMidnightKeys().tMDB_APIKey
+	static let accessToken = ThreatLevelMidnightKeys().tMDB_AccessToken
 	static let version = "3"
 	static let type = "tv"
 	static let theOfficeId = "2316"
-	static let tmdbURL = "https://api.themoviedb.org/\(version)/\(type)/\(theOfficeId)"
+	static let tmdbURL = "https://api.themoviedb.org/\(version)"
 
 	enum ParameterKey: String {
-		case apiKey = "api_key"
 		case id
 		case language
 	}

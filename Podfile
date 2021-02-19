@@ -33,5 +33,5 @@ end
 plugin 'cocoapods-keys', {
 :project => "ThreatLevelMidnight",
 :keys => [
-	"TMDB_APIKey"
+	"TMDB_AccessToken"
 ]}
