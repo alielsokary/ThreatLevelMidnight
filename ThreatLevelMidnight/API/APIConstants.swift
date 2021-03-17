@@ -12,6 +12,7 @@ import Keys
 struct APIConstants {
 
 	static let accessToken = ThreatLevelMidnightKeys().tMDB_AccessToken
+	static let configuration = "configuration"
 	static let version = "3"
 	static let type = "tv"
 	static let theOfficeId = "2316"

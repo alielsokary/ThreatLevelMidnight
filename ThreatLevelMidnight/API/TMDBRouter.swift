@@ -10,6 +10,7 @@ import Alamofire
 
 enum TMDBRouter: URLRequestConvertible {
 
+	case getConfiguration
 	case getShow
 	case getSeason(season: Int)
 	case getEpisode(season: Int, episode: Int)
@@ -17,6 +18,8 @@ enum TMDBRouter: URLRequestConvertible {
 	// MARK: - HTTPMethod
 	private var method: HTTPMethod {
 		switch self {
+		case .getConfiguration:
+			return .get
 		case .getShow:
 			return .get
 		case .getSeason:
@@ -29,6 +32,8 @@ enum TMDBRouter: URLRequestConvertible {
 	// MARK: - Path
 	private var path: String {
 		switch self {
+		case .getConfiguration:
+			return "/\(APIConstants.configuration)"
 		case .getShow:
 			return "/\(APIConstants.type)/\(APIConstants.theOfficeId)"
 		case .getSeason(let season):
