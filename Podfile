@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '12.0'
 
 target 'ThreatLevelMidnight' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -29,3 +29,9 @@ target 'ThreatLevelMidnight' do
   end
 
 end
+
+plugin 'cocoapods-keys', {
+:project => "ThreatLevelMidnight",
+:keys => [
+	"TMDB_AccessToken"
+]}
