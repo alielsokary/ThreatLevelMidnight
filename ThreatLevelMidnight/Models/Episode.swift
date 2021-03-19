@@ -32,6 +32,13 @@ struct Episode: Codable {
 		case voteAverage = "vote_average"
 		case voteCount = "vote_count"
 	}
+
+	func posterUrl() -> String {
+		guard let baseUrl = Configurations.currentConfig()?.images?.secureBaseURL else { return "" }
+		guard let posterSize = Configurations.currentConfig()?.images?.posterSizes?.last else { return "" }
+		let url = baseUrl + posterSize + (stillPath ?? "")
+		return url
+	}
 }
 
 // MARK: - Crew

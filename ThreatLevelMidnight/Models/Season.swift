@@ -32,3 +32,4 @@ struct Season: Codable {
 		return url
 	}
 }
+
