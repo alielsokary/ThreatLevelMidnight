@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mky-QP-bii">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,13 +12,13 @@
         <!--Seasons View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SeasonsViewController" customModule="ThreatLevelMidnight" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SeasonsViewController" id="BYZ-38-t0r" customClass="SeasonsViewController" customModule="ThreatLevelMidnight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U2J-XQ-gl8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -31,13 +31,81 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U2J-XQ-gl8" secondAttribute="bottom" id="tmy-fV-f0B"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="YAb-dK-rmB"/>
                     <connections>
-                        <outlet property="seasonTableView" destination="U2J-XQ-gl8" id="pOV-la-saD"/>
+                        <outlet property="tableView" destination="U2J-XQ-gl8" id="sWR-QE-XPF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162" y="65"/>
+            <point key="canvasLocation" x="747.82608695652175" y="64.955357142857139"/>
+        </scene>
+        <!--Episodes View Controller-->
+        <scene sceneID="GiH-aT-Idq">
+            <objects>
+                <viewController storyboardIdentifier="EpisodesViewController" id="UWZ-M0-Lvk" customClass="EpisodesViewController" customModule="ThreatLevelMidnight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eGA-LJ-0h3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6xL-h7-B3h">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d0p-rF-T2o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6xL-h7-B3h" firstAttribute="leading" secondItem="d0p-rF-T2o" secondAttribute="leading" id="68b-DQ-qPb"/>
+                            <constraint firstItem="d0p-rF-T2o" firstAttribute="trailing" secondItem="6xL-h7-B3h" secondAttribute="trailing" id="C61-Sw-Pdd"/>
+                            <constraint firstItem="d0p-rF-T2o" firstAttribute="bottom" secondItem="6xL-h7-B3h" secondAttribute="bottom" id="hZ7-RS-Fa2"/>
+                            <constraint firstItem="6xL-h7-B3h" firstAttribute="top" secondItem="d0p-rF-T2o" secondAttribute="top" id="qCI-6l-A5T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ccs-af-9b6"/>
+                    <connections>
+                        <outlet property="tableView" destination="6xL-h7-B3h" id="CXV-L6-OQR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qa-pJ-w4n" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2368.1159420289855" y="64.955357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DpW-Wy-eiJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iTL-kV-eM8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="405-fR-gsJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UWZ-M0-Lvk" kind="relationship" relationship="rootViewController" id="IG5-ic-fwk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BzX-1Z-OO1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457.9710144927537" y="64.955357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lCq-j0-eWl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mky-QP-bii" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nSw-EH-lkQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Uu6-uI-FIR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6y-Rn-z6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="65"/>
         </scene>
     </scenes>
     <resources>

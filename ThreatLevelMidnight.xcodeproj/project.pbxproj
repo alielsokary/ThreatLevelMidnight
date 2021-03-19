@@ -29,6 +29,10 @@
 		418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671724A8D72000E857F7 /* LaunchScreen.storyboard */; };
 		418B672424A8D72000E857F7 /* ThreatLevelMidnightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */; };
 		418B672F24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */; };
+		41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE3260441C3002D29FC /* EpisodesViewModel.swift */; };
+		41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */; };
+		41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */; };
+		41CB9EF126044223002D29FC /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */; };
 		92523FDDAF689F54762B04AB /* Pods_ThreatLevelMidnight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */; };
 		C8A34E76625910DDFD577314 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57E7DADE1E2254C7DC943F3 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +84,10 @@
 		418B672A24A8D72000E857F7 /* ThreatLevelMidnightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreatLevelMidnightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatLevelMidnightUITests.swift; sourceTree = "<group>"; };
 		418B673024A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41CB9EE3260441C3002D29FC /* EpisodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewModel.swift; sourceTree = "<group>"; };
+		41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		44BF214EC99E698EDC53DEC4 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.release.xcconfig"; sourceTree = "<group>"; };
 		87AB1CA6B51BD77D7B8D9A80 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 		4109C1BD26041C38002CD17A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				41CB9EE026044195002D29FC /* Episodes */,
 				4109C1BE26041C45002CD17A /* Seasons */,
 			);
 			path = Scenes;
@@ -258,6 +267,41 @@
 			path = ThreatLevelMidnightUITests;
 			sourceTree = "<group>";
 		};
+		41CB9EE026044195002D29FC /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				41CB9EE12604419F002D29FC /* ViewModel */,
+				41CB9EE2260441A6002D29FC /* View */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		41CB9EE12604419F002D29FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41CB9EE3260441C3002D29FC /* EpisodesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41CB9EE2260441A6002D29FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41CB9EED260441FA002D29FC /* Cell */,
+				41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41CB9EED260441FA002D29FC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */,
+				41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A96BE099D8F0D74A71BE774C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4109C1DD26041EA2002CD17A /* SeasonTableViewCell.xib in Resources */,
+				41CB9EF126044223002D29FC /* EpisodeTableViewCell.xib in Resources */,
 				418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */,
 				4163079C25DF416D009D4A4F /* Localizable.strings in Resources */,
 				418B671624A8D72000E857F7 /* Assets.xcassets in Resources */,
@@ -554,6 +599,7 @@
 			files = (
 				4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */,
 				4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */,
+				41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */,
 				41184C6425DFF63900B7A143 /* Season.swift in Sources */,
 				416307C525DF434F009D4A4F /* R.generated.swift in Sources */,
 				41184C6925E00A6900B7A143 /* Episode.swift in Sources */,
@@ -561,8 +607,10 @@
 				4109C186260235D3002CD17A /* Configurations.swift in Sources */,
 				418B671124A8D71F00E857F7 /* ViewController.swift in Sources */,
 				418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */,
+				41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */,
 				4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */,
 				418B670F24A8D71F00E857F7 /* SceneDelegate.swift in Sources */,
+				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
 				4163086025DF54F1009D4A4F /* TVShow.swift in Sources */,
 				4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */,
