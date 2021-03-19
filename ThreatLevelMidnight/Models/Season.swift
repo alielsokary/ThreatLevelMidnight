@@ -24,4 +24,11 @@ struct Season: Codable {
 		case seasonNumber = "season_number"
 		case episodes
 	}
+
+	func posterUrl() -> String {
+		guard let baseUrl = Configurations.currentConfig()?.images?.secureBaseURL else { return "" }
+		guard let posterSize = Configurations.currentConfig()?.images?.posterSizes?.last else { return "" }
+		let url = baseUrl + posterSize + (posterPath ?? "")
+		return url
+	}
 }
