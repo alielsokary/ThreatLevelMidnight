@@ -23,7 +23,17 @@ class EpisodesViewController: UIViewController {
         super.viewDidLoad()
 		configureTableView()
 		setupBindings()
+		selectionBindings()
     }
+
+	fileprivate func configureTableView() {
+		tableView.estimatedRowHeight = 250
+		tableView.register(nib)
+		tableView.dataSource = nil
+		tableView.delegate = nil
+		tableView.rx.setDelegate(self)
+			.disposed(by: disposeBag)
+	}
 
 	fileprivate func setupBindings() {
 		viewModel.episodes
@@ -34,13 +44,17 @@ class EpisodesViewController: UIViewController {
 		viewModel.start()
 	}
 
-	fileprivate func configureTableView() {
-		tableView.estimatedRowHeight = 250
-		tableView.register(nib)
-		tableView.dataSource = nil
-		tableView.delegate = nil
-		tableView.rx.setDelegate(self)
-			.disposed(by: disposeBag)
+	fileprivate func selectionBindings() {
+		Observable
+			.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(Episode.self))
+			.observeOn(MainScheduler.instance)
+			.bind { [weak self] _, season in
+				print(season)
+				let episodsVC = R.storyboard.main.episodeDetailsViewController()!
+				episodsVC.viewModel.seasonNumber.accept(season.seasonNumber ?? 0)
+				episodsVC.viewModel.episodeNumber.accept(season.episodeNumber ?? 0)
+				self?.navigationController?.pushViewController(episodsVC, animated: true)
+			}.disposed(by: disposeBag)
 	}
 
 }

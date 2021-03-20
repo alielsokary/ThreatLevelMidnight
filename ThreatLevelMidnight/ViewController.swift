@@ -16,9 +16,6 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		APIClient.getEpisode(season: 1, episode: 1).subscribe { (_) in
-		}.disposed(by: bag)
-
 	}
 
 }
