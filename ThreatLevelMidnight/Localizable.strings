@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ThreatLevelMidnight
+
+  Created by Ali on 19/02/2021.
+  Copyright © 2021 mag. All rights reserved.
+*/
+
+// General
+"OK" = "OK";
+"Error" = "Error";
+"Cancel" = "Cancel";
+
+// APIError
+"API_ERROR_Already_LoggedIn" = "Driver Already LoggedIn";
+"API_ERROR_No_Connection" = "No Internet Connection. Please check your connection and try again";
