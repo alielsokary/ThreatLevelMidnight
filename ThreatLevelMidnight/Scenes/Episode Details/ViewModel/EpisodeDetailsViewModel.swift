@@ -23,13 +23,15 @@ class EpisodeDetailsViewModel {
 	let episode: Observable<Episode>
 	let alertMessage: Observable<String>
 
+	let service = EpisodeDetailsServiceImpl()
+
 	init() {
 		self.episode = _episodeSubject.asObserver()
 		self.alertMessage = _alertMessage.asObservable()
 	}
 
 	func start() {
-		APIClient.getEpisode(season: seasonNumber.value, episode: episodeNumber.value)
+		service.getEpisode(season: seasonNumber.value, episode: episodeNumber.value)
 			.subscribe(onNext: { [weak self] episode in
 				self?._episodeSubject.onNext(episode)
 			}, onError: { [weak self] error in

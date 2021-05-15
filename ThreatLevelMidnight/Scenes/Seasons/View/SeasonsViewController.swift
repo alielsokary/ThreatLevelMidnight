@@ -14,7 +14,7 @@ class SeasonsViewController: UIViewController {
 
 	@IBOutlet weak var tableView: UITableView!
 
-	fileprivate let viewModel = SeasonsViewModel()
+	var viewModel: SeasonsViewModel!
 	private let disposeBag = DisposeBag()
 
 	private let nib = R.nib.seasonTableViewCell
