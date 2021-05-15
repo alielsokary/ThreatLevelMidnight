@@ -12,7 +12,7 @@ import RxSwift
 
 class APIClient {
 
-	private static func request<T: Codable> (_ route: URLRequestConvertible) -> Observable<T> {
+	func request<T: Codable> (_ route: URLRequestConvertible) -> Observable<T> {
 		return Observable<T>.create { observer in
 			let request = AF.request(route).responseDecodable { (response: AFDataResponse<T>) in
 
@@ -45,19 +45,4 @@ class APIClient {
 		}
 	}
 
-	static func getConfigurations() -> Observable<Configurations> {
-		return request(TMDBRouter.getConfiguration)
-	}
-
-	static func getTVShow() -> Observable<TVShow> {
-		return request(TMDBRouter.getShow)
-	}
-
-	static func getSeason(season: Int) -> Observable<Season> {
-		return request(TMDBRouter.getSeason(season: season))
-	}
-
-	static func getEpisode(season: Int, episode: Int) -> Observable<Episode> {
-		return request(TMDBRouter.getEpisode(season: season, episode: episode))
-	}
 }

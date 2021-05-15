@@ -24,13 +24,21 @@
 		416307C525DF434F009D4A4F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416307C425DF434F009D4A4F /* R.generated.swift */; };
 		4163086025DF54F1009D4A4F /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163085F25DF54F1009D4A4F /* TVShow.swift */; };
 		418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670C24A8D71F00E857F7 /* AppDelegate.swift */; };
-		418B670F24A8D71F00E857F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670E24A8D71F00E857F7 /* SceneDelegate.swift */; };
-		418B671124A8D71F00E857F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B671024A8D71F00E857F7 /* ViewController.swift */; };
 		418B671424A8D71F00E857F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671224A8D71F00E857F7 /* Main.storyboard */; };
 		418B671624A8D72000E857F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418B671524A8D72000E857F7 /* Assets.xcassets */; };
 		418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671724A8D72000E857F7 /* LaunchScreen.storyboard */; };
 		418B672424A8D72000E857F7 /* ThreatLevelMidnightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */; };
 		418B672F24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */; };
+		419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B4887264F651C001F1BB3 /* SplashCoordinator.swift */; };
+		419B488D264F6593001F1BB3 /* SplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B488C264F6593001F1BB3 /* SplashService.swift */; };
+		419B4892264F6641001F1BB3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B4891264F6641001F1BB3 /* SplashViewController.swift */; };
+		419B4897264F667A001F1BB3 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B4896264F667A001F1BB3 /* SplashViewModel.swift */; };
+		419B489F264F6C92001F1BB3 /* EpisodesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B489E264F6C92001F1BB3 /* EpisodesService.swift */; };
+		419B48A5264F6D56001F1BB3 /* EpisodeDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B48A4264F6D56001F1BB3 /* EpisodeDetailsService.swift */; };
+		41C0228D264F5AAF004E8437 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0228C264F5AAF004E8437 /* BaseCoordinator.swift */; };
+		41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C02294264F5AC9004E8437 /* AppCoordinator.swift */; };
+		41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */; };
+		41C022A4264F5BEE004E8437 /* SeasonsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C022A3264F5BEE004E8437 /* SeasonsService.swift */; };
 		41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE3260441C3002D29FC /* EpisodesViewModel.swift */; };
 		41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */; };
 		41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */; };
@@ -76,8 +84,6 @@
 		4163085F25DF54F1009D4A4F /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
 		418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreatLevelMidnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B670C24A8D71F00E857F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		418B670E24A8D71F00E857F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		418B671024A8D71F00E857F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		418B671324A8D71F00E857F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		418B671524A8D72000E857F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		418B671824A8D72000E857F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +94,16 @@
 		418B672A24A8D72000E857F7 /* ThreatLevelMidnightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreatLevelMidnightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatLevelMidnightUITests.swift; sourceTree = "<group>"; };
 		418B673024A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419B4887264F651C001F1BB3 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		419B488C264F6593001F1BB3 /* SplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashService.swift; sourceTree = "<group>"; };
+		419B4891264F6641001F1BB3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		419B4896264F667A001F1BB3 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		419B489E264F6C92001F1BB3 /* EpisodesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesService.swift; sourceTree = "<group>"; };
+		419B48A4264F6D56001F1BB3 /* EpisodeDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsService.swift; sourceTree = "<group>"; };
+		41C0228C264F5AAF004E8437 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		41C02294264F5AC9004E8437 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsCoordinator.swift; sourceTree = "<group>"; };
+		41C022A3264F5BEE004E8437 /* SeasonsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsService.swift; sourceTree = "<group>"; };
 		41CB9EE3260441C3002D29FC /* EpisodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewModel.swift; sourceTree = "<group>"; };
 		41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
@@ -142,6 +158,7 @@
 		4109C1BD26041C38002CD17A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				419B4882264F64AD001F1BB3 /* Splash */,
 				4109C1BE26041C45002CD17A /* Seasons */,
 				41CB9EE026044195002D29FC /* Episodes */,
 				411B46D82604F2E3002F3970 /* Episode Details */,
@@ -152,6 +169,8 @@
 		4109C1BE26041C45002CD17A /* Seasons */ = {
 			isa = PBXGroup;
 			children = (
+				41C022A2264F5B95004E8437 /* Service */,
+				41C02299264F5AF2004E8437 /* Coordinator */,
 				4109C1C826041CD8002CD17A /* ViewModel */,
 				4109C1C726041CD0002CD17A /* View */,
 			);
@@ -187,6 +206,7 @@
 		411B46D82604F2E3002F3970 /* Episode Details */ = {
 			isa = PBXGroup;
 			children = (
+				419B48A3264F6D43001F1BB3 /* Service */,
 				411B46DF2604F319002F3970 /* ViewModel */,
 				411B46DE2604F311002F3970 /* View */,
 			);
@@ -212,6 +232,7 @@
 		4163075925DF3DF5009D4A4F /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				41C0228B264F5A9B004E8437 /* Navigation */,
 				416307C425DF434F009D4A4F /* R.generated.swift */,
 			);
 			path = Library;
@@ -263,13 +284,12 @@
 		418B670B24A8D71F00E857F7 /* ThreatLevelMidnight */ = {
 			isa = PBXGroup;
 			children = (
+				41C0228A264F5A75004E8437 /* App */,
 				4109C1BD26041C38002CD17A /* Scenes */,
 				4163085E25DF54D5009D4A4F /* Models */,
 				4163075D25DF3EDE009D4A4F /* API */,
 				4163075925DF3DF5009D4A4F /* Library */,
 				418B670C24A8D71F00E857F7 /* AppDelegate.swift */,
-				418B670E24A8D71F00E857F7 /* SceneDelegate.swift */,
-				418B671024A8D71F00E857F7 /* ViewController.swift */,
 				418B671224A8D71F00E857F7 /* Main.storyboard */,
 				418B671524A8D72000E857F7 /* Assets.xcassets */,
 				418B671724A8D72000E857F7 /* LaunchScreen.storyboard */,
@@ -297,9 +317,109 @@
 			path = ThreatLevelMidnightUITests;
 			sourceTree = "<group>";
 		};
+		419B4880264F604F001F1BB3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				419B489E264F6C92001F1BB3 /* EpisodesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		419B4881264F6056001F1BB3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		419B4882264F64AD001F1BB3 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				419B4883264F64D4001F1BB3 /* Coordinator */,
+				419B4884264F64DC001F1BB3 /* View Model */,
+				419B4885264F64E3001F1BB3 /* View */,
+				419B4886264F64E9001F1BB3 /* Service */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		419B4883264F64D4001F1BB3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				419B4887264F651C001F1BB3 /* SplashCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		419B4884264F64DC001F1BB3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				419B4896264F667A001F1BB3 /* SplashViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		419B4885264F64E3001F1BB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				419B4891264F6641001F1BB3 /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		419B4886264F64E9001F1BB3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				419B488C264F6593001F1BB3 /* SplashService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		419B48A3264F6D43001F1BB3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				419B48A4264F6D56001F1BB3 /* EpisodeDetailsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		41C0228A264F5A75004E8437 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41C02294264F5AC9004E8437 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		41C0228B264F5A9B004E8437 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				41C0228C264F5AAF004E8437 /* BaseCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		41C02299264F5AF2004E8437 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		41C022A2264F5B95004E8437 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				41C022A3264F5BEE004E8437 /* SeasonsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		41CB9EE026044195002D29FC /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
+				419B4881264F6056001F1BB3 /* Coordinator */,
+				419B4880264F604F001F1BB3 /* Service */,
 				41CB9EE12604419F002D29FC /* ViewModel */,
 				41CB9EE2260441A6002D29FC /* View */,
 			);
@@ -627,22 +747,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				419B4897264F667A001F1BB3 /* SplashViewModel.swift in Sources */,
+				419B489F264F6C92001F1BB3 /* EpisodesService.swift in Sources */,
 				4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */,
+				41C0228D264F5AAF004E8437 /* BaseCoordinator.swift in Sources */,
 				4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */,
+				41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */,
 				41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */,
+				419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */,
 				41184C6425DFF63900B7A143 /* Season.swift in Sources */,
 				416307C525DF434F009D4A4F /* R.generated.swift in Sources */,
 				411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */,
+				419B488D264F6593001F1BB3 /* SplashService.swift in Sources */,
 				41184C6925E00A6900B7A143 /* Episode.swift in Sources */,
 				4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */,
+				41C022A4264F5BEE004E8437 /* SeasonsService.swift in Sources */,
 				4109C186260235D3002CD17A /* Configurations.swift in Sources */,
-				418B671124A8D71F00E857F7 /* ViewController.swift in Sources */,
 				418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */,
+				419B4892264F6641001F1BB3 /* SplashViewController.swift in Sources */,
 				41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */,
 				4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */,
-				418B670F24A8D71F00E857F7 /* SceneDelegate.swift in Sources */,
 				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
+				41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */,
+				419B48A5264F6D56001F1BB3 /* EpisodeDetailsService.swift in Sources */,
 				4163086025DF54F1009D4A4F /* TVShow.swift in Sources */,
 				4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */,
 				411B46E12604F335002F3970 /* EpisodeDetailsViewModel.swift in Sources */,
@@ -751,7 +879,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -806,7 +934,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -824,6 +952,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV394V58Y3;
 				INFOPLIST_FILE = ThreatLevelMidnight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -843,6 +972,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV394V58Y3;
 				INFOPLIST_FILE = ThreatLevelMidnight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

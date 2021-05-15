@@ -23,18 +23,18 @@ class SeasonsViewModel {
 	let seasons: Observable<[Season]>
 	let alertMessage: Observable<String>
 
-	init() {
+	let service: SeasonsService
+
+	init(service: SeasonsService) {
+		self.service = service
+
 		self.tvShow = _tvShowSubject.asObserver()
 		self.seasons = _seasonsSubject.asObserver()
 		self.alertMessage = _alertMessage.asObservable()
 	}
 
 	func start() {
-		APIClient.getConfigurations().subscribe { (config) in
-			_ = config.element?.saveUserData()
-		}.disposed(by: bag)
-
-		APIClient.getTVShow()
+		service.getTVShow()
 			.subscribe(onNext: { [weak self] tvShow in
 			guard let self = self else { return }
 			self._tvShowSubject.onNext(tvShow)

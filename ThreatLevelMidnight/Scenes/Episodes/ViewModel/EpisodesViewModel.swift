@@ -16,6 +16,8 @@ class EpisodesViewModel {
 
 	let seasonId = BehaviorRelay<Int>(value: 0)
 
+	let service = EpisodesServiceImpl()
+
 	private let _episodesSubject = PublishSubject<[Episode]>()
 	private let _alertMessage = PublishSubject<String>()
 
@@ -28,7 +30,7 @@ class EpisodesViewModel {
 	}
 
 	func start() {
-		APIClient.getSeason(season: seasonId.value)
+		service.getSeason(season: seasonId.value)
 			.subscribe(onNext: { [weak self] season in
 				guard let self = self else { return }
 				self._episodesSubject.onNext(season.episodes ?? [])
