@@ -5,9 +5,7 @@ PODS:
   - Differentiator (4.0.1)
   - Keys (1.0.1)
   - Kingfisher (6.2.1)
-  - NVActivityIndicatorView (5.1.1):
-    - NVActivityIndicatorView/Base (= 5.1.1)
-  - NVActivityIndicatorView/Base (5.1.1)
+  - PKHUD (5.3.0)
   - R.swift (5.4.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
@@ -52,7 +50,7 @@ DEPENDENCIES:
   - AlamofireNetworkActivityLogger (~> 3.4)
   - Keys (from `Pods/CocoaPodsKeys`)
   - Kingfisher (~> 6.0)
-  - NVActivityIndicatorView
+  - PKHUD
   - R.swift
   - RxCocoa (~> 5)
   - RxDataSources (~> 4.0)
@@ -65,7 +63,7 @@ SPEC REPOS:
     - AlamofireNetworkActivityLogger
     - Differentiator
     - Kingfisher
-    - NVActivityIndicatorView
+    - PKHUD
     - R.swift
     - R.swift.Library
     - RxCocoa
@@ -84,7 +82,7 @@ SPEC CHECKSUMS:
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
-  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -93,6 +91,6 @@ SPEC CHECKSUMS:
   RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
-PODFILE CHECKSUM: 6ebb2e731596e3511a896d51b15426d78a5f6247
+PODFILE CHECKSUM: 37a0d0efad878deacc0f5b98e25777426df4da02
 
 COCOAPODS: 1.10.1

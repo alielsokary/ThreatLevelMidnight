@@ -17,7 +17,7 @@ target 'ThreatLevelMidnight' do
   pod 'R.swift'
   pod 'SwifterSwift'
   
-  pod 'NVActivityIndicatorView'
+	pod 'PKHUD'
 
   target 'ThreatLevelMidnightTests' do
     inherit! :search_paths
