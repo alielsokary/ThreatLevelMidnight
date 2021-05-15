@@ -24,8 +24,6 @@
 		416307C525DF434F009D4A4F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416307C425DF434F009D4A4F /* R.generated.swift */; };
 		4163086025DF54F1009D4A4F /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163085F25DF54F1009D4A4F /* TVShow.swift */; };
 		418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670C24A8D71F00E857F7 /* AppDelegate.swift */; };
-		418B670F24A8D71F00E857F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670E24A8D71F00E857F7 /* SceneDelegate.swift */; };
-		418B671124A8D71F00E857F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B671024A8D71F00E857F7 /* ViewController.swift */; };
 		418B671424A8D71F00E857F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671224A8D71F00E857F7 /* Main.storyboard */; };
 		418B671624A8D72000E857F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418B671524A8D72000E857F7 /* Assets.xcassets */; };
 		418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671724A8D72000E857F7 /* LaunchScreen.storyboard */; };
@@ -76,8 +74,6 @@
 		4163085F25DF54F1009D4A4F /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
 		418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreatLevelMidnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B670C24A8D71F00E857F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		418B670E24A8D71F00E857F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		418B671024A8D71F00E857F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		418B671324A8D71F00E857F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		418B671524A8D72000E857F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		418B671824A8D72000E857F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -268,8 +264,6 @@
 				4163075D25DF3EDE009D4A4F /* API */,
 				4163075925DF3DF5009D4A4F /* Library */,
 				418B670C24A8D71F00E857F7 /* AppDelegate.swift */,
-				418B670E24A8D71F00E857F7 /* SceneDelegate.swift */,
-				418B671024A8D71F00E857F7 /* ViewController.swift */,
 				418B671224A8D71F00E857F7 /* Main.storyboard */,
 				418B671524A8D72000E857F7 /* Assets.xcassets */,
 				418B671724A8D72000E857F7 /* LaunchScreen.storyboard */,
@@ -636,11 +630,9 @@
 				41184C6925E00A6900B7A143 /* Episode.swift in Sources */,
 				4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */,
 				4109C186260235D3002CD17A /* Configurations.swift in Sources */,
-				418B671124A8D71F00E857F7 /* ViewController.swift in Sources */,
 				418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */,
 				41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */,
 				4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */,
-				418B670F24A8D71F00E857F7 /* SceneDelegate.swift in Sources */,
 				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
 				4163086025DF54F1009D4A4F /* TVShow.swift in Sources */,
@@ -751,7 +743,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -806,7 +798,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -824,6 +816,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV394V58Y3;
 				INFOPLIST_FILE = ThreatLevelMidnight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -843,6 +836,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV394V58Y3;
 				INFOPLIST_FILE = ThreatLevelMidnight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
