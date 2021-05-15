@@ -10,6 +10,7 @@
 "OK" = "OK";
 "Error" = "Error";
 "Cancel" = "Cancel";
+"Retry" = "Retry";
 
 // APIError
 "API_ERROR_Already_LoggedIn" = "Driver Already LoggedIn";
