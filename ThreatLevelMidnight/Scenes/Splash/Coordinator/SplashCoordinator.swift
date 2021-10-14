@@ -10,13 +10,12 @@ import RxSwift
 
 class SplashCoordinator: BaseCoordinator<Void> {
 
-	let rootViewController: UIViewController
+	private let rootViewController: UIViewController
+	private let service = SplashServiceImpl()
 
 	init(rootViewController: UIViewController) {
 		self.rootViewController = rootViewController
 	}
-
-	let service = SplashServiceImpl()
 
 	override func start() -> Observable<Void> {
 		let viewController = rootViewController as? SplashViewController
@@ -34,7 +33,6 @@ class SplashCoordinator: BaseCoordinator<Void> {
 
 	private func coordinateToSeasonsList() -> Observable<Void> {
 		let seasonsCoordinator = SeasonsCoordinator(rootViewController: rootViewController)
-
 		return coordinate(to: seasonsCoordinator)
 			.map { _ in () }
 	}

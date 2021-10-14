@@ -21,17 +21,21 @@ class EpisodeTableViewCell: UITableViewCell {
 
     }
 
-	func configureData(episode: Episode) {
-		episodeNumberLabel.text = "\(episode.episodeNumber ?? 0)"
-		episodeNameLabel.text = episode.name
-		episodeOverviewLabel.text = episode.overview
-		episodeImageView.kf.setImage(with: URL(string: episode.posterUrl()), placeholder: UIImage())
+	// MARK: - Properties
+	var viewModel: EpisodeViewModel! {
+		didSet {
+			self.configure()
+		}
 	}
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+}
 
-        // Configure the view for the selected state
-    }
+extension EpisodeTableViewCell {
 
+	func configure() {
+		episodeNumberLabel.text = "\(viewModel.number ?? 0)"
+		episodeNameLabel.text = viewModel.name
+		episodeOverviewLabel.text = viewModel.overview
+		episodeImageView.kf.setImage(with: URL(string: viewModel.image ?? ""), placeholder: UIImage())
+	}
 }

@@ -12,31 +12,29 @@ import RxCocoa
 
 class EpisodesViewModel {
 
-	private let bag = DisposeBag()
+	private let service: EpisodesService!
+	private let disposeBag = DisposeBag()
 
-	let seasonId = BehaviorRelay<Int>(value: 0)
+	// MARK: - Actions
+	let selectedEpisode = PublishSubject<EpisodeViewModel>()
 
-	let service = EpisodesServiceImpl()
-
-	private let _episodesSubject = PublishSubject<[Episode]>()
 	private let _alertMessage = PublishSubject<String>()
 
-	let episodes: Observable<[Episode]>
+	let episodes = BehaviorSubject<[EpisodeViewModel]>(value: [])
 	let alertMessage: Observable<String>
 
-	init() {
-		self.episodes = _episodesSubject.asObserver()
+	init(service: EpisodesService, season: Int?) {
+		self.service = service
 		self.alertMessage = _alertMessage.asObservable()
-	}
 
-	func start() {
-		service.getSeason(season: seasonId.value)
+		self.service.getSeason(season: season!)
 			.subscribe(onNext: { [weak self] season in
 				guard let self = self else { return }
-				self._episodesSubject.onNext(season.episodes ?? [])
+				let episodesList = season.episodes?.compactMap { EpisodeViewModel(episode: $0) }
+				self.episodes.onNext(episodesList ?? [])
 		}, onError: { [weak self] error in
 			guard let self = self else { return }
 			self._alertMessage.onNext(error.localizedDescription)
-		}).disposed(by: bag)
+		}).disposed(by: disposeBag)
 	}
 }
