@@ -27,11 +27,14 @@ class SplashViewController: UIViewController {
 
 private extension SplashViewController {
 	func setupBindings() {
-		viewModel.isLoading
-			.subscribe(onNext: { [weak self] isLoading in
-				isLoading ? self?.showProgress() : self?.hideProgress()
-			})
+		viewModel.alertMessage
+			.subscribe(onNext: { [weak self] in self?.showAlert(message: $0) })
 			.disposed(by: disposeBag)
+
+		viewModel.isLoading
+			.subscribe { [weak self] isLoading in
+				isLoading ? self?.showProgress() : self?.hideProgress()
+			}.disposed(by: disposeBag)
 
 		viewModel.noInternet
 			.subscribe { [weak self] noInternet in

@@ -19,15 +19,17 @@ class SeasonTableViewCell: UITableViewCell {
 
     }
 
-	func configureData(season: Season) {
-		seasonImageView.kf.setImage(with: URL(string: season.posterUrl()), placeholder: UIImage())
-		seasonLabel.text = "\(season.seasonNumber ?? 0)"
+	// MARK: - Properties
+	var viewModel: SeasonViewModel! {
+		didSet {
+			self.configure()
+		}
 	}
+}
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+extension SeasonTableViewCell {
+	func configure() {
+		seasonLabel.text = "\(viewModel.number ?? 0)"
+		seasonImageView.kf.setImage(with: URL(string: viewModel.image ?? ""), placeholder: UIImage())
+	}
 }

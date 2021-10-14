@@ -51,15 +51,6 @@ extension UIViewController {
 		present(alertController, animated: true)
 	}
 
-	func showAlertAndDismiss(message: String) {
-		let alertController = UIAlertController(title: message, message: nil, preferredStyle: .alert)
-		present(alertController, animated: true) {
-			DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-				self.dismiss(animated: true, completion: nil)
-			}
-		}
-	}
-
 	func showAlert(withError error: Error, handler: ((UIAlertAction) -> Void)? = nil) {
 		showAlert(withTitle: R.string.localizable.error(), message: error.localizedDescription, handler: handler)
 	}

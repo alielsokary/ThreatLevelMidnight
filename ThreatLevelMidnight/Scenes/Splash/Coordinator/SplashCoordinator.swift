@@ -34,7 +34,6 @@ class SplashCoordinator: BaseCoordinator<Void> {
 
 	private func coordinateToSeasonsList() -> Observable<Void> {
 		let seasonsCoordinator = SeasonsCoordinator(rootViewController: rootViewController)
-
 		return coordinate(to: seasonsCoordinator)
 			.map { _ in () }
 	}

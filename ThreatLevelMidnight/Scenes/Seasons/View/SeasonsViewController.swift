@@ -21,12 +21,25 @@ class SeasonsViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		setupUI()
 		configureTableView()
 		setupBindings()
 		selectionBindings()
 	}
+}
 
-	fileprivate func configureTableView() {
+// MARK: - Setup UI
+
+private extension SeasonsViewController {
+	func setupUI() {
+		self.navigationItem.setHidesBackButton(true, animated: true)
+	}
+}
+
+// MARK: - TableView Configurations
+
+private extension SeasonsViewController {
+	func configureTableView() {
 		tableView.estimatedRowHeight = 250
 		tableView.register(nib)
 		tableView.dataSource = nil
@@ -34,30 +47,47 @@ class SeasonsViewController: UIViewController {
 		tableView.rx.setDelegate(self)
 			.disposed(by: disposeBag)
 	}
+}
 
-	fileprivate func setupBindings() {
+// MARK: - Setup Bindings
+
+private extension SeasonsViewController {
+	func setupBindings() {
 		viewModel.seasons
 			.observeOn(MainScheduler.instance)
-			.bind(to: tableView.rx.items(cellIdentifier: R.reuseIdentifier.seasonTableViewCell.identifier, cellType: SeasonTableViewCell.self)) { _, season, cell in
-				cell.configureData(season: season)
+			.bind(to: tableView.rx.items(cellIdentifier: R.reuseIdentifier.seasonTableViewCell.identifier, cellType: SeasonTableViewCell.self)) { _, viewModel, cell in
+				cell.viewModel = viewModel
+			}.disposed(by: disposeBag)
+
+		viewModel.alertMessage
+			.subscribe(onNext: { [weak self] in self?.showAlert(message: $0) })
+			.disposed(by: disposeBag)
+
+		viewModel.isLoading
+			.subscribe { [weak self] isLoading in
+				isLoading ? self?.showProgress() : self?.hideProgress()
+			}.disposed(by: disposeBag)
+
+		viewModel.noInternet
+			.subscribe { [weak self] noInternet in
+				if noInternet.element! {
+					self?.showAlert(message: R.string.localizable.api_ERROR_No_Connection(), handler: { _ in
+						self?.viewModel.start()
+					})
+				}
 			}.disposed(by: disposeBag)
 
 		viewModel.start()
 	}
 
-	fileprivate func selectionBindings() {
-		Observable
-			.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(Season.self))
-			.observeOn(MainScheduler.instance)
-			.bind { [weak self] _, season in
-				print(season)
-				let episodsVC = R.storyboard.main.episodesViewController()!
-				episodsVC.viewModel.seasonId.accept(season.seasonNumber ?? 0)
-				self?.navigationController?.pushViewController(episodsVC, animated: true)
-			}.disposed(by: disposeBag)
+	func selectionBindings() {
+		tableView.rx.modelSelected(SeasonViewModel.self)
+			.bind(to: viewModel.selectedSeason)
+			.disposed(by: disposeBag)
 	}
-
 }
+
+// MARK: - TableView Delegate
 
 extension SeasonsViewController: UITableViewDelegate {
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

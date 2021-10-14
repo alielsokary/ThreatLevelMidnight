@@ -10,7 +10,7 @@ import RxSwift
 
 class AppCoordinator: BaseCoordinator<Void> {
 
-	var window: UIWindow
+	private let window: UIWindow
 
 	init(window: UIWindow) {
 		self.window = window
@@ -20,11 +20,11 @@ class AppCoordinator: BaseCoordinator<Void> {
 		guard let viewcontroller = R.storyboard.main.splashViewController() else { return  Observable.empty() }
 		let navigationController = UINavigationController(rootViewController: viewcontroller)
 
-		let seasonsCoordinator = SplashCoordinator(rootViewController: navigationController.viewControllers[0])
+		let splashCoordinator = SplashCoordinator(rootViewController: navigationController.viewControllers[0])
 
 		window.rootViewController = navigationController
 		window.makeKeyAndVisible()
 
-		return coordinate(to: seasonsCoordinator)
+		return coordinate(to: splashCoordinator)
 	}
 }

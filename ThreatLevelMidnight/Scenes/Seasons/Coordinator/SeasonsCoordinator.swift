@@ -7,27 +7,40 @@
 //
 
 import RxSwift
+import Rswift
 
 class SeasonsCoordinator: BaseCoordinator<Void> {
 
 	let rootViewController: UIViewController
+	let service = SeasonsServiceImpl()
 
 	init(rootViewController: UIViewController) {
 		self.rootViewController = rootViewController
 	}
 
-	let service = SeasonsServiceImpl()
-
 	override func start() -> Observable<Void> {
-		guard let viewController = R.storyboard.main.seasonsViewController() else { return Observable.never() }
-
-		let navigationController = UINavigationController(rootViewController: viewController)
 
 		let viewModel = SeasonsViewModel(service: service)
+		guard let viewController = R.storyboard.main.seasonsViewController() else { return Observable.empty() }
+
 		viewController.viewModel = viewModel
-		navigationController.modalPresentationStyle = .fullScreen
-		rootViewController.navigationController?.present(navigationController, animated: false)
-		return Observable.never()
+
+		rootViewController.navigationController?.pushViewController(viewController, animated: false)
+
+		viewModel.selectedSeason
+			.flatMap({ [unowned self] (season) in
+			self.coordinateToEpisodesList(with: season)
+			})
+			.subscribe()
+			.disposed(by: disposeBag)
+		return Observable.empty()
+	}
+
+	private func coordinateToEpisodesList(with viewModel: SeasonViewModel) -> Observable<Void> {
+		let episodesListCoordinator = EpisodesCoordinator(rootViewController: rootViewController)
+		episodesListCoordinator.seasonViewModel = viewModel
+		return coordinate(to: episodesListCoordinator)
+			.map { _ in () }
 	}
 
 }

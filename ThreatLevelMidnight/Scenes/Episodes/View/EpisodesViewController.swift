@@ -15,7 +15,7 @@ class EpisodesViewController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
 
 	private let disposeBag = DisposeBag()
-	let viewModel = EpisodesViewModel()
+	var viewModel: EpisodesViewModel!
 
 	private let nib = R.nib.episodeTableViewCell
 
@@ -40,8 +40,6 @@ class EpisodesViewController: UIViewController {
 			.observeOn(MainScheduler.instance).bind(to: tableView.rx.items(cellIdentifier: R.reuseIdentifier.episodeTableViewCell.identifier, cellType: EpisodeTableViewCell.self)) { _, episode, cell in
 				cell.configureData(episode: episode)
 			}.disposed(by: disposeBag)
-
-		viewModel.start()
 	}
 
 	fileprivate func selectionBindings() {

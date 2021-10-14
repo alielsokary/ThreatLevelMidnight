@@ -12,36 +12,46 @@ import RxCocoa
 
 class SeasonsViewModel {
 
-	private let bag = DisposeBag()
+	private let disposeBag = DisposeBag()
 
-	private let _tvShowSubject = PublishSubject<TVShow>()
-	private let _seasonsSubject = PublishSubject<[Season]>()
-
+	let isLoading = BehaviorSubject<Bool>(value: false)
+	let noInternet = BehaviorSubject<Bool>(value: false)
 	private let _alertMessage = PublishSubject<String>()
 
-	let tvShow: Observable<TVShow>
-	let seasons: Observable<[Season]>
+	let seasons = BehaviorSubject<[SeasonViewModel]>(value: [])
+	let selectedSeason = PublishSubject<SeasonViewModel>()
+	let didClose = PublishSubject<Void>()
+
 	let alertMessage: Observable<String>
 
 	let service: SeasonsService
 
 	init(service: SeasonsService) {
 		self.service = service
-
-		self.tvShow = _tvShowSubject.asObserver()
-		self.seasons = _seasonsSubject.asObserver()
 		self.alertMessage = _alertMessage.asObservable()
 	}
 
 	func start() {
+		self.isLoading.onNext(true)
+		self.noInternet.onNext(false)
 		service.getTVShow()
 			.subscribe(onNext: { [weak self] tvShow in
 			guard let self = self else { return }
-			self._tvShowSubject.onNext(tvShow)
-			self._seasonsSubject.onNext(tvShow.seasons?.filter { $0.seasonNumber != 0 } ?? [])
+			self.isLoading.onNext(false)
+				let seasonsList = tvShow.seasons?.filter { $0.seasonNumber != 0 }.compactMap {
+					SeasonViewModel(season: $0)
+				}
+				self.seasons.onNext(seasonsList ?? [])
 		}, onError: { [weak self] error in
-			self?._alertMessage.onNext(error.localizedDescription)
-		}).disposed(by: bag)
+			self?.isLoading.onNext(false)
+			guard let error = error as? APIError else { return }
+			switch error {
+			case .noInternet:
+				self?.noInternet.onNext(true)
+			default:
+				self?._alertMessage.onNext(error.localizedDescription)
+			}
+		}).disposed(by: disposeBag)
 
 	}
 }

@@ -14,9 +14,11 @@ class EpisodesViewModel {
 
 	private let bag = DisposeBag()
 
-	let seasonId = BehaviorRelay<Int>(value: 0)
+	let service: EpisodesService!
 
-	let service = EpisodesServiceImpl()
+	// MARK: - Actions
+	var selectedSeason = PublishSubject<SeasonViewModel>()
+	let back = PublishSubject<Void>()
 
 	private let _episodesSubject = PublishSubject<[Episode]>()
 	private let _alertMessage = PublishSubject<String>()
@@ -24,15 +26,13 @@ class EpisodesViewModel {
 	let episodes: Observable<[Episode]>
 	let alertMessage: Observable<String>
 
-	init() {
+	init(service: EpisodesService, season: Int?) {
+		self.service = service
 		self.episodes = _episodesSubject.asObserver()
 		self.alertMessage = _alertMessage.asObservable()
-	}
 
-	func start() {
-		service.getSeason(season: seasonId.value)
-			.subscribe(onNext: { [weak self] season in
-				guard let self = self else { return }
+		self.service.getSeason(season: season!)
+			.subscribe(onNext: { season in
 				self._episodesSubject.onNext(season.episodes ?? [])
 		}, onError: { [weak self] error in
 			guard let self = self else { return }
