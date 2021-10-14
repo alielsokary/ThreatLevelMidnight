@@ -9,6 +9,7 @@
 import Foundation
 
 struct SeasonViewModel {
+
 	let number: Int?
 	let image: String?
 

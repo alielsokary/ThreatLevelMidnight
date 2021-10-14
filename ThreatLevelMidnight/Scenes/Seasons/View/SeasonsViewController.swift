@@ -14,7 +14,7 @@ class SeasonsViewController: UIViewController {
 
 	@IBOutlet weak var tableView: UITableView!
 
-	private var viewModel: SeasonsViewModel!
+	private let viewModel: SeasonsViewModel!
 	private let disposeBag = DisposeBag()
 
 	private let nib = R.nib.seasonTableViewCell
@@ -40,6 +40,7 @@ class SeasonsViewController: UIViewController {
 // MARK: - Setup UI
 
 private extension SeasonsViewController {
+
 	func setupUI() {
 		self.navigationItem.setHidesBackButton(true, animated: true)
 	}
@@ -48,6 +49,7 @@ private extension SeasonsViewController {
 // MARK: - TableView Configurations
 
 private extension SeasonsViewController {
+
 	func configureTableView() {
 		tableView.estimatedRowHeight = 250
 		tableView.register(nib)
@@ -61,6 +63,7 @@ private extension SeasonsViewController {
 // MARK: - Setup Bindings
 
 private extension SeasonsViewController {
+
 	func setupBindings() {
 		viewModel.seasons
 			.observeOn(MainScheduler.instance)
@@ -99,6 +102,7 @@ private extension SeasonsViewController {
 // MARK: - TableView Delegate
 
 extension SeasonsViewController: UITableViewDelegate {
+
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		return UITableView.automaticDimension
 	}

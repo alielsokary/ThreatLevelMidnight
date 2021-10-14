@@ -16,23 +16,22 @@ class EpisodesViewModel {
 	private let disposeBag = DisposeBag()
 
 	// MARK: - Actions
-	var selectedSeason = PublishSubject<SeasonViewModel>()
-	let back = PublishSubject<Void>()
+	let selectedEpisode = PublishSubject<EpisodeViewModel>()
 
-	private let _episodesSubject = PublishSubject<[Episode]>()
 	private let _alertMessage = PublishSubject<String>()
 
-	let episodes: Observable<[Episode]>
+	let episodes = BehaviorSubject<[EpisodeViewModel]>(value: [])
 	let alertMessage: Observable<String>
 
 	init(service: EpisodesService, season: Int?) {
 		self.service = service
-		self.episodes = _episodesSubject.asObserver()
 		self.alertMessage = _alertMessage.asObservable()
 
 		self.service.getSeason(season: season!)
-			.subscribe(onNext: { season in
-				self._episodesSubject.onNext(season.episodes ?? [])
+			.subscribe(onNext: { [weak self] season in
+				guard let self = self else { return }
+				let episodesList = season.episodes?.compactMap { EpisodeViewModel(episode: $0) }
+				self.episodes.onNext(episodesList ?? [])
 		}, onError: { [weak self] error in
 			guard let self = self else { return }
 			self._alertMessage.onNext(error.localizedDescription)

@@ -28,6 +28,7 @@ class SeasonTableViewCell: UITableViewCell {
 }
 
 extension SeasonTableViewCell {
+
 	func configure() {
 		seasonLabel.text = "\(viewModel.number ?? 0)"
 		seasonImageView.kf.setImage(with: URL(string: viewModel.image ?? ""), placeholder: UIImage())

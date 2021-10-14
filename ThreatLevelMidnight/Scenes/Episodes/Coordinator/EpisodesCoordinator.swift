@@ -28,7 +28,19 @@ class EpisodesCoordinator: BaseCoordinator<Void> {
 
 		rootViewController.navigationController?.pushViewController(viewController, animated: true)
 
+		viewModel.selectedEpisode
+			.flatMap({ [unowned self] (episode) in
+				self.coordinateToEpisodeDetails(with: episode)
+			}).subscribe()
+			.disposed(by: disposeBag)
+
 		return Observable.empty()
+	}
+
+	private func coordinateToEpisodeDetails(with viewModel: EpisodeViewModel) -> Observable<Void> {
+		let episodeDetailsCoordinator = EpisodeDetailsCoordinator(rootViewController: rootViewController, viewModel: viewModel)
+		return coordinate(to: episodeDetailsCoordinator)
+			.map { _ in () }
 	}
 
 }
