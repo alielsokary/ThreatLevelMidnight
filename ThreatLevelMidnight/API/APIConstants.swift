@@ -40,23 +40,3 @@ struct APIConstants {
 	}
 
 }
-
-enum APIError: Error {
-	case noInternet
-	case tlmn_unauthorized           // Status code 401
-	case tlmn_forbidden              // Status code 403
-	case tlmn_notFound               // Status code 404
-	case tlmn_internalServerError    // Status code 500
-	case unknown
-}
-
-extension APIError: LocalizedError {
-	var errorDescription: String? {
-		switch self {
-		case .noInternet:
-			return R.string.localizable.api_ERROR_No_Connection()
-		default:
-			return R.string.localizable.error()
-		}
-	}
-}

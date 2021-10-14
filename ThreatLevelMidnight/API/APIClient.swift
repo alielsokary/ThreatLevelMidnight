@@ -12,7 +12,7 @@ import RxSwift
 
 class APIClient {
 
-	func request<T: Codable> (_ route: URLRequestConvertible) -> Observable<T> {
+	func request<T: Codable> (_ route: URLRequestBuilder) -> Observable<T> {
 		return Observable<T>.create { observer in
 			let request = AF.request(route).responseDecodable { (response: AFDataResponse<T>) in
 

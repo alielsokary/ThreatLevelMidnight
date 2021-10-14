@@ -6,13 +6,13 @@ target 'ThreatLevelMidnight' do
   use_frameworks!
 
   # Pods for ThreatLevelMidnight
-	pod 'Alamofire', '~> 5.2'
+	pod 'Alamofire', '5.4.1'
 	pod 'AlamofireNetworkActivityLogger', '~> 3.4'
 	pod 'Kingfisher', '~> 6.0'
   
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
-  pod 'RxDataSources', '~> 4.0'
+	pod 'RxSwift', '6.1.0'
+	pod 'RxCocoa', '6.1.0'
+	pod 'RxDataSources', '~> 5.0'
   
   pod 'R.swift'
   pod 'SwifterSwift'

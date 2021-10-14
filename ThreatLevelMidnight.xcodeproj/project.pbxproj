@@ -19,6 +19,8 @@
 		411B46E12604F335002F3970 /* EpisodeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B46E02604F335002F3970 /* EpisodeDetailsViewModel.swift */; };
 		411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F09271849BF0008B7AB /* EpisodeDetailsCoordinator.swift */; };
 		411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F0B27184B340008B7AB /* EpisodeViewModel.swift */; };
+		411C2F102718BEAF0008B7AB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F0F2718BEAF0008B7AB /* APIError.swift */; };
+		411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F112718C0440008B7AB /* URLRequestBuilder.swift */; };
 		4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */; };
 		4120A8FC2717B123003E2A69 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8FB2717B123003E2A69 /* Typealias.swift */; };
 		4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163075E25DF3EFD009D4A4F /* APIConstants.swift */; };
@@ -85,6 +87,8 @@
 		411B46E02604F335002F3970 /* EpisodeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewModel.swift; sourceTree = "<group>"; };
 		411C2F09271849BF0008B7AB /* EpisodeDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsCoordinator.swift; sourceTree = "<group>"; };
 		411C2F0B27184B340008B7AB /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		411C2F0F2718BEAF0008B7AB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		411C2F112718C0440008B7AB /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4120A8FB2717B123003E2A69 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		4163075E25DF3EFD009D4A4F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -268,8 +272,10 @@
 			isa = PBXGroup;
 			children = (
 				4163075E25DF3EFD009D4A4F /* APIConstants.swift */,
+				411C2F112718C0440008B7AB /* URLRequestBuilder.swift */,
 				4163076325DF3F0C009D4A4F /* TMDBRouter.swift */,
 				4163076825DF3F1C009D4A4F /* APIClient.swift */,
+				411C2F0F2718BEAF0008B7AB /* APIError.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -797,6 +803,7 @@
 				41184C6425DFF63900B7A143 /* Season.swift in Sources */,
 				416307C525DF434F009D4A4F /* R.generated.swift in Sources */,
 				411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */,
+				411C2F102718BEAF0008B7AB /* APIError.swift in Sources */,
 				419B488D264F6593001F1BB3 /* SplashService.swift in Sources */,
 				41184C6925E00A6900B7A143 /* Episode.swift in Sources */,
 				4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */,
@@ -812,6 +819,7 @@
 				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
 				41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */,
+				411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */,
 				411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */,
 				419B48A5264F6D56001F1BB3 /* EpisodeDetailsService.swift in Sources */,
 				41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */,
