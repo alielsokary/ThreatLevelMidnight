@@ -12,7 +12,7 @@ import RxCocoa
 
 class EpisodeDetailsViewModel {
 
-	private let bag = DisposeBag()
+	private let disposeBag = DisposeBag()
 
 	let seasonNumber = BehaviorRelay<Int>(value: 0)
 	let episodeNumber = BehaviorRelay<Int>(value: 0)
@@ -36,7 +36,7 @@ class EpisodeDetailsViewModel {
 				self?._episodeSubject.onNext(episode)
 			}, onError: { [weak self] error in
 				self?._alertMessage.onNext(error.localizedDescription)
-			}) .disposed(by: bag)
+			}) .disposed(by: disposeBag)
 
 	}
 }

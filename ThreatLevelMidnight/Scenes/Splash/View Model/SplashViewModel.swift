@@ -12,6 +12,7 @@ import RxCocoa
 
 class SplashViewModel {
 
+	private let service: SplashService!
 	private let disposeBag = DisposeBag()
 
 	let configLoaded = PublishSubject<Bool>()
@@ -19,7 +20,6 @@ class SplashViewModel {
 	let noInternet = BehaviorSubject<Bool>(value: false)
 	private let _alertMessage = PublishSubject<String>()
 
-	let service: SplashService
 	let alertMessage: Observable<String>
 
 	init(service: SplashService) {

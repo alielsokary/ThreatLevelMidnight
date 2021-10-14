@@ -14,10 +14,19 @@ class SeasonsViewController: UIViewController {
 
 	@IBOutlet weak var tableView: UITableView!
 
-	var viewModel: SeasonsViewModel!
+	private var viewModel: SeasonsViewModel!
 	private let disposeBag = DisposeBag()
 
 	private let nib = R.nib.seasonTableViewCell
+
+	required init?(coder: NSCoder, viewModel: SeasonsViewModel) {
+		self.viewModel = viewModel
+		super.init(coder: coder)
+	}
+
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

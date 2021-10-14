@@ -12,6 +12,7 @@ import RxCocoa
 
 class SeasonsViewModel {
 
+	private let service: SeasonsService!
 	private let disposeBag = DisposeBag()
 
 	let isLoading = BehaviorSubject<Bool>(value: false)
@@ -23,8 +24,6 @@ class SeasonsViewModel {
 	let didClose = PublishSubject<Void>()
 
 	let alertMessage: Observable<String>
-
-	let service: SeasonsService
 
 	init(service: SeasonsService) {
 		self.service = service

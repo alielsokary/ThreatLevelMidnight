@@ -11,19 +11,18 @@ import Rswift
 
 class SeasonsCoordinator: BaseCoordinator<Void> {
 
-	let rootViewController: UIViewController
-	let service = SeasonsServiceImpl()
+	private let rootViewController: UIViewController
+	private let service = SeasonsServiceImpl()
 
 	init(rootViewController: UIViewController) {
 		self.rootViewController = rootViewController
 	}
 
 	override func start() -> Observable<Void> {
-
 		let viewModel = SeasonsViewModel(service: service)
-		guard let viewController = R.storyboard.main.seasonsViewController() else { return Observable.empty() }
-
-		viewController.viewModel = viewModel
+		let viewController = Storyboard.main().instantiateViewController(identifier: Storyboard.main.seasonsViewController.identifier, creator: { coder in
+			return SeasonsViewController(coder: coder, viewModel: viewModel)
+		})
 
 		rootViewController.navigationController?.pushViewController(viewController, animated: false)
 
@@ -37,8 +36,7 @@ class SeasonsCoordinator: BaseCoordinator<Void> {
 	}
 
 	private func coordinateToEpisodesList(with viewModel: SeasonViewModel) -> Observable<Void> {
-		let episodesListCoordinator = EpisodesCoordinator(rootViewController: rootViewController)
-		episodesListCoordinator.seasonViewModel = viewModel
+		let episodesListCoordinator = EpisodesCoordinator(rootViewController: rootViewController, viewModel: viewModel)
 		return coordinate(to: episodesListCoordinator)
 			.map { _ in () }
 	}

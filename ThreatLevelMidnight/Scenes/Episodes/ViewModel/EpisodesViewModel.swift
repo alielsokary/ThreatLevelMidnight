@@ -12,9 +12,8 @@ import RxCocoa
 
 class EpisodesViewModel {
 
-	private let bag = DisposeBag()
-
-	let service: EpisodesService!
+	private let service: EpisodesService!
+	private let disposeBag = DisposeBag()
 
 	// MARK: - Actions
 	var selectedSeason = PublishSubject<SeasonViewModel>()
@@ -37,6 +36,6 @@ class EpisodesViewModel {
 		}, onError: { [weak self] error in
 			guard let self = self else { return }
 			self._alertMessage.onNext(error.localizedDescription)
-		}).disposed(by: bag)
+		}).disposed(by: disposeBag)
 	}
 }

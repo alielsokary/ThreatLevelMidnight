@@ -10,19 +10,21 @@ import RxSwift
 
 class EpisodesCoordinator: BaseCoordinator<Void> {
 
-	let rootViewController: UIViewController
-	let service = EpisodesServiceImpl()
-	var seasonViewModel: SeasonViewModel!
+	private let rootViewController: UIViewController
+	private let service = EpisodesServiceImpl()
+	private let seasonViewModel: SeasonViewModel!
 
-	init(rootViewController: UIViewController) {
+	init(rootViewController: UIViewController, viewModel: SeasonViewModel) {
 		self.rootViewController = rootViewController
+		self.seasonViewModel = viewModel
 	}
 
 	override func start() -> Observable<Void> {
-		guard let viewController = R.storyboard.main.episodesViewController() else { return Observable.never() }
-
 		let viewModel = EpisodesViewModel(service: service, season: seasonViewModel.number)
-		viewController.viewModel = viewModel
+
+		let viewController = Storyboard.main().instantiateViewController(identifier: Storyboard.main.episodesViewController.identifier) { coder in
+			return EpisodesViewController(coder: coder, viewModel: viewModel)
+		}
 
 		rootViewController.navigationController?.pushViewController(viewController, animated: true)
 
