@@ -10,11 +10,13 @@ import Foundation
 
 // MARK: - Season
 struct Season: Codable {
+	let id: Int?
+	let seasonNumber: Int?
+	let name, overview: String?
+	let episodeCount: Int?
+	let posterPath: String?
 	let airDate: String?
 	let episodes: [Episode]?
-	let episodeCount, id: Int?
-	let name, overview, posterPath: String?
-	let seasonNumber: Int?
 
 	enum CodingKeys: String, CodingKey {
 		case airDate = "air_date"

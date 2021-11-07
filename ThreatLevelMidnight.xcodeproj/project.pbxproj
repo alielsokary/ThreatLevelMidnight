@@ -23,6 +23,8 @@
 		411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F112718C0440008B7AB /* URLRequestBuilder.swift */; };
 		4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */; };
 		4120A8FC2717B123003E2A69 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8FB2717B123003E2A69 /* Typealias.swift */; };
+		41251D3227388FE60001362C /* SeasonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D3127388FE60001362C /* SeasonViewModelTests.swift */; };
+		41251D36273897670001362C /* EpisodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D35273897670001362C /* EpisodeViewModelTests.swift */; };
 		4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163075E25DF3EFD009D4A4F /* APIConstants.swift */; };
 		4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076325DF3F0C009D4A4F /* TMDBRouter.swift */; };
 		4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076825DF3F1C009D4A4F /* APIClient.swift */; };
@@ -33,7 +35,6 @@
 		418B671424A8D71F00E857F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671224A8D71F00E857F7 /* Main.storyboard */; };
 		418B671624A8D72000E857F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418B671524A8D72000E857F7 /* Assets.xcassets */; };
 		418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671724A8D72000E857F7 /* LaunchScreen.storyboard */; };
-		418B672424A8D72000E857F7 /* ThreatLevelMidnightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */; };
 		418B672F24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */; };
 		419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B4887264F651C001F1BB3 /* SplashCoordinator.swift */; };
 		419B488D264F6593001F1BB3 /* SplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B488C264F6593001F1BB3 /* SplashService.swift */; };
@@ -91,6 +92,8 @@
 		411C2F112718C0440008B7AB /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4120A8FB2717B123003E2A69 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		41251D3127388FE60001362C /* SeasonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModelTests.swift; sourceTree = "<group>"; };
+		41251D35273897670001362C /* EpisodeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModelTests.swift; sourceTree = "<group>"; };
 		4163075E25DF3EFD009D4A4F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		4163076325DF3F0C009D4A4F /* TMDBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBRouter.swift; sourceTree = "<group>"; };
 		4163076825DF3F1C009D4A4F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -104,7 +107,6 @@
 		418B671824A8D72000E857F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		418B671A24A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		418B671F24A8D72000E857F7 /* ThreatLevelMidnightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreatLevelMidnightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatLevelMidnightTests.swift; sourceTree = "<group>"; };
 		418B672524A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		418B672A24A8D72000E857F7 /* ThreatLevelMidnightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreatLevelMidnightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B672E24A8D72000E857F7 /* ThreatLevelMidnightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreatLevelMidnightUITests.swift; sourceTree = "<group>"; };
@@ -335,7 +337,8 @@
 		418B672224A8D72000E857F7 /* ThreatLevelMidnightTests */ = {
 			isa = PBXGroup;
 			children = (
-				418B672324A8D72000E857F7 /* ThreatLevelMidnightTests.swift */,
+				41251D3127388FE60001362C /* SeasonViewModelTests.swift */,
+				41251D35273897670001362C /* EpisodeViewModelTests.swift */,
 				418B672524A8D72000E857F7 /* Info.plist */,
 			);
 			path = ThreatLevelMidnightTests;
@@ -833,7 +836,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				418B672424A8D72000E857F7 /* ThreatLevelMidnightTests.swift in Sources */,
+				41251D36273897670001362C /* EpisodeViewModelTests.swift in Sources */,
+				41251D3227388FE60001362C /* SeasonViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
