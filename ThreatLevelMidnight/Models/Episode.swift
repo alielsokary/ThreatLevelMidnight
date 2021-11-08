@@ -10,12 +10,12 @@ import Foundation
 
 // MARK: - Episode
 struct Episode: Codable {
-	let airDate: String?
-	let episodeNumber: Int?
-	let crew, guestStars: [Crew]?
 	let id: Int?
-	let name, overview, productionCode: String?
+	let episodeNumber: Int?
 	let seasonNumber: Int?
+	let name, overview, productionCode: String?
+	let airDate: String?
+	let crew, guestStars: [Crew]?
 	let stillPath: String?
 	let voteAverage: Double?
 	let voteCount: Int?
@@ -43,12 +43,13 @@ struct Episode: Codable {
 
 // MARK: - Crew
 struct Crew: Codable {
+	let id: Int?
+	let name, originalName: String?
 	let department: Department?
 	let job, creditID: String?
 	let adult: Bool?
-	let gender, id: Int?
+	let gender: Int?
 	let knownForDepartment: Department?
-	let name, originalName: String?
 	let popularity: Double?
 	let profilePath: String?
 	let character: String?

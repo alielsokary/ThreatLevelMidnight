@@ -24,16 +24,12 @@ target 'ThreatLevelMidnight' do
     # Pods for testing
   end
 
-  target 'ThreatLevelMidnightUITests' do
-    # Pods for testing
-  end
-
 end
 
 plugin 'cocoapods-keys', {
 :project => "ThreatLevelMidnight",
 :keys => [
-	"TMDB_AccessToken"
+	"TMDBAccessToken"
 ]}
 
 post_install do |installer|
