@@ -24,10 +24,6 @@ target 'ThreatLevelMidnight' do
     # Pods for testing
   end
 
-  target 'ThreatLevelMidnightUITests' do
-    # Pods for testing
-  end
-
 end
 
 plugin 'cocoapods-keys', {
