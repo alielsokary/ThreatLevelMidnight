@@ -7,8 +7,6 @@ target 'ThreatLevelMidnight' do
 
   # Pods for ThreatLevelMidnight
     
-  pod 'R.swift'
-
   
   target 'ThreatLevelMidnightTests' do
     inherit! :search_paths

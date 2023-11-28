@@ -22,8 +22,8 @@ class EpisodeDetailsCoordinator: BaseCoordinator<Void> {
 
 	override func start() -> Observable<Void> {
 		let viewModel = EpisodeDetailsViewModel(service: service, season: episodeViewModel.seasonNumber, episode: episodeViewModel.number)
-
-		let viewController = Storyboard.main().instantiateViewController(identifier: Storyboard.main.episodeDetailsViewController.identifier) { coder in
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: R.storyboard.main.episodeDetailsViewController.identifier) { coder in
 			return EpisodeDetailsViewController(coder: coder, viewModel: viewModel)
 		}
 

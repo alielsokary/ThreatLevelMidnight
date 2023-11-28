@@ -23,7 +23,6 @@
 		411C2F102718BEAF0008B7AB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F0F2718BEAF0008B7AB /* APIError.swift */; };
 		411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F112718C0440008B7AB /* URLRequestBuilder.swift */; };
 		4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */; };
-		4120A8FC2717B123003E2A69 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8FB2717B123003E2A69 /* Typealias.swift */; };
 		41251D3227388FE60001362C /* SeasonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D3127388FE60001362C /* SeasonViewModelTests.swift */; };
 		41251D36273897670001362C /* EpisodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D35273897670001362C /* EpisodeViewModelTests.swift */; };
 		413A9CB42B16349C00625B1C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB32B16349C00625B1C /* PKHUD */; };
@@ -35,7 +34,6 @@
 		4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076325DF3F0C009D4A4F /* TMDBRouter.swift */; };
 		4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076825DF3F1C009D4A4F /* APIClient.swift */; };
 		4163079C25DF416D009D4A4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4163079B25DF416D009D4A4F /* Localizable.strings */; };
-		416307C525DF434F009D4A4F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416307C425DF434F009D4A4F /* R.generated.swift */; };
 		4163086025DF54F1009D4A4F /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163085F25DF54F1009D4A4F /* TVShow.swift */; };
 		418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670C24A8D71F00E857F7 /* AppDelegate.swift */; };
 		418B671424A8D71F00E857F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671224A8D71F00E857F7 /* Main.storyboard */; };
@@ -57,6 +55,8 @@
 		41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */; };
 		41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */; };
 		41CB9EF126044223002D29FC /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */; };
+		41E172F82B163C1F000928D5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 41E172F72B163C1F000928D5 /* RswiftLibrary */; };
+		41E172FA2B163C1F000928D5 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 41E172F92B163C1F000928D5 /* rswift */; };
 		41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */; };
 		8F2139D14EBEA41C33C53B35 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54751F43CA6B24DD4280EC44 /* Pods_ThreatLevelMidnightTests.framework */; };
 		CA528184CE5E7BB1BBB629CB /* Pods_ThreatLevelMidnight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0279C0560E55D3E84B40AB /* Pods_ThreatLevelMidnight.framework */; };
@@ -89,14 +89,12 @@
 		411C2F0F2718BEAF0008B7AB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		411C2F112718C0440008B7AB /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4120A8FB2717B123003E2A69 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		41251D3127388FE60001362C /* SeasonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModelTests.swift; sourceTree = "<group>"; };
 		41251D35273897670001362C /* EpisodeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModelTests.swift; sourceTree = "<group>"; };
 		4163075E25DF3EFD009D4A4F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		4163076325DF3F0C009D4A4F /* TMDBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBRouter.swift; sourceTree = "<group>"; };
 		4163076825DF3F1C009D4A4F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		4163079B25DF416D009D4A4F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		416307C425DF434F009D4A4F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		4163085F25DF54F1009D4A4F /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
 		418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreatLevelMidnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B670C24A8D71F00E857F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,9 +137,11 @@
 				413A9CBB2B163A5700625B1C /* RxRelay in Frameworks */,
 				413A9CB42B16349C00625B1C /* PKHUD in Frameworks */,
 				CA528184CE5E7BB1BBB629CB /* Pods_ThreatLevelMidnight.framework in Frameworks */,
+				41E172FA2B163C1F000928D5 /* rswift in Frameworks */,
 				4116C1172B16269B00AA8328 /* Alamofire in Frameworks */,
 				413A9CBD2B163A5700625B1C /* RxSwift in Frameworks */,
 				413A9CB72B163A5700625B1C /* RxBlocking in Frameworks */,
+				41E172F82B163C1F000928D5 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +254,6 @@
 			children = (
 				41F7D863264F934100E076C6 /* Extensions */,
 				41C0228B264F5A9B004E8437 /* Navigation */,
-				416307C425DF434F009D4A4F /* R.generated.swift */,
-				4120A8FB2717B123003E2A69 /* Typealias.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -496,16 +494,15 @@
 			buildConfigurationList = 418B673324A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnight" */;
 			buildPhases = (
 				AE19D9E668F0898B2051BCFC /* [CP] Check Pods Manifest.lock */,
-				410F134F24A9703B0040971D /* R.Swift */,
 				418B670524A8D71F00E857F7 /* Sources */,
 				418B670624A8D71F00E857F7 /* Frameworks */,
 				418B670724A8D71F00E857F7 /* Resources */,
 				410F134E24A959220040971D /* SwiftLint */,
-				82E49138445B98038D121619 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				41E172FC2B163C29000928D5 /* PBXTargetDependency */,
 			);
 			name = ThreatLevelMidnight;
 			packageProductDependencies = (
@@ -516,6 +513,8 @@
 				413A9CB82B163A5700625B1C /* RxCocoa */,
 				413A9CBA2B163A5700625B1C /* RxRelay */,
 				413A9CBC2B163A5700625B1C /* RxSwift */,
+				41E172F72B163C1F000928D5 /* RswiftLibrary */,
+				41E172F92B163C1F000928D5 /* rswift */,
 			);
 			productName = ThreatLevelMidnight;
 			productReference = 418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */;
@@ -573,6 +572,7 @@
 				4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */,
 				413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 418B670A24A8D71F00E857F7 /* Products */;
 			projectDirPath = "";
@@ -626,26 +626,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		410F134F24A9703B0040971D /* R.Swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$TEMP_DIR/rswift-lastrun",
-			);
-			name = R.Swift;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
 		41FCDFA88E81DFBD5FDFF281 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -666,23 +646,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82E49138445B98038D121619 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE19D9E668F0898B2051BCFC /* [CP] Check Pods Manifest.lock */ = {
@@ -725,7 +688,6 @@
 				41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */,
 				419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */,
 				41184C6425DFF63900B7A143 /* Season.swift in Sources */,
-				416307C525DF434F009D4A4F /* R.generated.swift in Sources */,
 				411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */,
 				411C2F102718BEAF0008B7AB /* APIError.swift in Sources */,
 				419B488D264F6593001F1BB3 /* SplashService.swift in Sources */,
@@ -738,7 +700,6 @@
 				419B4892264F6641001F1BB3 /* SplashViewController.swift in Sources */,
 				41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */,
 				411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */,
-				4120A8FC2717B123003E2A69 /* Typealias.swift in Sources */,
 				4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */,
 				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
@@ -769,6 +730,10 @@
 			isa = PBXTargetDependency;
 			target = 418B670824A8D71F00E857F7 /* ThreatLevelMidnight */;
 			targetProxy = 418B672024A8D72000E857F7 /* PBXContainerItemProxy */;
+		};
+		41E172FC2B163C29000928D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 41E172FB2B163C29000928D5 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1059,6 +1024,14 @@
 				version = 6.1.0;
 			};
 		};
+		41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1096,6 +1069,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		41E172F72B163C1F000928D5 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		41E172F92B163C1F000928D5 /* rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = rswift;
+		};
+		41E172FB2B163C29000928D5 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = "plugin:RswiftGenerateInternalResources";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
