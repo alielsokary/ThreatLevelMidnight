@@ -39,7 +39,8 @@ private extension SplashViewController {
 		viewModel.noInternet
 			.subscribe { [weak self] noInternet in
 				if noInternet.element! {
-					self?.showAlert(message: R.string.localizable.api_ERROR_No_Connection(), handler: { _ in
+
+					self?.showAlert(message: NSLocalizedString("API_ERROR_No_Connection", comment: ""), handler: { _ in
 						self?.viewModel.start()
 					})
 				}

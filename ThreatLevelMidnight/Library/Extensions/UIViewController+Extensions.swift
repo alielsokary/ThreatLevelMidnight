@@ -33,8 +33,8 @@ extension UIViewController {
 
 	func showAlert(withTitle title: String?, message: String?, handler: ((UIAlertAction) -> Void)?) {
 		let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-		let action = UIAlertAction(title: R.string.localizable.oK(), style: .default, handler: handler)
-		let cancelAction = UIAlertAction(title: R.string.localizable.cancel(), style: .cancel, handler: nil)
+		let action = UIAlertAction(title: "OK", style: .default, handler: handler)
+		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
 		alert.addAction(action)
 		alert.addAction(cancelAction)
 		present(alert, animated: true, completion: nil)
@@ -42,18 +42,18 @@ extension UIViewController {
 
 	func showAlert(message: String) {
 		let alertController = UIAlertController(title: message, message: nil, preferredStyle: .alert)
-		alertController.addAction(UIAlertAction(title: R.string.localizable.oK(), style: .default, handler: nil))
+		alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 		present(alertController, animated: true)
 	}
 
 	func showAlert(message: String, handler: ((UIAlertAction) -> Void)?) {
 		let alertController = UIAlertController(title: message, message: nil, preferredStyle: .alert)
-		alertController.addAction(UIAlertAction(title: R.string.localizable.oK(), style: .default, handler: handler))
+		alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: handler))
 		present(alertController, animated: true)
 	}
 
 	func showAlert(withError error: Error, handler: ((UIAlertAction) -> Void)? = nil) {
-		showAlert(withTitle: R.string.localizable.error(), message: error.localizedDescription, handler: handler)
+		showAlert(withTitle: "Error", message: error.localizedDescription, handler: handler)
 	}
 
 }

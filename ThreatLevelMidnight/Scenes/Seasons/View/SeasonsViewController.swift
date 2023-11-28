@@ -17,7 +17,7 @@ class SeasonsViewController: UIViewController {
 	private let viewModel: SeasonsViewModel!
 	private let disposeBag = DisposeBag()
 
-	private let nib = R.nib.seasonTableViewCell
+	private let nib = "SeasonTableViewCell"
 
 	required init?(coder: NSCoder, viewModel: SeasonsViewModel) {
 		self.viewModel = viewModel
@@ -52,7 +52,7 @@ private extension SeasonsViewController {
 
 	func configureTableView() {
 		tableView.estimatedRowHeight = 250
-		tableView.register(nib)
+        tableView.register(UINib(nibName: nib, bundle: nil), forCellReuseIdentifier: nib)
 		tableView.dataSource = nil
 		tableView.delegate = nil
 		tableView.rx.setDelegate(self)
@@ -67,7 +67,7 @@ private extension SeasonsViewController {
 	func setupBindings() {
 		viewModel.seasons
 			.observeOn(MainScheduler.instance)
-			.bind(to: tableView.rx.items(cellIdentifier: R.reuseIdentifier.seasonTableViewCell.identifier, cellType: SeasonTableViewCell.self)) { _, viewModel, cell in
+			.bind(to: tableView.rx.items(cellIdentifier: nib, cellType: SeasonTableViewCell.self)) { _, viewModel, cell in
 				cell.viewModel = viewModel
 			}.disposed(by: disposeBag)
 
@@ -83,7 +83,7 @@ private extension SeasonsViewController {
 		viewModel.noInternet
 			.subscribe { [weak self] noInternet in
 				if noInternet.element! {
-					self?.showAlert(message: R.string.localizable.api_ERROR_No_Connection(), handler: { _ in
+					self?.showAlert(message: NSLocalizedString("API_ERROR_No_Connection", comment: ""), handler: { _ in
 						self?.viewModel.start()
 					})
 				}

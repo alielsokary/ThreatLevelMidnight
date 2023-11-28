@@ -18,7 +18,9 @@ class AppCoordinator: BaseCoordinator<Void> {
 	}
 
 	override func start() -> Observable<Void> {
-		guard let viewcontroller = R.storyboard.main.splashViewController() else { return  Observable.empty() }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+		guard let viewcontroller = storyboard.instantiateViewController(identifier: "SplashViewController") as? SplashViewController else { return  Observable.empty() }
 		let navigationController = UINavigationController(rootViewController: viewcontroller)
 
 		let splashCoordinator = SplashCoordinator(rootViewController: navigationController.viewControllers[0])

@@ -21,7 +21,7 @@ class SeasonsCoordinator: BaseCoordinator<Void> {
 	override func start() -> Observable<Void> {
 		let viewModel = SeasonsViewModel(service: service)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let viewController = storyboard.instantiateViewController(identifier: R.storyboard.main.seasonsViewController.identifier, creator: { coder in
+		let viewController = storyboard.instantiateViewController(identifier: "SeasonsViewController", creator: { coder in
 			return SeasonsViewController(coder: coder, viewModel: viewModel)
 		})
 

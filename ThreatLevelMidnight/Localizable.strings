@@ -13,5 +13,4 @@
 "Retry" = "Retry";
 
 // APIError
-"API_ERROR_Already_LoggedIn" = "Driver Already LoggedIn";
 "API_ERROR_No_Connection" = "No Internet Connection. Please check your connection and try again";
