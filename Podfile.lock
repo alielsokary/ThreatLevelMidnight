@@ -1,9 +1,5 @@
 PODS:
-  - Alamofire (5.4.1)
-  - AlamofireNetworkActivityLogger (3.4.0):
-    - Alamofire (~> 5.4.0)
   - Differentiator (5.0.0)
-  - Keys (1.0.1)
   - Kingfisher (6.3.1)
   - PKHUD (5.3.0)
   - R.swift (5.4.0):
@@ -46,9 +42,6 @@ PODS:
   - SwifterSwift/UIKit (5.2.0)
 
 DEPENDENCIES:
-  - Alamofire (= 5.4.1)
-  - AlamofireNetworkActivityLogger (~> 3.4)
-  - Keys (from `Pods/CocoaPodsKeys`)
   - Kingfisher (~> 6.0)
   - PKHUD
   - R.swift
@@ -59,8 +52,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Alamofire
-    - AlamofireNetworkActivityLogger
     - Differentiator
     - Kingfisher
     - PKHUD
@@ -72,15 +63,8 @@ SPEC REPOS:
     - RxSwift
     - SwifterSwift
 
-EXTERNAL SOURCES:
-  Keys:
-    :path: Pods/CocoaPodsKeys
-
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  AlamofireNetworkActivityLogger: 162ab8aee00e6267a4304d7cc134e13ccfe3bcc5
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
-  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
@@ -91,6 +75,6 @@ SPEC CHECKSUMS:
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
-PODFILE CHECKSUM: 8c24f00dbb13b6b2301f114960ae64d83dc4ae40
+PODFILE CHECKSUM: 3a1b3a9326d9a294689c50142a4f9292da473b3b
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.14.3

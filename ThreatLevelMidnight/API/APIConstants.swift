@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import Keys
 
 struct APIConstants {
 
-	static let accessToken = ThreatLevelMidnightKeys().tMDBAccessToken
+	static let accessToken = ""
 	static let configuration = "configuration"
 	static let version = "3"
 	static let type = "tv"

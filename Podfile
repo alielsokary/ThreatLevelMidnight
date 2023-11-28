@@ -6,8 +6,6 @@ target 'ThreatLevelMidnight' do
   use_frameworks!
 
   # Pods for ThreatLevelMidnight
-	pod 'Alamofire', '5.4.1'
-	pod 'AlamofireNetworkActivityLogger', '~> 3.4'
 	pod 'Kingfisher', '~> 6.0'
   
 	pod 'RxSwift', '6.1.0'
@@ -25,12 +23,6 @@ target 'ThreatLevelMidnight' do
   end
 
 end
-
-plugin 'cocoapods-keys', {
-:project => "ThreatLevelMidnight",
-:keys => [
-	"TMDBAccessToken"
-]}
 
 post_install do |installer|
 		installer.pods_project.targets.each do |target|

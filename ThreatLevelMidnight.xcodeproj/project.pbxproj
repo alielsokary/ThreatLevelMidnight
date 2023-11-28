@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AC90DF1896A350A6329E2A8 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */; };
 		4109C186260235D3002CD17A /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C185260235D3002CD17A /* Configurations.swift */; };
 		4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1C226041CA6002CD17A /* SeasonsViewModel.swift */; };
 		4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */; };
 		4109C1DD26041EA2002CD17A /* SeasonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */; };
 		4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1E126041F7E002CD17A /* SeasonsViewController.swift */; };
+		4116C1172B16269B00AA8328 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C1162B16269B00AA8328 /* Alamofire */; };
 		41184C6425DFF63900B7A143 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6325DFF63900B7A143 /* Season.swift */; };
 		41184C6925E00A6900B7A143 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6825E00A6900B7A143 /* Episode.swift */; };
 		411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */; };
@@ -52,7 +52,8 @@
 		41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */; };
 		41CB9EF126044223002D29FC /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */; };
 		41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */; };
-		92523FDDAF689F54762B04AB /* Pods_ThreatLevelMidnight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */; };
+		8F2139D14EBEA41C33C53B35 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54751F43CA6B24DD4280EC44 /* Pods_ThreatLevelMidnightTests.framework */; };
+		CA528184CE5E7BB1BBB629CB /* Pods_ThreatLevelMidnight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0279C0560E55D3E84B40AB /* Pods_ThreatLevelMidnight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnightTests.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnightTests/Pods-ThreatLevelMidnightTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F4B421EA7A68395EB1583A /* Pods-ThreatLevelMidnight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.debug.xcconfig"; sourceTree = "<group>"; };
+		3A62DE7C7220442A99A3C068 /* Pods-ThreatLevelMidnightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnightTests.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnightTests/Pods-ThreatLevelMidnightTests.release.xcconfig"; sourceTree = "<group>"; };
 		4109C185260235D3002CD17A /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		4109C1C226041CA6002CD17A /* SeasonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewModel.swift; sourceTree = "<group>"; };
 		4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
@@ -116,13 +117,10 @@
 		41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		44BF214EC99E698EDC53DEC4 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.release.xcconfig"; sourceTree = "<group>"; };
-		87AB1CA6B51BD77D7B8D9A80 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.debug.xcconfig"; sourceTree = "<group>"; };
-		B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnightTests.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnightTests/Pods-ThreatLevelMidnightTests.release.xcconfig"; sourceTree = "<group>"; };
-		DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F57E7DADE1E2254C7DC943F3 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54751F43CA6B24DD4280EC44 /* Pods_ThreatLevelMidnightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0279C0560E55D3E84B40AB /* Pods_ThreatLevelMidnight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C549B3BE77C581CC230ADDF /* Pods-ThreatLevelMidnightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnightTests.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnightTests/Pods-ThreatLevelMidnightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8052D42B7B85CB82EBFF784 /* Pods-ThreatLevelMidnight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92523FDDAF689F54762B04AB /* Pods_ThreatLevelMidnight.framework in Frameworks */,
+				CA528184CE5E7BB1BBB629CB /* Pods_ThreatLevelMidnight.framework in Frameworks */,
+				4116C1172B16269B00AA8328 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,19 +137,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC90DF1896A350A6329E2A8 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */,
+				8F2139D14EBEA41C33C53B35 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10E3F043E6C1C243B895EF16 /* Frameworks */ = {
+		4009A462D4AF8E1F49E835FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */,
-				F57E7DADE1E2254C7DC943F3 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework */,
-				3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */,
+				5F0279C0560E55D3E84B40AB /* Pods_ThreatLevelMidnight.framework */,
+				54751F43CA6B24DD4280EC44 /* Pods_ThreatLevelMidnightTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,7 +278,7 @@
 				418B672224A8D72000E857F7 /* ThreatLevelMidnightTests */,
 				418B670A24A8D71F00E857F7 /* Products */,
 				A96BE099D8F0D74A71BE774C /* Pods */,
-				10E3F043E6C1C243B895EF16 /* Frameworks */,
+				4009A462D4AF8E1F49E835FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -470,12 +468,10 @@
 		A96BE099D8F0D74A71BE774C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */,
-				5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */,
-				87AB1CA6B51BD77D7B8D9A80 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig */,
-				44BF214EC99E698EDC53DEC4 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig */,
-				26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */,
-				B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */,
+				25F4B421EA7A68395EB1583A /* Pods-ThreatLevelMidnight.debug.xcconfig */,
+				D8052D42B7B85CB82EBFF784 /* Pods-ThreatLevelMidnight.release.xcconfig */,
+				8C549B3BE77C581CC230ADDF /* Pods-ThreatLevelMidnightTests.debug.xcconfig */,
+				3A62DE7C7220442A99A3C068 /* Pods-ThreatLevelMidnightTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -487,19 +483,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418B673324A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnight" */;
 			buildPhases = (
-				C897B7781E7ED605851D8E3C /* [CP] Check Pods Manifest.lock */,
+				AE19D9E668F0898B2051BCFC /* [CP] Check Pods Manifest.lock */,
 				410F134F24A9703B0040971D /* R.Swift */,
 				418B670524A8D71F00E857F7 /* Sources */,
 				418B670624A8D71F00E857F7 /* Frameworks */,
 				418B670724A8D71F00E857F7 /* Resources */,
 				410F134E24A959220040971D /* SwiftLint */,
-				B082C0BD29236AEC5E5FDC43 /* [CP] Embed Pods Frameworks */,
+				82E49138445B98038D121619 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ThreatLevelMidnight;
+			packageProductDependencies = (
+				4116C1162B16269B00AA8328 /* Alamofire */,
+			);
 			productName = ThreatLevelMidnight;
 			productReference = 418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */;
 			productType = "com.apple.product-type.application";
@@ -508,7 +507,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418B673624A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnightTests" */;
 			buildPhases = (
-				C20D0A8A07231CDEE9C1EC58 /* [CP] Check Pods Manifest.lock */,
+				41FCDFA88E81DFBD5FDFF281 /* [CP] Check Pods Manifest.lock */,
 				418B671B24A8D72000E857F7 /* Sources */,
 				418B671C24A8D72000E857F7 /* Frameworks */,
 				418B671D24A8D72000E857F7 /* Resources */,
@@ -551,6 +550,9 @@
 				Base,
 			);
 			mainGroup = 418B670024A8D71F00E857F7;
+			packageReferences = (
+				4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 418B670A24A8D71F00E857F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -623,24 +625,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		B082C0BD29236AEC5E5FDC43 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C20D0A8A07231CDEE9C1EC58 /* [CP] Check Pods Manifest.lock */ = {
+		41FCDFA88E81DFBD5FDFF281 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -662,7 +647,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C897B7781E7ED605851D8E3C /* [CP] Check Pods Manifest.lock */ = {
+		82E49138445B98038D121619 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE19D9E668F0898B2051BCFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -887,7 +889,7 @@
 		};
 		418B673424A8D72000E857F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */;
+			baseConfigurationReference = 25F4B421EA7A68395EB1583A /* Pods-ThreatLevelMidnight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -907,7 +909,7 @@
 		};
 		418B673524A8D72000E857F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */;
+			baseConfigurationReference = D8052D42B7B85CB82EBFF784 /* Pods-ThreatLevelMidnight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -927,7 +929,7 @@
 		};
 		418B673724A8D72000E857F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */;
+			baseConfigurationReference = 8C549B3BE77C581CC230ADDF /* Pods-ThreatLevelMidnightTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -950,7 +952,7 @@
 		};
 		418B673824A8D72000E857F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */;
+			baseConfigurationReference = 3A62DE7C7220442A99A3C068 /* Pods-ThreatLevelMidnightTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1002,6 +1004,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4116C1162B16269B00AA8328 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 418B670124A8D71F00E857F7 /* Project object */;
 }
