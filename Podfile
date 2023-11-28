@@ -6,7 +6,6 @@ target 'ThreatLevelMidnight' do
   use_frameworks!
 
   # Pods for ThreatLevelMidnight
-	pod 'Kingfisher', '~> 6.0'
   
 	pod 'RxSwift', '6.1.0'
 	pod 'RxCocoa', '6.1.0'
