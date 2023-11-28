@@ -26,6 +26,7 @@
 		4120A8FC2717B123003E2A69 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8FB2717B123003E2A69 /* Typealias.swift */; };
 		41251D3227388FE60001362C /* SeasonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D3127388FE60001362C /* SeasonViewModelTests.swift */; };
 		41251D36273897670001362C /* EpisodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D35273897670001362C /* EpisodeViewModelTests.swift */; };
+		413A9CB42B16349C00625B1C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB32B16349C00625B1C /* PKHUD */; };
 		4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163075E25DF3EFD009D4A4F /* APIConstants.swift */; };
 		4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076325DF3F0C009D4A4F /* TMDBRouter.swift */; };
 		4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076825DF3F1C009D4A4F /* APIClient.swift */; };
@@ -130,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */,
+				413A9CB42B16349C00625B1C /* PKHUD in Frameworks */,
 				CA528184CE5E7BB1BBB629CB /* Pods_ThreatLevelMidnight.framework in Frameworks */,
 				4116C1172B16269B00AA8328 /* Alamofire in Frameworks */,
 			);
@@ -501,6 +503,7 @@
 			packageProductDependencies = (
 				4116C1162B16269B00AA8328 /* Alamofire */,
 				4116C11F2B1628E200AA8328 /* Kingfisher */,
+				413A9CB32B16349C00625B1C /* PKHUD */,
 			);
 			productName = ThreatLevelMidnight;
 			productReference = 418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */;
@@ -556,6 +559,7 @@
 			packageReferences = (
 				4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 418B670A24A8D71F00E857F7 /* Products */;
 			projectDirPath = "";
@@ -1026,6 +1030,14 @@
 				minimumVersion = 7.10.0;
 			};
 		};
+		413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1038,6 +1050,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		413A9CB32B16349C00625B1C /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

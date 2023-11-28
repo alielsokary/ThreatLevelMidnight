@@ -12,10 +12,8 @@ target 'ThreatLevelMidnight' do
 	pod 'RxDataSources', '~> 5.0'
   
   pod 'R.swift'
-  pod 'SwifterSwift'
-  
-	pod 'PKHUD'
 
+  
   target 'ThreatLevelMidnightTests' do
     inherit! :search_paths
     # Pods for testing
