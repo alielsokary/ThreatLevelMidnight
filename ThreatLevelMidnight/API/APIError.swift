@@ -21,9 +21,9 @@ extension APIError: LocalizedError {
 	var errorDescription: String? {
 		switch self {
 		case .noInternet:
-			return R.string.localizable.api_ERROR_No_Connection()
+			return "No Internet Connection. Please check your connection and try again"
 		default:
-			return R.string.localizable.error()
+			return "Error"
 		}
 	}
 }

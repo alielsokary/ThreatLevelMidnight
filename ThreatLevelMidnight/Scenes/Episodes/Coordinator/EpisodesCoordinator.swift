@@ -25,7 +25,7 @@ class EpisodesCoordinator: BaseCoordinator<Void> {
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-		let viewController = storyboard.instantiateViewController(identifier: R.storyboard.main.episodesViewController.identifier) { coder in
+		let viewController = storyboard.instantiateViewController(identifier: "EpisodesViewController") { coder in
 			return EpisodesViewController(coder: coder, viewModel: viewModel)
 		}
 

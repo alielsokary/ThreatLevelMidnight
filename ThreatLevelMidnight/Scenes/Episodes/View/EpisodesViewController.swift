@@ -17,7 +17,7 @@ class EpisodesViewController: UIViewController {
 	private let viewModel: EpisodesViewModel!
 	private let disposeBag = DisposeBag()
 
-	private let nib = R.nib.episodeTableViewCell
+	private let nib = "EpisodeTableViewCell"
 
 	required init?(coder: NSCoder, viewModel: EpisodesViewModel) {
 		self.viewModel = viewModel
@@ -41,7 +41,7 @@ class EpisodesViewController: UIViewController {
 private extension EpisodesViewController {
 	func configureTableView() {
 		tableView.estimatedRowHeight = 250
-		tableView.register(nib)
+		tableView.register(UINib(nibName: nib, bundle: nil), forCellReuseIdentifier: nib)
 		tableView.dataSource = nil
 		tableView.delegate = nil
 		tableView.rx.setDelegate(self)
@@ -54,7 +54,7 @@ private extension EpisodesViewController {
 private extension EpisodesViewController {
 	func setupBindings() {
 		viewModel.episodes
-			.observeOn(MainScheduler.instance).bind(to: tableView.rx.items(cellIdentifier: R.reuseIdentifier.episodeTableViewCell.identifier, cellType: EpisodeTableViewCell.self)) { _, viewModel, cell in
+			.observeOn(MainScheduler.instance).bind(to: tableView.rx.items(cellIdentifier: nib, cellType: EpisodeTableViewCell.self)) { _, viewModel, cell in
 				cell.viewModel = viewModel
 			}.disposed(by: disposeBag)
 	}
