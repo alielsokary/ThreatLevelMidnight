@@ -2,7 +2,3 @@ disabled_rules:
 - line_length
 - unused_optional_binding
 - identifier_name
-
-excluded:
-- Pods
-- "*.generated.swift"
