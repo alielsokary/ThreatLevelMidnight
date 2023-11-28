@@ -469,7 +469,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				41E172FC2B163C29000928D5 /* PBXTargetDependency */,
+				41C630612B1691B100B883DD /* PBXTargetDependency */,
 			);
 			name = ThreatLevelMidnight;
 			packageProductDependencies = (
@@ -653,9 +653,9 @@
 			target = 418B670824A8D71F00E857F7 /* ThreatLevelMidnight */;
 			targetProxy = 418B672024A8D72000E857F7 /* PBXContainerItemProxy */;
 		};
-		41E172FC2B163C29000928D5 /* PBXTargetDependency */ = {
+		41C630612B1691B100B883DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = 41E172FB2B163C29000928D5 /* RswiftGenerateInternalResources */;
+			productRef = 41C630602B1691B100B883DD /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -988,6 +988,10 @@
 			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
+		41C630602B1691B100B883DD /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
 		41E172F72B163C1F000928D5 /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
@@ -997,11 +1001,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = rswift;
-		};
-		41E172FB2B163C29000928D5 /* RswiftGenerateInternalResources */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
-			productName = "plugin:RswiftGenerateInternalResources";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
