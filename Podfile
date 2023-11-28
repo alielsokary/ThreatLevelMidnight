@@ -6,11 +6,7 @@ target 'ThreatLevelMidnight' do
   use_frameworks!
 
   # Pods for ThreatLevelMidnight
-  
-	pod 'RxSwift', '6.1.0'
-	pod 'RxCocoa', '6.1.0'
-	pod 'RxDataSources', '~> 5.0'
-  
+    
   pod 'R.swift'
 
   
