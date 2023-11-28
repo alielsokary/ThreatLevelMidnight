@@ -6,6 +6,7 @@
 //  Copyright © 2021 mag. All rights reserved.
 //
 
+import UIKit
 import RxSwift
 
 class SplashCoordinator: BaseCoordinator<Void> {

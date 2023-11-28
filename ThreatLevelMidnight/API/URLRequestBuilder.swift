@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import Keys
 
 protocol URLRequestBuilder: URLRequestConvertible {
 	var mainURL: URL { get }

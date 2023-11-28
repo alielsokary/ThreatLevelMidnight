@@ -6,8 +6,8 @@
 //  Copyright © 2021 mag. All rights reserved.
 //
 
+import UIKit
 import RxSwift
-import Rswift
 
 class SeasonsCoordinator: BaseCoordinator<Void> {
 
@@ -20,7 +20,8 @@ class SeasonsCoordinator: BaseCoordinator<Void> {
 
 	override func start() -> Observable<Void> {
 		let viewModel = SeasonsViewModel(service: service)
-		let viewController = Storyboard.main().instantiateViewController(identifier: Storyboard.main.seasonsViewController.identifier, creator: { coder in
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		let viewController = storyboard.instantiateViewController(identifier: R.storyboard.main.seasonsViewController.identifier, creator: { coder in
 			return SeasonsViewController(coder: coder, viewModel: viewModel)
 		})
 

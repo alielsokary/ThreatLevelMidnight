@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AC90DF1896A350A6329E2A8 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */; };
 		4109C186260235D3002CD17A /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C185260235D3002CD17A /* Configurations.swift */; };
 		4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1C226041CA6002CD17A /* SeasonsViewModel.swift */; };
 		4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */; };
 		4109C1DD26041EA2002CD17A /* SeasonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */; };
 		4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1E126041F7E002CD17A /* SeasonsViewController.swift */; };
+		4116C1172B16269B00AA8328 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C1162B16269B00AA8328 /* Alamofire */; };
+		4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C11F2B1628E200AA8328 /* Kingfisher */; };
 		41184C6425DFF63900B7A143 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6325DFF63900B7A143 /* Season.swift */; };
 		41184C6925E00A6900B7A143 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6825E00A6900B7A143 /* Episode.swift */; };
 		411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */; };
@@ -22,14 +23,17 @@
 		411C2F102718BEAF0008B7AB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F0F2718BEAF0008B7AB /* APIError.swift */; };
 		411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F112718C0440008B7AB /* URLRequestBuilder.swift */; };
 		4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */; };
-		4120A8FC2717B123003E2A69 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8FB2717B123003E2A69 /* Typealias.swift */; };
 		41251D3227388FE60001362C /* SeasonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D3127388FE60001362C /* SeasonViewModelTests.swift */; };
 		41251D36273897670001362C /* EpisodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D35273897670001362C /* EpisodeViewModelTests.swift */; };
+		413A9CB42B16349C00625B1C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB32B16349C00625B1C /* PKHUD */; };
+		413A9CB72B163A5700625B1C /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB62B163A5700625B1C /* RxBlocking */; };
+		413A9CB92B163A5700625B1C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB82B163A5700625B1C /* RxCocoa */; };
+		413A9CBB2B163A5700625B1C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CBA2B163A5700625B1C /* RxRelay */; };
+		413A9CBD2B163A5700625B1C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CBC2B163A5700625B1C /* RxSwift */; };
 		4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163075E25DF3EFD009D4A4F /* APIConstants.swift */; };
 		4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076325DF3F0C009D4A4F /* TMDBRouter.swift */; };
 		4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076825DF3F1C009D4A4F /* APIClient.swift */; };
 		4163079C25DF416D009D4A4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4163079B25DF416D009D4A4F /* Localizable.strings */; };
-		416307C525DF434F009D4A4F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416307C425DF434F009D4A4F /* R.generated.swift */; };
 		4163086025DF54F1009D4A4F /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163085F25DF54F1009D4A4F /* TVShow.swift */; };
 		418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B670C24A8D71F00E857F7 /* AppDelegate.swift */; };
 		418B671424A8D71F00E857F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671224A8D71F00E857F7 /* Main.storyboard */; };
@@ -51,8 +55,9 @@
 		41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */; };
 		41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */; };
 		41CB9EF126044223002D29FC /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */; };
+		41E172F82B163C1F000928D5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 41E172F72B163C1F000928D5 /* RswiftLibrary */; };
+		41E172FA2B163C1F000928D5 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 41E172F92B163C1F000928D5 /* rswift */; };
 		41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */; };
-		92523FDDAF689F54762B04AB /* Pods_ThreatLevelMidnight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnightTests.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnightTests/Pods-ThreatLevelMidnightTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4109C185260235D3002CD17A /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		4109C1C226041CA6002CD17A /* SeasonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewModel.swift; sourceTree = "<group>"; };
 		4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
@@ -82,14 +85,12 @@
 		411C2F0F2718BEAF0008B7AB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		411C2F112718C0440008B7AB /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4120A8FB2717B123003E2A69 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		41251D3127388FE60001362C /* SeasonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModelTests.swift; sourceTree = "<group>"; };
 		41251D35273897670001362C /* EpisodeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModelTests.swift; sourceTree = "<group>"; };
 		4163075E25DF3EFD009D4A4F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		4163076325DF3F0C009D4A4F /* TMDBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBRouter.swift; sourceTree = "<group>"; };
 		4163076825DF3F1C009D4A4F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		4163079B25DF416D009D4A4F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		416307C425DF434F009D4A4F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		4163085F25DF54F1009D4A4F /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
 		418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreatLevelMidnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B670C24A8D71F00E857F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,13 +117,6 @@
 		41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		44BF214EC99E698EDC53DEC4 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.release.xcconfig"; sourceTree = "<group>"; };
-		87AB1CA6B51BD77D7B8D9A80 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests/Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnight.debug.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight.debug.xcconfig"; sourceTree = "<group>"; };
-		B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreatLevelMidnightTests.release.xcconfig"; path = "Target Support Files/Pods-ThreatLevelMidnightTests/Pods-ThreatLevelMidnightTests.release.xcconfig"; sourceTree = "<group>"; };
-		DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F57E7DADE1E2254C7DC943F3 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +124,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92523FDDAF689F54762B04AB /* Pods_ThreatLevelMidnight.framework in Frameworks */,
+				413A9CB92B163A5700625B1C /* RxCocoa in Frameworks */,
+				4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */,
+				413A9CBB2B163A5700625B1C /* RxRelay in Frameworks */,
+				413A9CB42B16349C00625B1C /* PKHUD in Frameworks */,
+				41E172FA2B163C1F000928D5 /* rswift in Frameworks */,
+				4116C1172B16269B00AA8328 /* Alamofire in Frameworks */,
+				413A9CBD2B163A5700625B1C /* RxSwift in Frameworks */,
+				413A9CB72B163A5700625B1C /* RxBlocking in Frameworks */,
+				41E172F82B163C1F000928D5 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +140,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC90DF1896A350A6329E2A8 /* Pods_ThreatLevelMidnightTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10E3F043E6C1C243B895EF16 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DB5FE568A14F5A8A69D597F7 /* Pods_ThreatLevelMidnight.framework */,
-				F57E7DADE1E2254C7DC943F3 /* Pods_ThreatLevelMidnight_ThreatLevelMidnightUITests.framework */,
-				3B23D497A70AAA4D00809F72 /* Pods_ThreatLevelMidnightTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4109C1BD26041C38002CD17A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,8 +235,6 @@
 			children = (
 				41F7D863264F934100E076C6 /* Extensions */,
 				41C0228B264F5A9B004E8437 /* Navigation */,
-				416307C425DF434F009D4A4F /* R.generated.swift */,
-				4120A8FB2717B123003E2A69 /* Typealias.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -279,8 +268,6 @@
 				418B670B24A8D71F00E857F7 /* ThreatLevelMidnight */,
 				418B672224A8D72000E857F7 /* ThreatLevelMidnightTests */,
 				418B670A24A8D71F00E857F7 /* Products */,
-				A96BE099D8F0D74A71BE774C /* Pods */,
-				10E3F043E6C1C243B895EF16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -467,19 +454,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A96BE099D8F0D74A71BE774C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */,
-				5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */,
-				87AB1CA6B51BD77D7B8D9A80 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.debug.xcconfig */,
-				44BF214EC99E698EDC53DEC4 /* Pods-ThreatLevelMidnight-ThreatLevelMidnightUITests.release.xcconfig */,
-				26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */,
-				B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -487,19 +461,28 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418B673324A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnight" */;
 			buildPhases = (
-				C897B7781E7ED605851D8E3C /* [CP] Check Pods Manifest.lock */,
-				410F134F24A9703B0040971D /* R.Swift */,
 				418B670524A8D71F00E857F7 /* Sources */,
 				418B670624A8D71F00E857F7 /* Frameworks */,
 				418B670724A8D71F00E857F7 /* Resources */,
 				410F134E24A959220040971D /* SwiftLint */,
-				B082C0BD29236AEC5E5FDC43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				41E172FC2B163C29000928D5 /* PBXTargetDependency */,
 			);
 			name = ThreatLevelMidnight;
+			packageProductDependencies = (
+				4116C1162B16269B00AA8328 /* Alamofire */,
+				4116C11F2B1628E200AA8328 /* Kingfisher */,
+				413A9CB32B16349C00625B1C /* PKHUD */,
+				413A9CB62B163A5700625B1C /* RxBlocking */,
+				413A9CB82B163A5700625B1C /* RxCocoa */,
+				413A9CBA2B163A5700625B1C /* RxRelay */,
+				413A9CBC2B163A5700625B1C /* RxSwift */,
+				41E172F72B163C1F000928D5 /* RswiftLibrary */,
+				41E172F92B163C1F000928D5 /* rswift */,
+			);
 			productName = ThreatLevelMidnight;
 			productReference = 418B670924A8D71F00E857F7 /* ThreatLevelMidnight.app */;
 			productType = "com.apple.product-type.application";
@@ -508,7 +491,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418B673624A8D72000E857F7 /* Build configuration list for PBXNativeTarget "ThreatLevelMidnightTests" */;
 			buildPhases = (
-				C20D0A8A07231CDEE9C1EC58 /* [CP] Check Pods Manifest.lock */,
 				418B671B24A8D72000E857F7 /* Sources */,
 				418B671C24A8D72000E857F7 /* Frameworks */,
 				418B671D24A8D72000E857F7 /* Resources */,
@@ -551,6 +533,13 @@
 				Base,
 			);
 			mainGroup = 418B670024A8D71F00E857F7;
+			packageReferences = (
+				4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */,
+				413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			productRefGroup = 418B670A24A8D71F00E857F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -603,87 +592,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		410F134F24A9703B0040971D /* R.Swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$TEMP_DIR/rswift-lastrun",
-			);
-			name = R.Swift;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
-		B082C0BD29236AEC5E5FDC43 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreatLevelMidnight/Pods-ThreatLevelMidnight-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C20D0A8A07231CDEE9C1EC58 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ThreatLevelMidnightTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C897B7781E7ED605851D8E3C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ThreatLevelMidnight-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -702,7 +610,6 @@
 				41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */,
 				419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */,
 				41184C6425DFF63900B7A143 /* Season.swift in Sources */,
-				416307C525DF434F009D4A4F /* R.generated.swift in Sources */,
 				411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */,
 				411C2F102718BEAF0008B7AB /* APIError.swift in Sources */,
 				419B488D264F6593001F1BB3 /* SplashService.swift in Sources */,
@@ -715,7 +622,6 @@
 				419B4892264F6641001F1BB3 /* SplashViewController.swift in Sources */,
 				41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */,
 				411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */,
-				4120A8FC2717B123003E2A69 /* Typealias.swift in Sources */,
 				4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */,
 				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
@@ -746,6 +652,10 @@
 			isa = PBXTargetDependency;
 			target = 418B670824A8D71F00E857F7 /* ThreatLevelMidnight */;
 			targetProxy = 418B672024A8D72000E857F7 /* PBXContainerItemProxy */;
+		};
+		41E172FC2B163C29000928D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 41E172FB2B163C29000928D5 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -887,7 +797,6 @@
 		};
 		418B673424A8D72000E857F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 904307FC5F1F6B6B16EB89DA /* Pods-ThreatLevelMidnight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -907,7 +816,6 @@
 		};
 		418B673524A8D72000E857F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5451E89475A8A70C744C7BAD /* Pods-ThreatLevelMidnight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -927,7 +835,6 @@
 		};
 		418B673724A8D72000E857F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26A145C5DFB00F6FCF611E9C /* Pods-ThreatLevelMidnightTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -950,7 +857,6 @@
 		};
 		418B673824A8D72000E857F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B70580491C0CC2E59DFF40BF /* Pods-ThreatLevelMidnightTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1002,6 +908,102 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.1;
+			};
+		};
+		4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+		413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.1.0;
+			};
+		};
+		41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4116C1162B16269B00AA8328 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4116C11F2B1628E200AA8328 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		413A9CB32B16349C00625B1C /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+		413A9CB62B163A5700625B1C /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		413A9CB82B163A5700625B1C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		413A9CBA2B163A5700625B1C /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		413A9CBC2B163A5700625B1C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		41E172F72B163C1F000928D5 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		41E172F92B163C1F000928D5 /* rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = rswift;
+		};
+		41E172FB2B163C29000928D5 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41E172F62B163C1F000928D5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 418B670124A8D71F00E857F7 /* Project object */;
 }
