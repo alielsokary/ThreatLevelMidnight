@@ -7,34 +7,36 @@
 //
 
 import UIKit
-import RxSwift
 
-class SplashCoordinator: BaseCoordinator<Void> {
+class SplashCoordinator: Coordinator {
 
-	private let rootViewController: UIViewController
+    var childCoordinators = [Coordinator]()
+    var navigationController: UINavigationController
+
 	private let service = SplashServiceImpl()
 
-	init(rootViewController: UIViewController) {
-		self.rootViewController = rootViewController
+	init(navigationController: UINavigationController) {
+		self.navigationController = navigationController
 	}
 
-	override func start() -> Observable<Void> {
-		let viewController = rootViewController as? SplashViewController
+    func start() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let viewController = storyBoard.instantiateViewController(withIdentifier: "SplashViewController") as? SplashViewController else { return }
 		let viewModel = SplashViewModel(service: service)
-		viewController?.viewModel = viewModel
+        viewController.viewModel = viewModel
+        navigationController.pushViewController(viewController, animated: true)
 
-		viewModel.configLoaded
-			.flatMap { [unowned self] _ in
-				self.coordinateToSeasonsList()
-		}.subscribe()
-		.disposed(by: disposeBag)
-
-		return Observable.empty()
+        _ = viewModel.configLoaded
+            .subscribe(on: DispatchQueue.global(qos: .default))
+            .sink { [weak self] value in
+                if value {
+                    self?.coordinateToSeasonsList()
+                }
+        }
 	}
 
-	private func coordinateToSeasonsList() -> Observable<Void> {
-		let seasonsCoordinator = SeasonsCoordinator(rootViewController: rootViewController)
-		return coordinate(to: seasonsCoordinator)
-			.map { _ in () }
+	private func coordinateToSeasonsList() {
+		let seasonsCoordinator = SeasonsCoordinator(navigationController: navigationController)
+        seasonsCoordinator.start()
 	}
 }

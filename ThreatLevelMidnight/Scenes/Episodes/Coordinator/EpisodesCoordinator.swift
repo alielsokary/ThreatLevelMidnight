@@ -7,20 +7,20 @@
 //
 
 import UIKit
-import RxSwift
 
-class EpisodesCoordinator: BaseCoordinator<Void> {
+class EpisodesCoordinator: Coordinator {
 
-	private let rootViewController: UIViewController
+    var childCoordinators = [Coordinator]()
+	var navigationController: UINavigationController
 	private let service = EpisodesServiceImpl()
 	private let seasonViewModel: SeasonViewModel!
 
-	init(rootViewController: UIViewController, viewModel: SeasonViewModel) {
-		self.rootViewController = rootViewController
+	init(navigationController: UINavigationController, viewModel: SeasonViewModel) {
+		self.navigationController = navigationController
 		self.seasonViewModel = viewModel
 	}
 
-	override func start() -> Observable<Void> {
+    func start() {
 		let viewModel = EpisodesViewModel(service: service, season: seasonViewModel.number)
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -29,21 +29,20 @@ class EpisodesCoordinator: BaseCoordinator<Void> {
 			return EpisodesViewController(coder: coder, viewModel: viewModel)
 		}
 
-		rootViewController.navigationController?.pushViewController(viewController, animated: true)
+		navigationController.pushViewController(viewController, animated: true)
 
-		viewModel.selectedEpisode
-			.flatMap({ [unowned self] (episode) in
-				self.coordinateToEpisodeDetails(with: episode)
-			}).subscribe()
-			.disposed(by: disposeBag)
+//		viewModel.selectedEpisode
+//			.flatMap({ [unowned self] (episode) in
+//				self.coordinateToEpisodeDetails(with: episode)
+//			}).subscribe()
+//			.disposed(by: disposeBag)
 
-		return Observable.empty()
 	}
 
-	private func coordinateToEpisodeDetails(with viewModel: EpisodeViewModel) -> Observable<Void> {
-		let episodeDetailsCoordinator = EpisodeDetailsCoordinator(rootViewController: rootViewController, viewModel: viewModel)
-		return coordinate(to: episodeDetailsCoordinator)
-			.map { _ in () }
-	}
+//	private func coordinateToEpisodeDetails(with viewModel: EpisodeViewModel) -> Observable<Void> {
+//		let episodeDetailsCoordinator = EpisodeDetailsCoordinator(rootViewController: rootViewController, viewModel: viewModel)
+//		return coordinate(to: episodeDetailsCoordinator)
+//			.map { _ in () }
+//	}
 
 }

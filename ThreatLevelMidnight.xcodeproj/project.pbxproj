@@ -12,6 +12,7 @@
 		4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */; };
 		4109C1DD26041EA2002CD17A /* SeasonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */; };
 		4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1E126041F7E002CD17A /* SeasonsViewController.swift */; };
+		410B788D2B177E0800668FA7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B788C2B177E0800668FA7 /* Coordinator.swift */; };
 		4116C1172B16269B00AA8328 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C1162B16269B00AA8328 /* Alamofire */; };
 		4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C11F2B1628E200AA8328 /* Kingfisher */; };
 		41184C6425DFF63900B7A143 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6325DFF63900B7A143 /* Season.swift */; };
@@ -47,7 +48,6 @@
 		419B48A5264F6D56001F1BB3 /* EpisodeDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B48A4264F6D56001F1BB3 /* EpisodeDetailsService.swift */; };
 		41B592FE264FAA800055DDA2 /* SeasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B592FD264FAA800055DDA2 /* SeasonViewModel.swift */; };
 		41B59306264FB4D50055DDA2 /* EpisodesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B59305264FB4D50055DDA2 /* EpisodesCoordinator.swift */; };
-		41C0228D264F5AAF004E8437 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0228C264F5AAF004E8437 /* BaseCoordinator.swift */; };
 		41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C02294264F5AC9004E8437 /* AppCoordinator.swift */; };
 		41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */; };
 		41C022A4264F5BEE004E8437 /* SeasonsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C022A3264F5BEE004E8437 /* SeasonsService.swift */; };
@@ -74,6 +74,7 @@
 		4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonTableViewCell.xib; sourceTree = "<group>"; };
 		4109C1E126041F7E002CD17A /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
+		410B788C2B177E0800668FA7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		41184C6325DFF63900B7A143 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		41184C6825E00A6900B7A143 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +107,6 @@
 		419B48A4264F6D56001F1BB3 /* EpisodeDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsService.swift; sourceTree = "<group>"; };
 		41B592FD264FAA800055DDA2 /* SeasonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModel.swift; sourceTree = "<group>"; };
 		41B59305264FB4D50055DDA2 /* EpisodesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesCoordinator.swift; sourceTree = "<group>"; };
-		41C0228C264F5AAF004E8437 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		41C02294264F5AC9004E8437 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsCoordinator.swift; sourceTree = "<group>"; };
 		41C022A3264F5BEE004E8437 /* SeasonsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsService.swift; sourceTree = "<group>"; };
@@ -383,7 +383,7 @@
 		41C0228B264F5A9B004E8437 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				41C0228C264F5AAF004E8437 /* BaseCoordinator.swift */,
+				410B788C2B177E0800668FA7 /* Coordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -597,7 +597,6 @@
 				419B489F264F6C92001F1BB3 /* EpisodesService.swift in Sources */,
 				4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */,
 				4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */,
-				41C0228D264F5AAF004E8437 /* BaseCoordinator.swift in Sources */,
 				41B59306264FB4D50055DDA2 /* EpisodesCoordinator.swift in Sources */,
 				4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */,
 				41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */,
@@ -620,6 +619,7 @@
 				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
 				41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */,
+				410B788D2B177E0800668FA7 /* Coordinator.swift in Sources */,
 				411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */,
 				411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */,
 				419B48A5264F6D56001F1BB3 /* EpisodeDetailsService.swift in Sources */,
