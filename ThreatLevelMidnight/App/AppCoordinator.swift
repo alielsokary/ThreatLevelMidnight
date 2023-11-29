@@ -7,27 +7,37 @@
 //
 
 import UIKit
-import RxSwift
 
-class AppCoordinator: BaseCoordinator<Void> {
+class AppCoordinator: NSObject, Coordinator {
 
-	private let window: UIWindow
+    var childCoordinators = [Coordinator]()
+    var navigationController: UINavigationController
 
-	init(window: UIWindow) {
-		self.window = window
-	}
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
 
-	override func start() -> Observable<Void> {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    func start() {
+        navigationController.delegate = self
+        let coordinator = SplashCoordinator(navigationController: navigationController)
+        childCoordinators.append(coordinator)
+        coordinator.start()
+    }
 
-		guard let viewcontroller = storyboard.instantiateViewController(identifier: "SplashViewController") as? SplashViewController else { return  Observable.empty() }
-		let navigationController = UINavigationController(rootViewController: viewcontroller)
+    func childDidFinish(_ child: Coordinator?) {
+        for (index, coordinator) in childCoordinators.enumerated() where coordinator === child {
+            childCoordinators.remove(at: index)
+            break
+        }
+    }
+}
 
-		let splashCoordinator = SplashCoordinator(rootViewController: navigationController.viewControllers[0])
+extension AppCoordinator: UINavigationControllerDelegate {
+    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else { return }
 
-		window.rootViewController = navigationController
-		window.makeKeyAndVisible()
-
-		return coordinate(to: splashCoordinator)
-	}
+        if navigationController.viewControllers.contains(fromViewController) {
+            return
+        }
+    }
 }

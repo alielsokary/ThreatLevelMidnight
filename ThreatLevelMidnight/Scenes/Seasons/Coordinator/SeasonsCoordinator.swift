@@ -7,39 +7,40 @@
 //
 
 import UIKit
-import RxSwift
 
-class SeasonsCoordinator: BaseCoordinator<Void> {
+class SeasonsCoordinator: Coordinator {
 
-	private let rootViewController: UIViewController
+    var childCoordinators = [Coordinator]()
+    var navigationController: UINavigationController
+
 	private let service = SeasonsServiceImpl()
 
-	init(rootViewController: UIViewController) {
-		self.rootViewController = rootViewController
-	}
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
 
-	override func start() -> Observable<Void> {
+    func start() {
 		let viewModel = SeasonsViewModel(service: service)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		let viewController = storyboard.instantiateViewController(identifier: "SeasonsViewController", creator: { coder in
 			return SeasonsViewController(coder: coder, viewModel: viewModel)
 		})
 
-		rootViewController.navigationController?.pushViewController(viewController, animated: false)
+        navigationController.pushViewController(viewController, animated: false)
 
-		viewModel.selectedSeason
-			.flatMap({ [unowned self] (season) in
-			self.coordinateToEpisodesList(with: season)
-			})
-			.subscribe()
-			.disposed(by: disposeBag)
-		return Observable.empty()
+//		viewModel.selectedSeason
+//			.flatMap({ [unowned self] (season) in
+//			self.coordinateToEpisodesList(with: season)
+//			})
+//			.subscribe()
+//			.disposed(by: disposeBag)
+//		return Observable.empty()
 	}
 
-	private func coordinateToEpisodesList(with viewModel: SeasonViewModel) -> Observable<Void> {
-		let episodesListCoordinator = EpisodesCoordinator(rootViewController: rootViewController, viewModel: viewModel)
-		return coordinate(to: episodesListCoordinator)
-			.map { _ in () }
-	}
+//	private func coordinateToEpisodesList(with viewModel: SeasonViewModel) -> Observable<Void> {
+//		let episodesListCoordinator = EpisodesCoordinator(rootViewController: rootViewController, viewModel: viewModel)
+//		return coordinate(to: episodesListCoordinator)
+//			.map { _ in () }
+//	}
 
 }

@@ -7,27 +7,26 @@
 //
 
 import UIKit
-import RxSwift
 
-class EpisodeDetailsCoordinator: BaseCoordinator<Void> {
+class EpisodeDetailsCoordinator: Coordinator {
 
-	private let rootViewController: UIViewController
+    var childCoordinators = [Coordinator]()
+    var navigationController: UINavigationController
 	private let episodeViewModel: EpisodeViewModel!
 	private let service = EpisodeDetailsServiceImpl()
 
-	init(rootViewController: UIViewController, viewModel: EpisodeViewModel) {
-		self.rootViewController = rootViewController
+	init(navigationController: UINavigationController, viewModel: EpisodeViewModel) {
+		self.navigationController = navigationController
 		self.episodeViewModel = viewModel
 	}
 
-	override func start() -> Observable<Void> {
+    func start() {
 		let viewModel = EpisodeDetailsViewModel(service: service, season: episodeViewModel.seasonNumber, episode: episodeViewModel.number)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "EpisodeDetailsViewController") { coder in
 			return EpisodeDetailsViewController(coder: coder, viewModel: viewModel)
 		}
 
-		rootViewController.navigationController?.pushViewController(viewController, animated: true)
-		return Observable.empty()
+        navigationController.pushViewController(viewController, animated: true)
 	}
 }

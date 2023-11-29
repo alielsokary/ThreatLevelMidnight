@@ -9,17 +9,19 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import Combine
 
 class SplashViewModel {
 
 	private let service: SplashService!
 	private let disposeBag = DisposeBag()
 
-	let configLoaded = PublishSubject<Bool>()
 	let isLoading = BehaviorSubject<Bool>(value: false)
 	let noInternet = BehaviorSubject<Bool>(value: false)
 	private let _alertMessage = PublishSubject<String>()
 
+    @Published var _configLoaded: Bool = false
+    public var configLoaded: Published<Bool>.Publisher { $_configLoaded }
 	let alertMessage: Observable<String>
 
 	init(service: SplashService) {
@@ -34,7 +36,7 @@ class SplashViewModel {
 			.subscribe(onNext: { [weak self] (config) in
 				self?.isLoading.onNext(false)
 				_ = config.saveUserData()
-				self?.configLoaded.onNext(true)
+                self?._configLoaded = true
 			}, onError: { [weak self] error in
 				self?.isLoading.onNext(false)
 				guard let error = error as? APIError else { return }
