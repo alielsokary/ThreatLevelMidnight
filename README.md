@@ -1,5 +1,5 @@
 
-![cover-logo](https://user-images.githubusercontent.com/11244927/138536471-9866ddca-624d-4fb2-bee5-9b42cd3b3e21.png)
+![cover-logo](https://github.com/alielsokary/ThreatLevelMidnight/assets/11244927/793986a9-bea3-479f-a759-6c032cfd16a4)
 
 
 [![iOS](https://github.com/alielsokary/ThreatLevelMidnight/actions/workflows/iOS.yml/badge.svg)](https://github.com/alielsokary/ThreatLevelMidnight/actions/workflows/iOS.yml)
