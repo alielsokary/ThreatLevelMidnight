@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ThreatLevelMidnight
+@testable import TLM
 
 class EpisodeViewModelTests: XCTestCase {
 
