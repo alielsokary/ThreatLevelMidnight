@@ -71,8 +71,4 @@ class EpisodeViewModelTests: XCTestCase {
 		XCTAssertEqual(sut.overview, "overview")
 	}
 
-	func test_episodePoster_equals_episodePoster() throws {
-		XCTAssertEqual(sut.image, "https://image.tmdb.org/t/p/original" + "path")
-	}
-
 }

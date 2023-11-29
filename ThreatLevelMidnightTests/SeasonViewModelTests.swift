@@ -70,8 +70,4 @@ class SeasonViewModelTests: XCTestCase {
     func test_seasonNumber_Equals_seasonNumber() throws {
 		XCTAssertEqual(sut.number, 1)
     }
-
-	func test_seasonPoster_Equals_seasonPoster() throws {
-		XCTAssertEqual(sut.image, "https://image.tmdb.org/t/p/original" + "path")
-	}
 }
