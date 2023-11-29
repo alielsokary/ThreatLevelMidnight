@@ -1,5 +1,5 @@
 //
-//  EpisodeDetailsViewModel.swift
+//  EpisodesViewModel.swift
 //  ThreatLevelMidnight
 //
 //  Created by Ali Elsokary on 19/03/2021.
@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-class EpisodeDetailsViewModel {
+class EpisodesListViewModel {
 
 	private let service: TMDBService!
     private var cancellables = Set<AnyCancellable>()
@@ -17,12 +17,17 @@ class EpisodeDetailsViewModel {
     @Published var alertMessage: String?
     @Published var isLoading: Bool = false
 
-    var episode: PassthroughSubject = PassthroughSubject<EpisodeViewModel, Error>()
+    var episodes: PassthroughSubject = PassthroughSubject<[EpisodeViewModel], Error>()
 
-	init(service: TMDBService, season: Int?, episode: Int?) {
+    private var _episodesViewModel: [EpisodeViewModel] = []
+    var episodesViewModel: [EpisodeViewModel] {
+        return _episodesViewModel
+    }
+
+	init(service: TMDBService, season: Int?) {
 		self.service = service
         isLoading = true
-        service.dispatch(TMDBRouter.GetEpisode(season: season!, episode: episode!))
+        service.dispatch(TMDBRouter.GetSeason(season: season!))
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
@@ -31,11 +36,10 @@ class EpisodeDetailsViewModel {
                     self?.alertMessage = error.localizedDescription
                 }
                 self?.isLoading = false
-        } receiveValue: { [weak self] episode in
-
-            let episodeViewModel = EpisodeViewModel(episode: episode)
-            self?.episode.send(episodeViewModel)
-
+        } receiveValue: { [weak self] season in
+            let episodesList = season.episodes?.compactMap { EpisodeViewModel(episode: $0) }
+            self?._episodesViewModel = episodesList ?? []
+            self?.episodes.send(episodesList ?? [])
         }.store(in: &cancellables)
 	}
 }

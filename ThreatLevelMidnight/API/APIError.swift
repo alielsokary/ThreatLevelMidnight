@@ -21,9 +21,9 @@ extension APIError: LocalizedError {
 	var errorDescription: String? {
 		switch self {
 		case .noInternet:
-			return "No Internet Connection. Please check your connection and try again"
+			return NSLocalizedString("API_ERROR_No_Connection", comment: "")
 		default:
-			return "Error"
+			return NSLocalizedString("Error", comment: "")
 		}
 	}
 }

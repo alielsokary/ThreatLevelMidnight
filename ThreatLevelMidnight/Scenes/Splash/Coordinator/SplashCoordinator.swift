@@ -13,7 +13,7 @@ class SplashCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
-	private let service = SplashServiceImpl()
+	private let service = TMDBServiceImpl()
 
 	init(navigationController: UINavigationController) {
 		self.navigationController = navigationController
@@ -26,7 +26,7 @@ class SplashCoordinator: Coordinator {
         viewController.viewModel = viewModel
         navigationController.pushViewController(viewController, animated: true)
 
-        _ = viewModel.configLoaded
+        _ = viewModel.$configLoaded
             .subscribe(on: DispatchQueue.global(qos: .default))
             .sink { [weak self] value in
                 if value {
