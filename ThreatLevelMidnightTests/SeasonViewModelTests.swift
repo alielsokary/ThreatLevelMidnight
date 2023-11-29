@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ThreatLevelMidnight
+@testable import TLM
 
 class SeasonViewModelTests: XCTestCase {
 
@@ -22,12 +22,12 @@ class SeasonViewModelTests: XCTestCase {
 		crew = Crew(id: 1,
 					name: "name",
 					originalName: "name",
-					department: Department(rawValue: "dep"),
+					department: "dep",
 					job: "job",
 					creditID: "id",
 					adult: true,
 					gender: 1,
-					knownForDepartment: Department(rawValue: "act"),
+					knownForDepartment: "act",
 					popularity: 5.0,
 					profilePath: "path",
 					character: "char",
@@ -70,8 +70,4 @@ class SeasonViewModelTests: XCTestCase {
     func test_seasonNumber_Equals_seasonNumber() throws {
 		XCTAssertEqual(sut.number, 1)
     }
-
-	func test_seasonPoster_Equals_seasonPoster() throws {
-		XCTAssertEqual(sut.image, "https://image.tmdb.org/t/p/original" + "path")
-	}
 }

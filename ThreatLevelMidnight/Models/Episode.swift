@@ -45,11 +45,11 @@ struct Episode: Codable {
 struct Crew: Codable {
 	let id: Int?
 	let name, originalName: String?
-	let department: Department?
+	let department: String?
 	let job, creditID: String?
 	let adult: Bool?
 	let gender: Int?
-	let knownForDepartment: Department?
+	let knownForDepartment: String?
 	let popularity: Double?
 	let profilePath: String?
 	let character: String?
@@ -66,18 +66,4 @@ struct Crew: Codable {
 		case profilePath = "profile_path"
 		case character, order
 	}
-}
-
-enum Department: String, Codable {
-	case acting = "Acting"
-	case art = "Art"
-	case camera = "Camera"
-	case costumeMakeUp = "Costume & Make-Up"
-	case creator = "Creator"
-	case directing = "Directing"
-	case editing = "Editing"
-	case lighting = "Lighting"
-	case production = "Production"
-	case sound = "Sound"
-	case writing = "Writing"
 }

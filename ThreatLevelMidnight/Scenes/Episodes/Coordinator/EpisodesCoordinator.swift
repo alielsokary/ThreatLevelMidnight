@@ -12,7 +12,7 @@ class EpisodesCoordinator: Coordinator {
 
     var childCoordinators = [Coordinator]()
 	var navigationController: UINavigationController
-	private let service = EpisodesServiceImpl()
+	private let service = TMDBServiceImpl()
 	private let seasonViewModel: SeasonViewModel!
 
 	init(navigationController: UINavigationController, viewModel: SeasonViewModel) {
@@ -21,28 +21,20 @@ class EpisodesCoordinator: Coordinator {
 	}
 
     func start() {
-		let viewModel = EpisodesViewModel(service: service, season: seasonViewModel.number)
+		let viewModel = EpisodesListViewModel(service: service, season: seasonViewModel.number)
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
 		let viewController = storyboard.instantiateViewController(identifier: "EpisodesViewController") { coder in
-			return EpisodesViewController(coder: coder, viewModel: viewModel)
+            return EpisodesListViewController(coder: coder, coordinator: self, viewModel: viewModel)
 		}
 
 		navigationController.pushViewController(viewController, animated: true)
-
-//		viewModel.selectedEpisode
-//			.flatMap({ [unowned self] (episode) in
-//				self.coordinateToEpisodeDetails(with: episode)
-//			}).subscribe()
-//			.disposed(by: disposeBag)
-
 	}
 
-//	private func coordinateToEpisodeDetails(with viewModel: EpisodeViewModel) -> Observable<Void> {
-//		let episodeDetailsCoordinator = EpisodeDetailsCoordinator(rootViewController: rootViewController, viewModel: viewModel)
-//		return coordinate(to: episodeDetailsCoordinator)
-//			.map { _ in () }
-//	}
+    func coordinateToEpisodeDetails(with viewModel: EpisodeViewModel) {
+		let coordinator = EpisodeDetailsCoordinator(navigationController: navigationController, viewModel: viewModel)
+        coordinator.start()
+	}
 
 }

@@ -6,40 +6,38 @@
 //  Copyright © 2021 mag. All rights reserved.
 //
 
-import Alamofire
+import Foundation
 
-enum TMDBRouter: URLRequestBuilder {
+struct TMDBRouter {
 
-	case getConfiguration
-	case getShow
-	case getSeason(season: Int)
-	case getEpisode(season: Int, episode: Int)
+    struct GetConfiguration: EndpointRouter {
+        typealias ReturnType = Configurations
+        var path: String { "/\(APIConstants.configuration)" }
+        var method: HTTPMethod = .get
+    }
 
-	// MARK: - Path
-	var path: String {
-		switch self {
-		case .getConfiguration:
-			return "/\(APIConstants.configuration)"
-		case .getShow:
-			return "/\(APIConstants.type)/\(APIConstants.theOfficeId)"
-		case .getSeason(let season):
-			return "/\(APIConstants.type)/\(APIConstants.theOfficeId)/\(APIConstants.season)/\(season)"
-		case .getEpisode(let season, let episode):
-			return "/\(APIConstants.type)/\(APIConstants.theOfficeId)/\(APIConstants.season)/\(season)/\(APIConstants.episode)/\(episode)"
-		}
-	}
+    struct GetShow: EndpointRouter {
+        typealias ReturnType = TVShow
 
-	// MARK: - Parameters
-	var parameters: Parameters? {
-		let params = defaultParams
-		switch self {
-		default:
-			return params
-		}
-	}
+        var path: String { "/\(APIConstants.type)/\(APIConstants.theOfficeId)" }
+        var method: HTTPMethod = .get
+    }
 
-	// MARK: - Methods
-	var method: HTTPMethod {
-		return .get
-	}
+    struct GetSeason: EndpointRouter {
+        typealias ReturnType = Season
+        let season: Int
+
+        var path: String { "/\(APIConstants.type)/\(APIConstants.theOfficeId)/\(APIConstants.season)/\(season)" }
+
+        var method: HTTPMethod = .get
+    }
+
+    struct GetEpisode: EndpointRouter {
+        typealias ReturnType = Episode
+        let season: Int
+        let episode: Int
+
+        var path: String { "/\(APIConstants.type)/\(APIConstants.theOfficeId)/\(APIConstants.season)/\(season)/\(APIConstants.episode)/\(episode)" }
+        var method: HTTPMethod = .get
+    }
 }

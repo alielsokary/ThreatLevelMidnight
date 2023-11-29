@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
+import Combine
 
 class EpisodeDetailsViewController: UIViewController {
 
@@ -17,7 +16,7 @@ class EpisodeDetailsViewController: UIViewController {
 	@IBOutlet weak var episodeOverView: UILabel!
 
 	private let viewModel: EpisodeDetailsViewModel!
-	private let disposeBag = DisposeBag()
+    private var cancellables = Set<AnyCancellable>()
 
 	required init?(coder: NSCoder, viewModel: EpisodeDetailsViewModel) {
 		self.viewModel = viewModel
@@ -39,12 +38,28 @@ private extension EpisodeDetailsViewController {
 
 	func setupBindings() {
 		viewModel.episode
-			.observeOn(MainScheduler.instance)
-			.subscribe({ [weak self] episode in
-				guard let self = self else { return }
-				self.episodeImageView.kf.setImage(with: URL(string: episode.element?.posterUrl() ?? ""), placeholder: UIImage())
-				self.episodeNameLabel.text = episode.element?.name
-				self.episodeOverView.text = episode.element?.overview
-			}).disposed(by: disposeBag)
+            .sink { completion in
+                switch completion {
+                case .finished: break
+                case let .failure(error):
+                    print(error)
+                }
+            } receiveValue: { episode in
+                self.episodeImageView.kf.setImage(with: URL(string: episode.image ?? ""), placeholder: UIImage())
+                self.episodeNameLabel.text = episode.name
+                self.episodeOverView.text = episode.overview
+            }.store(in: &cancellables)
+
+        viewModel.$alertMessage
+            .compactMap { $0 }
+            .sink { message in
+                self.showAlert(message: message)
+            }.store(in: &cancellables)
+
+        viewModel.$isLoading
+            .sink { [weak self] isLoading in
+                isLoading ? self?.showProgress() : self?.hideProgress()
+            }
+            .store(in: &cancellables)
 	}
 }

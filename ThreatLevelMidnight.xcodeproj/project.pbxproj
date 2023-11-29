@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4109C186260235D3002CD17A /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C185260235D3002CD17A /* Configurations.swift */; };
-		4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1C226041CA6002CD17A /* SeasonsViewModel.swift */; };
+		4109C1C326041CA6002CD17A /* SeasonsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1C226041CA6002CD17A /* SeasonsListViewModel.swift */; };
 		4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */; };
 		4109C1DD26041EA2002CD17A /* SeasonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */; };
-		4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1E126041F7E002CD17A /* SeasonsViewController.swift */; };
+		4109C1E226041F7E002CD17A /* SeasonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1E126041F7E002CD17A /* SeasonsListViewController.swift */; };
 		410B788D2B177E0800668FA7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B788C2B177E0800668FA7 /* Coordinator.swift */; };
-		4116C1172B16269B00AA8328 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C1162B16269B00AA8328 /* Alamofire */; };
+		4114D5A22B17A87000BBF674 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5A12B17A87000BBF674 /* HTTPClient.swift */; };
 		4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C11F2B1628E200AA8328 /* Kingfisher */; };
 		41184C6425DFF63900B7A143 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6325DFF63900B7A143 /* Season.swift */; };
 		41184C6925E00A6900B7A143 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6825E00A6900B7A143 /* Episode.swift */; };
@@ -22,15 +22,11 @@
 		411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F09271849BF0008B7AB /* EpisodeDetailsCoordinator.swift */; };
 		411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F0B27184B340008B7AB /* EpisodeViewModel.swift */; };
 		411C2F102718BEAF0008B7AB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F0F2718BEAF0008B7AB /* APIError.swift */; };
-		411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F112718C0440008B7AB /* URLRequestBuilder.swift */; };
+		411C2F122718C0440008B7AB /* EndpointRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F112718C0440008B7AB /* EndpointRouter.swift */; };
 		4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */; };
 		41251D3227388FE60001362C /* SeasonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D3127388FE60001362C /* SeasonViewModelTests.swift */; };
 		41251D36273897670001362C /* EpisodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D35273897670001362C /* EpisodeViewModelTests.swift */; };
 		413A9CB42B16349C00625B1C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB32B16349C00625B1C /* PKHUD */; };
-		413A9CB72B163A5700625B1C /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB62B163A5700625B1C /* RxBlocking */; };
-		413A9CB92B163A5700625B1C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB82B163A5700625B1C /* RxCocoa */; };
-		413A9CBB2B163A5700625B1C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CBA2B163A5700625B1C /* RxRelay */; };
-		413A9CBD2B163A5700625B1C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CBC2B163A5700625B1C /* RxSwift */; };
 		4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163075E25DF3EFD009D4A4F /* APIConstants.swift */; };
 		4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076325DF3F0C009D4A4F /* TMDBRouter.swift */; };
 		4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076825DF3F1C009D4A4F /* APIClient.swift */; };
@@ -41,18 +37,15 @@
 		418B671624A8D72000E857F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418B671524A8D72000E857F7 /* Assets.xcassets */; };
 		418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B671724A8D72000E857F7 /* LaunchScreen.storyboard */; };
 		419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B4887264F651C001F1BB3 /* SplashCoordinator.swift */; };
-		419B488D264F6593001F1BB3 /* SplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B488C264F6593001F1BB3 /* SplashService.swift */; };
+		419B488D264F6593001F1BB3 /* TMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B488C264F6593001F1BB3 /* TMDBService.swift */; };
 		419B4892264F6641001F1BB3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B4891264F6641001F1BB3 /* SplashViewController.swift */; };
 		419B4897264F667A001F1BB3 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B4896264F667A001F1BB3 /* SplashViewModel.swift */; };
-		419B489F264F6C92001F1BB3 /* EpisodesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B489E264F6C92001F1BB3 /* EpisodesService.swift */; };
-		419B48A5264F6D56001F1BB3 /* EpisodeDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B48A4264F6D56001F1BB3 /* EpisodeDetailsService.swift */; };
 		41B592FE264FAA800055DDA2 /* SeasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B592FD264FAA800055DDA2 /* SeasonViewModel.swift */; };
 		41B59306264FB4D50055DDA2 /* EpisodesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B59305264FB4D50055DDA2 /* EpisodesCoordinator.swift */; };
 		41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C02294264F5AC9004E8437 /* AppCoordinator.swift */; };
 		41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */; };
-		41C022A4264F5BEE004E8437 /* SeasonsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C022A3264F5BEE004E8437 /* SeasonsService.swift */; };
-		41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE3260441C3002D29FC /* EpisodesViewModel.swift */; };
-		41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */; };
+		41CB9EE4260441C3002D29FC /* EpisodesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE3260441C3002D29FC /* EpisodesListViewModel.swift */; };
+		41CB9EE9260441DA002D29FC /* EpisodesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE8260441DA002D29FC /* EpisodesListViewController.swift */; };
 		41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */; };
 		41CB9EF126044223002D29FC /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */; };
 		41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */; };
@@ -70,11 +63,12 @@
 
 /* Begin PBXFileReference section */
 		4109C185260235D3002CD17A /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
-		4109C1C226041CA6002CD17A /* SeasonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewModel.swift; sourceTree = "<group>"; };
+		4109C1C226041CA6002CD17A /* SeasonsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsListViewModel.swift; sourceTree = "<group>"; };
 		4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonTableViewCell.xib; sourceTree = "<group>"; };
-		4109C1E126041F7E002CD17A /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
+		4109C1E126041F7E002CD17A /* SeasonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsListViewController.swift; sourceTree = "<group>"; };
 		410B788C2B177E0800668FA7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4114D5A12B17A87000BBF674 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		41184C6325DFF63900B7A143 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		41184C6825E00A6900B7A143 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +76,7 @@
 		411C2F09271849BF0008B7AB /* EpisodeDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsCoordinator.swift; sourceTree = "<group>"; };
 		411C2F0B27184B340008B7AB /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
 		411C2F0F2718BEAF0008B7AB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		411C2F112718C0440008B7AB /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		411C2F112718C0440008B7AB /* EndpointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointRouter.swift; sourceTree = "<group>"; };
 		4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41251D3127388FE60001362C /* SeasonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModelTests.swift; sourceTree = "<group>"; };
 		41251D35273897670001362C /* EpisodeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModelTests.swift; sourceTree = "<group>"; };
@@ -100,18 +94,15 @@
 		418B671F24A8D72000E857F7 /* ThreatLevelMidnightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreatLevelMidnightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B672524A8D72000E857F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419B4887264F651C001F1BB3 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		419B488C264F6593001F1BB3 /* SplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashService.swift; sourceTree = "<group>"; };
+		419B488C264F6593001F1BB3 /* TMDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBService.swift; sourceTree = "<group>"; };
 		419B4891264F6641001F1BB3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		419B4896264F667A001F1BB3 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
-		419B489E264F6C92001F1BB3 /* EpisodesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesService.swift; sourceTree = "<group>"; };
-		419B48A4264F6D56001F1BB3 /* EpisodeDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsService.swift; sourceTree = "<group>"; };
 		41B592FD264FAA800055DDA2 /* SeasonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModel.swift; sourceTree = "<group>"; };
 		41B59305264FB4D50055DDA2 /* EpisodesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesCoordinator.swift; sourceTree = "<group>"; };
 		41C02294264F5AC9004E8437 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsCoordinator.swift; sourceTree = "<group>"; };
-		41C022A3264F5BEE004E8437 /* SeasonsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsService.swift; sourceTree = "<group>"; };
-		41CB9EE3260441C3002D29FC /* EpisodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewModel.swift; sourceTree = "<group>"; };
-		41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		41CB9EE3260441C3002D29FC /* EpisodesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListViewModel.swift; sourceTree = "<group>"; };
+		41CB9EE8260441DA002D29FC /* EpisodesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListViewController.swift; sourceTree = "<group>"; };
 		41CB9EEE26044223002D29FC /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		41CB9EEF26044223002D29FC /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -122,13 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				413A9CB92B163A5700625B1C /* RxCocoa in Frameworks */,
 				4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */,
-				413A9CBB2B163A5700625B1C /* RxRelay in Frameworks */,
 				413A9CB42B16349C00625B1C /* PKHUD in Frameworks */,
-				4116C1172B16269B00AA8328 /* Alamofire in Frameworks */,
-				413A9CBD2B163A5700625B1C /* RxSwift in Frameworks */,
-				413A9CB72B163A5700625B1C /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +145,6 @@
 				41C02299264F5AF2004E8437 /* Coordinator */,
 				4109C1C826041CD8002CD17A /* ViewModel */,
 				4109C1C726041CD0002CD17A /* View */,
-				41C022A2264F5B95004E8437 /* Service */,
 			);
 			path = Seasons;
 			sourceTree = "<group>";
@@ -168,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				4109C1CC26041DB5002CD17A /* Cell */,
-				4109C1E126041F7E002CD17A /* SeasonsViewController.swift */,
+				4109C1E126041F7E002CD17A /* SeasonsListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,7 +161,7 @@
 		4109C1C826041CD8002CD17A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4109C1C226041CA6002CD17A /* SeasonsViewModel.swift */,
+				4109C1C226041CA6002CD17A /* SeasonsListViewModel.swift */,
 				41B592FD264FAA800055DDA2 /* SeasonViewModel.swift */,
 			);
 			path = ViewModel;
@@ -197,7 +182,6 @@
 				411C2F08271849A10008B7AB /* Coordinator */,
 				411B46DF2604F319002F3970 /* ViewModel */,
 				411B46DE2604F311002F3970 /* View */,
-				419B48A3264F6D43001F1BB3 /* Service */,
 			);
 			path = "Episode Details";
 			sourceTree = "<group>";
@@ -239,10 +223,12 @@
 			isa = PBXGroup;
 			children = (
 				4163075E25DF3EFD009D4A4F /* APIConstants.swift */,
-				411C2F112718C0440008B7AB /* URLRequestBuilder.swift */,
+				411C2F112718C0440008B7AB /* EndpointRouter.swift */,
 				4163076325DF3F0C009D4A4F /* TMDBRouter.swift */,
 				4163076825DF3F1C009D4A4F /* APIClient.swift */,
 				411C2F0F2718BEAF0008B7AB /* APIError.swift */,
+				4114D5A12B17A87000BBF674 /* HTTPClient.swift */,
+				419B488C264F6593001F1BB3 /* TMDBService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -305,14 +291,6 @@
 			path = ThreatLevelMidnightTests;
 			sourceTree = "<group>";
 		};
-		419B4880264F604F001F1BB3 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				419B489E264F6C92001F1BB3 /* EpisodesService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		419B4881264F6056001F1BB3 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,7 +305,6 @@
 				419B4883264F64D4001F1BB3 /* Coordinator */,
 				419B4884264F64DC001F1BB3 /* View Model */,
 				419B4885264F64E3001F1BB3 /* View */,
-				419B4886264F64E9001F1BB3 /* Service */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -356,22 +333,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		419B4886264F64E9001F1BB3 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				419B488C264F6593001F1BB3 /* SplashService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		419B48A3264F6D43001F1BB3 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				419B48A4264F6D56001F1BB3 /* EpisodeDetailsService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		41C0228A264F5A75004E8437 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,21 +357,12 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		41C022A2264F5B95004E8437 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				41C022A3264F5BEE004E8437 /* SeasonsService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		41CB9EE026044195002D29FC /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
 				419B4881264F6056001F1BB3 /* Coordinator */,
 				41CB9EE12604419F002D29FC /* ViewModel */,
 				41CB9EE2260441A6002D29FC /* View */,
-				419B4880264F604F001F1BB3 /* Service */,
 			);
 			path = Episodes;
 			sourceTree = "<group>";
@@ -418,7 +370,7 @@
 		41CB9EE12604419F002D29FC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				41CB9EE3260441C3002D29FC /* EpisodesViewModel.swift */,
+				41CB9EE3260441C3002D29FC /* EpisodesListViewModel.swift */,
 				411C2F0B27184B340008B7AB /* EpisodeViewModel.swift */,
 			);
 			path = ViewModel;
@@ -428,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				41CB9EED260441FA002D29FC /* Cell */,
-				41CB9EE8260441DA002D29FC /* EpisodesViewController.swift */,
+				41CB9EE8260441DA002D29FC /* EpisodesListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -468,13 +420,8 @@
 			);
 			name = ThreatLevelMidnight;
 			packageProductDependencies = (
-				4116C1162B16269B00AA8328 /* Alamofire */,
 				4116C11F2B1628E200AA8328 /* Kingfisher */,
 				413A9CB32B16349C00625B1C /* PKHUD */,
-				413A9CB62B163A5700625B1C /* RxBlocking */,
-				413A9CB82B163A5700625B1C /* RxCocoa */,
-				413A9CBA2B163A5700625B1C /* RxRelay */,
-				413A9CBC2B163A5700625B1C /* RxSwift */,
 			);
 			productName = ThreatLevelMidnight;
 			productReference = 418B670924A8D71F00E857F7 /* TLM.app */;
@@ -528,10 +475,8 @@
 			);
 			mainGroup = 418B670024A8D71F00E857F7;
 			packageReferences = (
-				4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */,
-				413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 418B670A24A8D71F00E857F7 /* Products */;
 			projectDirPath = "";
@@ -594,21 +539,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				419B4897264F667A001F1BB3 /* SplashViewModel.swift in Sources */,
-				419B489F264F6C92001F1BB3 /* EpisodesService.swift in Sources */,
 				4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */,
 				4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */,
 				41B59306264FB4D50055DDA2 /* EpisodesCoordinator.swift in Sources */,
-				4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */,
+				4109C1E226041F7E002CD17A /* SeasonsListViewController.swift in Sources */,
 				41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */,
-				41CB9EE9260441DA002D29FC /* EpisodesViewController.swift in Sources */,
+				41CB9EE9260441DA002D29FC /* EpisodesListViewController.swift in Sources */,
 				419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */,
 				41184C6425DFF63900B7A143 /* Season.swift in Sources */,
 				411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */,
 				411C2F102718BEAF0008B7AB /* APIError.swift in Sources */,
-				419B488D264F6593001F1BB3 /* SplashService.swift in Sources */,
+				419B488D264F6593001F1BB3 /* TMDBService.swift in Sources */,
 				41184C6925E00A6900B7A143 /* Episode.swift in Sources */,
 				4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */,
-				41C022A4264F5BEE004E8437 /* SeasonsService.swift in Sources */,
 				4109C186260235D3002CD17A /* Configurations.swift in Sources */,
 				418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */,
 				41B592FE264FAA800055DDA2 /* SeasonViewModel.swift in Sources */,
@@ -616,14 +559,14 @@
 				41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */,
 				411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */,
 				4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */,
-				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
-				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
+				41CB9EE4260441C3002D29FC /* EpisodesListViewModel.swift in Sources */,
+				4109C1C326041CA6002CD17A /* SeasonsListViewModel.swift in Sources */,
 				41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */,
 				410B788D2B177E0800668FA7 /* Coordinator.swift in Sources */,
-				411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */,
+				411C2F122718C0440008B7AB /* EndpointRouter.swift in Sources */,
 				411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */,
-				419B48A5264F6D56001F1BB3 /* EpisodeDetailsService.swift in Sources */,
 				41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */,
+				4114D5A22B17A87000BBF674 /* HTTPClient.swift in Sources */,
 				4163086025DF54F1009D4A4F /* TVShow.swift in Sources */,
 				4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */,
 				411B46E12604F335002F3970 /* EpisodeDetailsViewModel.swift in Sources */,
@@ -849,7 +792,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreatLevelMidnight.app/ThreatLevelMidnight";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TLM";
 			};
 			name = Debug;
 		};
@@ -871,7 +814,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreatLevelMidnight.app/ThreatLevelMidnight";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TLM";
 			};
 			name = Release;
 		};
@@ -908,14 +851,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = exactVersion;
-				version = 5.4.1;
-			};
-		};
 		4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -932,22 +867,9 @@
 				minimumVersion = 5.4.0;
 			};
 		};
-		413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = exactVersion;
-				version = 6.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4116C1162B16269B00AA8328 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4116C1152B16269B00AA8328 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		4116C11F2B1628E200AA8328 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */;
@@ -957,26 +879,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
-		};
-		413A9CB62B163A5700625B1C /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		413A9CB82B163A5700625B1C /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		413A9CBA2B163A5700625B1C /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		413A9CBC2B163A5700625B1C /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 413A9CB52B163A5700625B1C /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
