@@ -12,6 +12,7 @@
 		4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */; };
 		4109C1DD26041EA2002CD17A /* SeasonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */; };
 		4109C1E226041F7E002CD17A /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1E126041F7E002CD17A /* SeasonsViewController.swift */; };
+		410B788D2B177E0800668FA7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B788C2B177E0800668FA7 /* Coordinator.swift */; };
 		4116C1172B16269B00AA8328 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C1162B16269B00AA8328 /* Alamofire */; };
 		4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C11F2B1628E200AA8328 /* Kingfisher */; };
 		41184C6425DFF63900B7A143 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6325DFF63900B7A143 /* Season.swift */; };
@@ -74,6 +75,7 @@
 		4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonTableViewCell.xib; sourceTree = "<group>"; };
 		4109C1E126041F7E002CD17A /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
+		410B788C2B177E0800668FA7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		41184C6325DFF63900B7A143 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		41184C6825E00A6900B7A143 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewController.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				41C0228C264F5AAF004E8437 /* BaseCoordinator.swift */,
+				410B788C2B177E0800668FA7 /* Coordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				41CB9EE4260441C3002D29FC /* EpisodesViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsViewModel.swift in Sources */,
 				41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */,
+				410B788D2B177E0800668FA7 /* Coordinator.swift in Sources */,
 				411C2F122718C0440008B7AB /* URLRequestBuilder.swift in Sources */,
 				411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */,
 				419B48A5264F6D56001F1BB3 /* EpisodeDetailsService.swift in Sources */,
