@@ -11,20 +11,20 @@ import Combine
 
 class SplashViewModel: ObservableObject {
 
-	private let service: TMDBService!
+	private let service: SplashService!
     private var cancellables = Set<AnyCancellable>()
 
     @Published var configLoaded: Bool = false
     @Published var isLoading: Bool = false
     @Published var alertMessage: String?
 
-	init(service: TMDBService) {
+	init(service: SplashService) {
 		self.service = service
 	}
 
 	func start() {
         isLoading = true
-        service.dispatch(TMDBRouter.GetConfiguration())
+        service.getConfigurations()
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:

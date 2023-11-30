@@ -11,7 +11,7 @@ import Combine
 
 class EpisodesListViewModel {
 
-	private let service: TMDBService!
+	private let service: EpisodesListService!
     private var cancellables = Set<AnyCancellable>()
 
     @Published var alertMessage: String?
@@ -24,10 +24,10 @@ class EpisodesListViewModel {
         return _episodesViewModel
     }
 
-	init(service: TMDBService, season: Int?) {
+	init(service: EpisodesListService, season: Int?) {
 		self.service = service
         isLoading = true
-        service.dispatch(TMDBRouter.GetSeason(season: season!))
+        service.getSeason(season: season!)
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:

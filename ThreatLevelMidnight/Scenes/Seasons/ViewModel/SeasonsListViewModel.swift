@@ -11,7 +11,7 @@ import Combine
 
 class SeasonsListViewModel: ObservableObject {
 
-	private let service: TMDBService!
+	private let service: SeasonListService!
 
     var seasons: PassthroughSubject = PassthroughSubject<[SeasonViewModel], Error>()
 
@@ -20,7 +20,7 @@ class SeasonsListViewModel: ObservableObject {
 
     private var cancellables = Set<AnyCancellable>()
 
-	init(service: TMDBService) {
+	init(service: SeasonListService) {
 		self.service = service
 	}
 
@@ -31,7 +31,7 @@ class SeasonsListViewModel: ObservableObject {
 
 	func start() {
         isLoading = true
-        service.dispatch(TMDBRouter.GetShow())
+        service.getShow()
             .sink { [weak self] completions in
             switch completions {
             case .finished:

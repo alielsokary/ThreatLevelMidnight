@@ -12,7 +12,7 @@ class EpisodesCoordinator: Coordinator {
 
     var childCoordinators = [Coordinator]()
 	var navigationController: UINavigationController
-	private let service = TMDBServiceImpl()
+	private let service = EpisodesListServiceImpl()
 	private let seasonViewModel: SeasonViewModel!
 
 	init(navigationController: UINavigationController, viewModel: SeasonViewModel) {

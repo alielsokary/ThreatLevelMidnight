@@ -11,9 +11,18 @@ import Combine
 
 class SplashViewController: UIViewController {
 
-	var viewModel: SplashViewModel!
+	private let viewModel: SplashViewModel!
 
     private var cancellables = Set<AnyCancellable>()
+
+    required init?(coder: NSCoder, viewModel: SplashViewModel) {
+        self.viewModel = viewModel
+        super.init(coder: coder)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

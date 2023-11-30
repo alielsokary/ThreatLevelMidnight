@@ -13,7 +13,7 @@ class SeasonsCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
-	private let service = TMDBServiceImpl()
+	private let service = SeasonListServiceImpl()
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController

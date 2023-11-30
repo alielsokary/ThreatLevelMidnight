@@ -13,7 +13,7 @@ class SplashCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
-	private let service = TMDBServiceImpl()
+	private let service = SplashServiceImpl()
 
 	init(navigationController: UINavigationController) {
 		self.navigationController = navigationController
@@ -21,9 +21,12 @@ class SplashCoordinator: Coordinator {
 
     func start() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        guard let viewController = storyBoard.instantiateViewController(withIdentifier: "SplashViewController") as? SplashViewController else { return }
-		let viewModel = SplashViewModel(service: service)
-        viewController.viewModel = viewModel
+        let viewModel = SplashViewModel(service: service)
+
+        let viewController = storyBoard.instantiateViewController(identifier: "SplashViewController", creator: { coder in
+            return SplashViewController(coder: coder, viewModel: viewModel)
+        })
+
         navigationController.pushViewController(viewController, animated: true)
 
         _ = viewModel.$configLoaded
