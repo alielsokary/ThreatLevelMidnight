@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SeasonsCoordinator: Coordinator {
 
@@ -21,12 +22,10 @@ class SeasonsCoordinator: Coordinator {
 
     func start() {
 		let viewModel = SeasonsListViewModel(service: service)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let viewController = storyboard.instantiateViewController(identifier: "SeasonsListViewController", creator: { coder in
-            return SeasonsListViewController(coder: coder, coordinator: self, viewModel: viewModel)
-		})
-        viewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-        navigationController.pushViewController(viewController, animated: false)
+        let view = SeasonsListView(viewModel: viewModel)
+        let hostingController = UIHostingController(rootView: view)
+        hostingController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        navigationController.pushViewController(hostingController, animated: false)
 	}
 
     func coordinateToEpisodesList(with viewModel: SeasonViewModel) {

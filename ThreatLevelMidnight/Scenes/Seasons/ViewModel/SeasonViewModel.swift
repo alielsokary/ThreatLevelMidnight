@@ -8,13 +8,15 @@
 
 import Foundation
 
-struct SeasonViewModel {
+struct SeasonViewModel: Hashable {
 
 	let number: Int?
 	let image: String?
+    let seasonTitle: String
 
 	init(season: Season) {
 		self.number = season.seasonNumber
+        self.seasonTitle = "Season \(season.seasonNumber!)"
 		self.image = season.posterUrl()
 	}
 }
