@@ -25,7 +25,7 @@ class SeasonsCoordinator: Coordinator {
 		let viewController = storyboard.instantiateViewController(identifier: "SeasonsListViewController", creator: { coder in
             return SeasonsListViewController(coder: coder, coordinator: self, viewModel: viewModel)
 		})
-
+        viewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         navigationController.pushViewController(viewController, animated: false)
 	}
 

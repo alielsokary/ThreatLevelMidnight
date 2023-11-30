@@ -30,13 +30,13 @@ class SplashCoordinator: Coordinator {
             .subscribe(on: DispatchQueue.global(qos: .default))
             .sink { [weak self] value in
                 if value {
-                    self?.coordinateToSeasonsList()
+                    self?.coordinateToMainTabBar()
                 }
         }
 	}
 
-	private func coordinateToSeasonsList() {
-		let seasonsCoordinator = SeasonsCoordinator(navigationController: navigationController)
-        seasonsCoordinator.start()
+	private func coordinateToMainTabBar() {
+		let coordinator = TabBarCoordinator(navigationController: navigationController)
+        coordinator.start()
 	}
 }
