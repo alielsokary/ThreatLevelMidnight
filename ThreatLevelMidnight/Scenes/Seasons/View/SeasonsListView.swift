@@ -10,20 +10,22 @@ import SwiftUI
 
 struct SeasonsListView: View {
 
+    private let coordinator: SeasonsCoordinator!
     @ObservedObject private var viewModel: SeasonsListViewModel
 
-    init(viewModel: SeasonsListViewModel) {
+    init(coordinator: SeasonsCoordinator, viewModel: SeasonsListViewModel) {
+        self.coordinator = coordinator
         self.viewModel = viewModel
+        viewModel.start()
     }
 
     var body: some View {
         ScrollView {
             ForEach( viewModel.seasonsViewModel, id: \.self) { viewModel in
-                SeasonView(viewModel: viewModel)
-            }.onAppear {
-                viewModel.start()
+                SeasonView(viewModel: viewModel).onTapGesture {
+                    coordinator.coordinateToEpisodesList(with: viewModel)
+                }
             }
         }
-
     }
 }

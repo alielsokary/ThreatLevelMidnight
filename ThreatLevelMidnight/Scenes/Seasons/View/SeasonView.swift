@@ -30,6 +30,8 @@ struct SeasonView: View {
             })
 
             VStack {
+                Spacer()
+
                 HStack {
                     Text(viewModel.seasonTitle)
                         .bold()
@@ -41,7 +43,6 @@ struct SeasonView: View {
                     Spacer()
                 }
 
-                Spacer()
             }
         }.padding()
     }

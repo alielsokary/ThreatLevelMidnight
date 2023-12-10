@@ -22,7 +22,7 @@ class SeasonsCoordinator: Coordinator {
 
     func start() {
 		let viewModel = SeasonsListViewModel(service: service)
-        let view = SeasonsListView(viewModel: viewModel)
+        let view = SeasonsListView(coordinator: self, viewModel: viewModel)
         let hostingController = UIHostingController(rootView: view)
         hostingController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         navigationController.pushViewController(hostingController, animated: false)
