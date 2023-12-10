@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SeasonsCoordinator: Coordinator {
 
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
-	private let service = TMDBServiceImpl()
+	private let service = SeasonListServiceImpl()
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -21,12 +22,10 @@ class SeasonsCoordinator: Coordinator {
 
     func start() {
 		let viewModel = SeasonsListViewModel(service: service)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let viewController = storyboard.instantiateViewController(identifier: "SeasonsListViewController", creator: { coder in
-            return SeasonsListViewController(coder: coder, coordinator: self, viewModel: viewModel)
-		})
-        viewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-        navigationController.pushViewController(viewController, animated: false)
+        let view = SeasonsListView(coordinator: self, viewModel: viewModel)
+        let hostingController = UIHostingController(rootView: view)
+        hostingController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        navigationController.pushViewController(hostingController, animated: false)
 	}
 
     func coordinateToEpisodesList(with viewModel: SeasonViewModel) {

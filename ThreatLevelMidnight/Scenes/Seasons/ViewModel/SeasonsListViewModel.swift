@@ -11,16 +11,18 @@ import Combine
 
 class SeasonsListViewModel: ObservableObject {
 
-	private let service: TMDBService!
+	private let service: SeasonListService!
 
     var seasons: PassthroughSubject = PassthroughSubject<[SeasonViewModel], Error>()
 
     @Published var isLoading: Bool = false
-    @Published var alertMessage: String?
+    @Published var showingAlert = false
+
+    @Published var alertMessage: String = ""
 
     private var cancellables = Set<AnyCancellable>()
 
-	init(service: TMDBService) {
+	init(service: SeasonListService) {
 		self.service = service
 	}
 
@@ -31,7 +33,8 @@ class SeasonsListViewModel: ObservableObject {
 
 	func start() {
         isLoading = true
-        service.dispatch(TMDBRouter.GetShow())
+        showingAlert = false
+        service.getShow()
             .sink { [weak self] completions in
             switch completions {
             case .finished:
@@ -39,6 +42,7 @@ class SeasonsListViewModel: ObservableObject {
 
             case let .failure(error):
                 self?.alertMessage = error.localizedDescription
+                self?.showingAlert = true
             }
             self?.isLoading = false
         } receiveValue: { [weak self] tvShow in

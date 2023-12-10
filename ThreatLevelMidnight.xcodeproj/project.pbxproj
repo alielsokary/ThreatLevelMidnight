@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		4109C186260235D3002CD17A /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C185260235D3002CD17A /* Configurations.swift */; };
 		4109C1C326041CA6002CD17A /* SeasonsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1C226041CA6002CD17A /* SeasonsListViewModel.swift */; };
-		4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */; };
-		4109C1DD26041EA2002CD17A /* SeasonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */; };
-		4109C1E226041F7E002CD17A /* SeasonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C1E126041F7E002CD17A /* SeasonsListViewController.swift */; };
 		410B788D2B177E0800668FA7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B788C2B177E0800668FA7 /* Coordinator.swift */; };
 		4114D5A22B17A87000BBF674 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5A12B17A87000BBF674 /* HTTPClient.swift */; };
 		4114D5A52B17F80B00BBF674 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5A42B17F80B00BBF674 /* MainTabBarController.swift */; };
@@ -19,6 +16,12 @@
 		4114D5AC2B18C50200BBF674 /* EpisodeOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5AB2B18C50200BBF674 /* EpisodeOfTheDayViewController.swift */; };
 		4114D5B02B18C54900BBF674 /* EpisodeOfTheDayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5AF2B18C54900BBF674 /* EpisodeOfTheDayCoordinator.swift */; };
 		4114D5B32B18C5C500BBF674 /* EpisodeOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5B22B18C5C500BBF674 /* EpisodeOfTheDayViewModel.swift */; };
+		4114D5B62B191EA200BBF674 /* SplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5B52B191EA200BBF674 /* SplashService.swift */; };
+		4114D5B92B191F7600BBF674 /* SeasonsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5B82B191F7600BBF674 /* SeasonsListService.swift */; };
+		4114D5BC2B19200800BBF674 /* EpisodesListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5BB2B19200800BBF674 /* EpisodesListService.swift */; };
+		4114D5BF2B19218800BBF674 /* EpisodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5BE2B19218800BBF674 /* EpisodeService.swift */; };
+		4114D5C12B19269600BBF674 /* SeasonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5C02B19269600BBF674 /* SeasonsListView.swift */; };
+		4114D5C32B192D7800BBF674 /* SeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5C22B192D7800BBF674 /* SeasonView.swift */; };
 		4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C11F2B1628E200AA8328 /* Kingfisher */; };
 		41184C6425DFF63900B7A143 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6325DFF63900B7A143 /* Season.swift */; };
 		41184C6925E00A6900B7A143 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6825E00A6900B7A143 /* Episode.swift */; };
@@ -69,9 +72,6 @@
 /* Begin PBXFileReference section */
 		4109C185260235D3002CD17A /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		4109C1C226041CA6002CD17A /* SeasonsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsListViewModel.swift; sourceTree = "<group>"; };
-		4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
-		4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonTableViewCell.xib; sourceTree = "<group>"; };
-		4109C1E126041F7E002CD17A /* SeasonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsListViewController.swift; sourceTree = "<group>"; };
 		410B788C2B177E0800668FA7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4114D5A12B17A87000BBF674 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		4114D5A42B17F80B00BBF674 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -79,6 +79,12 @@
 		4114D5AB2B18C50200BBF674 /* EpisodeOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDayViewController.swift; sourceTree = "<group>"; };
 		4114D5AF2B18C54900BBF674 /* EpisodeOfTheDayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDayCoordinator.swift; sourceTree = "<group>"; };
 		4114D5B22B18C5C500BBF674 /* EpisodeOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDayViewModel.swift; sourceTree = "<group>"; };
+		4114D5B52B191EA200BBF674 /* SplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashService.swift; sourceTree = "<group>"; };
+		4114D5B82B191F7600BBF674 /* SeasonsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsListService.swift; sourceTree = "<group>"; };
+		4114D5BB2B19200800BBF674 /* EpisodesListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListService.swift; sourceTree = "<group>"; };
+		4114D5BE2B19218800BBF674 /* EpisodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeService.swift; sourceTree = "<group>"; };
+		4114D5C02B19269600BBF674 /* SeasonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsListView.swift; sourceTree = "<group>"; };
+		4114D5C22B192D7800BBF674 /* SeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonView.swift; sourceTree = "<group>"; };
 		41184C6325DFF63900B7A143 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		41184C6825E00A6900B7A143 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 		4109C1BE26041C45002CD17A /* Seasons */ = {
 			isa = PBXGroup;
 			children = (
+				4114D5B72B191F5300BBF674 /* Service */,
 				41C02299264F5AF2004E8437 /* Coordinator */,
 				4109C1C826041CD8002CD17A /* ViewModel */,
 				4109C1C726041CD0002CD17A /* View */,
@@ -164,8 +171,8 @@
 		4109C1C726041CD0002CD17A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4109C1CC26041DB5002CD17A /* Cell */,
-				4109C1E126041F7E002CD17A /* SeasonsListViewController.swift */,
+				4114D5C02B19269600BBF674 /* SeasonsListView.swift */,
+				4114D5C22B192D7800BBF674 /* SeasonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,15 +184,6 @@
 				41B592FD264FAA800055DDA2 /* SeasonViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		4109C1CC26041DB5002CD17A /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				4109C1DB26041EA2002CD17A /* SeasonTableViewCell.xib */,
-				4109C1DA26041EA2002CD17A /* SeasonTableViewCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		4114D5A32B17F7D900BBF674 /* TabBar */ = {
@@ -247,9 +245,42 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4114D5B42B191E8600BBF674 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4114D5B52B191EA200BBF674 /* SplashService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4114D5B72B191F5300BBF674 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4114D5B82B191F7600BBF674 /* SeasonsListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4114D5BA2B191FEE00BBF674 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4114D5BB2B19200800BBF674 /* EpisodesListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4114D5BD2B19216D00BBF674 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4114D5BE2B19218800BBF674 /* EpisodeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		411B46D82604F2E3002F3970 /* Episode Details */ = {
 			isa = PBXGroup;
 			children = (
+				4114D5BD2B19216D00BBF674 /* Service */,
 				411C2F08271849A10008B7AB /* Coordinator */,
 				411B46DF2604F319002F3970 /* ViewModel */,
 				411B46DE2604F311002F3970 /* View */,
@@ -373,6 +404,7 @@
 		419B4882264F64AD001F1BB3 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				4114D5B42B191E8600BBF674 /* Service */,
 				419B4883264F64D4001F1BB3 /* Coordinator */,
 				419B4884264F64DC001F1BB3 /* View Model */,
 				419B4885264F64E3001F1BB3 /* View */,
@@ -431,6 +463,7 @@
 		41CB9EE026044195002D29FC /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
+				4114D5BA2B191FEE00BBF674 /* Service */,
 				419B4881264F6056001F1BB3 /* Coordinator */,
 				41CB9EE12604419F002D29FC /* ViewModel */,
 				41CB9EE2260441A6002D29FC /* View */,
@@ -564,7 +597,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4109C1DD26041EA2002CD17A /* SeasonTableViewCell.xib in Resources */,
 				41CB9EF126044223002D29FC /* EpisodeTableViewCell.xib in Resources */,
 				418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */,
 				4163079C25DF416D009D4A4F /* Localizable.strings in Resources */,
@@ -615,8 +647,9 @@
 				4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */,
 				4114D5A52B17F80B00BBF674 /* MainTabBarController.swift in Sources */,
 				4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */,
+				4114D5C32B192D7800BBF674 /* SeasonView.swift in Sources */,
 				41B59306264FB4D50055DDA2 /* EpisodesCoordinator.swift in Sources */,
-				4109C1E226041F7E002CD17A /* SeasonsListViewController.swift in Sources */,
+				4114D5BF2B19218800BBF674 /* EpisodeService.swift in Sources */,
 				41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */,
 				41CB9EE9260441DA002D29FC /* EpisodesListViewController.swift in Sources */,
 				419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */,
@@ -630,11 +663,13 @@
 				418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */,
 				41B592FE264FAA800055DDA2 /* SeasonViewModel.swift in Sources */,
 				419B4892264F6641001F1BB3 /* SplashViewController.swift in Sources */,
+				4114D5BC2B19200800BBF674 /* EpisodesListService.swift in Sources */,
 				41CB9EF026044223002D29FC /* EpisodeTableViewCell.swift in Sources */,
 				411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */,
-				4109C1DC26041EA2002CD17A /* SeasonTableViewCell.swift in Sources */,
+				4114D5B62B191EA200BBF674 /* SplashService.swift in Sources */,
 				4114D5A92B181EC900BBF674 /* TabBarCoordinator.swift in Sources */,
 				4114D5B02B18C54900BBF674 /* EpisodeOfTheDayCoordinator.swift in Sources */,
+				4114D5C12B19269600BBF674 /* SeasonsListView.swift in Sources */,
 				41CB9EE4260441C3002D29FC /* EpisodesListViewModel.swift in Sources */,
 				4109C1C326041CA6002CD17A /* SeasonsListViewModel.swift in Sources */,
 				41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */,
@@ -645,6 +680,7 @@
 				4114D5A22B17A87000BBF674 /* HTTPClient.swift in Sources */,
 				4163086025DF54F1009D4A4F /* TVShow.swift in Sources */,
 				4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */,
+				4114D5B92B191F7600BBF674 /* SeasonsListService.swift in Sources */,
 				411B46E12604F335002F3970 /* EpisodeDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -741,7 +777,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -798,7 +834,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -817,7 +853,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = ThreatLevelMidnight/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TLM;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -838,7 +874,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = ThreatLevelMidnight/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TLM;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -858,7 +894,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV394V58Y3;
 				INFOPLIST_FILE = ThreatLevelMidnightTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -880,7 +916,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV394V58Y3;
 				INFOPLIST_FILE = ThreatLevelMidnightTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
