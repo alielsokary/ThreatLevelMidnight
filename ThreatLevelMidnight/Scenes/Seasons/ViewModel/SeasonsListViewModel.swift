@@ -16,7 +16,9 @@ class SeasonsListViewModel: ObservableObject {
     var seasons: PassthroughSubject = PassthroughSubject<[SeasonViewModel], Error>()
 
     @Published var isLoading: Bool = false
-    @Published var alertMessage: String?
+    @Published var showingAlert = false
+
+    @Published var alertMessage: String = ""
 
     private var cancellables = Set<AnyCancellable>()
 
@@ -31,6 +33,7 @@ class SeasonsListViewModel: ObservableObject {
 
 	func start() {
         isLoading = true
+        showingAlert = false
         service.getShow()
             .sink { [weak self] completions in
             switch completions {
@@ -39,6 +42,7 @@ class SeasonsListViewModel: ObservableObject {
 
             case let .failure(error):
                 self?.alertMessage = error.localizedDescription
+                self?.showingAlert = true
             }
             self?.isLoading = false
         } receiveValue: { [weak self] tvShow in

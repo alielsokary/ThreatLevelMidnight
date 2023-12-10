@@ -16,16 +16,24 @@ struct SeasonsListView: View {
     init(coordinator: SeasonsCoordinator, viewModel: SeasonsListViewModel) {
         self.coordinator = coordinator
         self.viewModel = viewModel
-        viewModel.start()
     }
 
     var body: some View {
+        if viewModel.isLoading {
+            ProgressView()
+                .progressViewStyle(.circular)
+        }
+
         ScrollView {
             ForEach( viewModel.seasonsViewModel, id: \.self) { viewModel in
                 SeasonView(viewModel: viewModel).onTapGesture {
                     coordinator.coordinateToEpisodesList(with: viewModel)
                 }
+            }.onAppear {
+                viewModel.start()
             }
+        }.alert(isPresented: $viewModel.showingAlert) {
+            Alert(title: Text(viewModel.alertMessage))
         }
     }
 }
