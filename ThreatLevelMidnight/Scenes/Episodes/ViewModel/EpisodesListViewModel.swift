@@ -9,12 +9,14 @@
 import Foundation
 import Combine
 
-class EpisodesListViewModel {
+class EpisodesListViewModel: ObservableObject {
 
 	private let service: EpisodesListService!
     private var cancellables = Set<AnyCancellable>()
 
-    @Published var alertMessage: String?
+    @Published var showingAlert = false
+    @Published var alertMessage: String = ""
+
     @Published var isLoading: Bool = false
 
     var episodes: PassthroughSubject = PassthroughSubject<[EpisodeViewModel], Error>()
@@ -27,6 +29,7 @@ class EpisodesListViewModel {
 	init(service: EpisodesListService, season: Int?) {
 		self.service = service
         isLoading = true
+        showingAlert = false
         service.getSeason(season: season!)
             .sink { [weak self] completion in
                 switch completion {
@@ -34,6 +37,7 @@ class EpisodesListViewModel {
                     break
                 case let .failure(error):
                     self?.alertMessage = error.localizedDescription
+                    self?.showingAlert = true
                 }
                 self?.isLoading = false
         } receiveValue: { [weak self] season in
