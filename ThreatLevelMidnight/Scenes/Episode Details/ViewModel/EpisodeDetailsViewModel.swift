@@ -24,8 +24,8 @@ class EpisodeDetailsViewModel: ObservableObject {
     var writtenByTitle: String = "Written By"
     @Published var director: String = ""
     @Published var writer: String = ""
-
-    var episode: PassthroughSubject = PassthroughSubject<EpisodeViewModel, Error>()
+    var airDateTitle: String = "Air Date"
+    @Published var airDate: String = ""
 
     func getDirector(episode: EpisodeViewModel) {
         director = ((episode.crew?.filter { $0.job == "Director" }.first)?.name)!
@@ -33,6 +33,20 @@ class EpisodeDetailsViewModel: ObservableObject {
 
     func getWriter(episode: EpisodeViewModel) {
         writer = ((episode.crew?.filter { $0.job == "Writer" }.first)?.name)!
+    }
+
+    func getAirDate(episode: EpisodeViewModel) {
+        let dateString = episode.airDate!
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+
+        if let date = dateFormatter.date(from: dateString) {
+            dateFormatter.dateFormat = "MMM, dd, yyyy"
+            let formattedDate = dateFormatter.string(from: date)
+
+            airDate = formattedDate
+        }
     }
 
 	init(service: EpisodeService, season: Int?, episode: Int?) {
@@ -55,8 +69,7 @@ class EpisodeDetailsViewModel: ObservableObject {
             self?.episodeOverView = episodeViewModel.overview
             self?.getDirector(episode: episodeViewModel)
             self?.getWriter(episode: episodeViewModel)
-
-            self?.episode.send(episodeViewModel)
+            self?.getAirDate(episode: episodeViewModel)
 
         }.store(in: &cancellables)
 	}

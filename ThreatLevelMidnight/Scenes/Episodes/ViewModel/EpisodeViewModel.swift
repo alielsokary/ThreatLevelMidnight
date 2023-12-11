@@ -17,6 +17,7 @@ struct EpisodeViewModel: Hashable {
 	let image: String?
     let episodeTitle: String
     let crew: [Crew]?
+    let airDate: String?
 
 	init(episode: Episode) {
 		self.seasonNumber = episode.seasonNumber
@@ -26,5 +27,6 @@ struct EpisodeViewModel: Hashable {
 		self.image = episode.posterUrl()
         self.episodeTitle = "E\(self.number ?? 0): \(self.name ?? "")"
         self.crew = episode.crew
+        self.airDate = episode.airDate
 	}
 }

@@ -80,6 +80,21 @@ struct EpisodeDetailsView: View {
                         .foregroundStyle(.black)
                         .padding(.leading)
                         .padding(.trailing)
+
+                    Spacer()
+
+                    Text(viewModel.airDateTitle)
+                        .bold()
+                        .font(.system(.title3, design: .rounded))
+                        .foregroundStyle(.black)
+                        .padding(.leading)
+                        .padding(.trailing)
+
+                    Text(viewModel.airDate)
+                        .font(.system(.subheadline, design: .rounded))
+                        .foregroundStyle(.black)
+                        .padding(.leading)
+                        .padding(.trailing)
                 }
             }
         }

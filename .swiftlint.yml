@@ -3,3 +3,4 @@ disabled_rules:
 - unused_optional_binding
 - identifier_name
 - nesting
+- force_try
