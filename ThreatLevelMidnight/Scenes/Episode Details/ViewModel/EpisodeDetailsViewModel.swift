@@ -20,8 +20,20 @@ class EpisodeDetailsViewModel: ObservableObject {
     @Published var episodeImage: String? = ""
     @Published var episodeTitle: String? = ""
     @Published var episodeOverView: String? = ""
+    var directedByTitle: String = "Directed By"
+    var writtenByTitle: String = "Written By"
+    @Published var director: String = ""
+    @Published var writer: String = ""
 
     var episode: PassthroughSubject = PassthroughSubject<EpisodeViewModel, Error>()
+
+    func getDirector(episode: EpisodeViewModel) {
+        director = ((episode.crew?.filter { $0.job == "Director" }.first)?.name)!
+    }
+
+    func getWriter(episode: EpisodeViewModel) {
+        writer = ((episode.crew?.filter { $0.job == "Writer" }.first)?.name)!
+    }
 
 	init(service: EpisodeService, season: Int?, episode: Int?) {
 		self.service = service
@@ -41,6 +53,8 @@ class EpisodeDetailsViewModel: ObservableObject {
             self?.episodeImage = episodeViewModel.image ?? ""
             self?.episodeTitle = episodeViewModel.episodeTitle
             self?.episodeOverView = episodeViewModel.overview
+            self?.getDirector(episode: episodeViewModel)
+            self?.getWriter(episode: episodeViewModel)
 
             self?.episode.send(episodeViewModel)
 

@@ -50,10 +50,38 @@ struct EpisodeDetailsView: View {
                         .foregroundStyle(.black)
                         .padding(.leading)
                         .padding(.trailing)
+
+                    Spacer()
+
+                    Text(viewModel.directedByTitle)
+                        .bold()
+                        .font(.system(.title3, design: .rounded))
+                        .foregroundStyle(.black)
+                        .padding(.leading)
+                        .padding(.trailing)
+
+                    Text(viewModel.director)
+                        .font(.system(.subheadline, design: .rounded))
+                        .foregroundStyle(.black)
+                        .padding(.leading)
+                        .padding(.trailing)
+
+                    Spacer()
+
+                    Text(viewModel.writtenByTitle)
+                        .bold()
+                        .font(.system(.title3, design: .rounded))
+                        .foregroundStyle(.black)
+                        .padding(.leading)
+                        .padding(.trailing)
+
+                    Text(viewModel.writer)
+                        .font(.system(.subheadline, design: .rounded))
+                        .foregroundStyle(.black)
+                        .padding(.leading)
+                        .padding(.trailing)
                 }
-
             }
-
         }
     }
 }
