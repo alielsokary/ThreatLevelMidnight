@@ -26,7 +26,7 @@ class EpisodesCoordinator: Coordinator {
         let view = EpisodesListView(coordinator: self, viewModel: viewModel)
 
         let hostingController = UIHostingController(rootView: view)
-        navigationController.pushViewController(hostingController, animated: false)
+        navigationController.pushViewController(hostingController, animated: true)
 	}
 
     func coordinateToEpisodeDetails(with viewModel: EpisodeViewModel) {

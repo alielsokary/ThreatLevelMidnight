@@ -41,7 +41,6 @@ struct EpisodeDetailsView: View {
                         .bold()
                         .font(.system(.largeTitle, design: .rounded))
                         .foregroundStyle(.black)
-                        .shadow(color: .black.opacity(0.5), radius: 10, x: 0.0, y: 2.0)
                         .padding(.leading)
                         .padding(.trailing)
 

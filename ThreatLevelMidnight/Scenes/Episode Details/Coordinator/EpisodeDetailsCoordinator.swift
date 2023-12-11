@@ -26,7 +26,7 @@ class EpisodeDetailsCoordinator: Coordinator {
         let view = EpisodeDetailsView(coordinator: self, viewModel: viewModel)
 
         let hostingController = UIHostingController(rootView: view)
-        navigationController.pushViewController(hostingController, animated: false)
+        navigationController.pushViewController(hostingController, animated: true)
 
 	}
 }

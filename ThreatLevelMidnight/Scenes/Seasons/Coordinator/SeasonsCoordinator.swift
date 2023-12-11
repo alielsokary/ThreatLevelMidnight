@@ -24,7 +24,7 @@ class SeasonsCoordinator: Coordinator {
         let view = SeasonsListView(coordinator: self, viewModel: viewModel)
         let hostingController = UIHostingController(rootView: view)
         hostingController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-        navigationController.pushViewController(hostingController, animated: false)
+        navigationController.pushViewController(hostingController, animated: true)
 	}
 
     func coordinateToEpisodesList(with viewModel: SeasonViewModel) {

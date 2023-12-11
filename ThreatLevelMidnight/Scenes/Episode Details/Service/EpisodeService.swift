@@ -9,12 +9,12 @@
 import Combine
 
 protocol EpisodeService {
-    func getSeason(season: Int, episode: Int) -> AnyPublisher<Episode, NetworkRequestError>
+    func getEpisode(season: Int, episode: Int) -> AnyPublisher<Episode, NetworkRequestError>
 }
 
 class EpisodeServiceImpl: EpisodeService {
     let service = TMDBServiceImpl()
-    func getSeason(season: Int, episode: Int) -> AnyPublisher<Episode, NetworkRequestError> {
+    func getEpisode(season: Int, episode: Int) -> AnyPublisher<Episode, NetworkRequestError> {
         service.dispatch(TMDBRouter.GetEpisode(season: season, episode: episode))
     }
 }

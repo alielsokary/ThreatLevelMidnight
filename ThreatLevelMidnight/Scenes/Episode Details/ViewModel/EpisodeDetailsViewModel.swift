@@ -26,7 +26,7 @@ class EpisodeDetailsViewModel: ObservableObject {
 	init(service: EpisodeService, season: Int?, episode: Int?) {
 		self.service = service
         isLoading = true
-        service.getSeason(season: season!, episode: episode!)
+        service.getEpisode(season: season!, episode: episode!)
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
