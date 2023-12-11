@@ -59,62 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfz-TA-btI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131.8840579710145" y="-642.1875"/>
-        </scene>
-        <!--Episode Details View Controller-->
-        <scene sceneID="Nz1-pR-ETi">
-            <objects>
-                <viewController storyboardIdentifier="EpisodeDetailsViewController" id="Rqn-Bj-TjR" customClass="EpisodeDetailsViewController" customModule="TLM" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="48o-6e-G7M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-QC-l0h">
-                                <rect key="frame" x="16" y="64" width="382" height="782"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wk6-lp-pAb">
-                                        <rect key="frame" x="71" y="0.0" width="240" height="128"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTa-T1-x14">
-                                        <rect key="frame" x="170.5" y="154" width="41.5" height="535"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcu-cW-Q38">
-                                        <rect key="frame" x="170.5" y="715" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzD-4A-C3b">
-                                        <rect key="frame" x="170.5" y="761.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="a4M-5i-R1F"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="j0B-QC-l0h" firstAttribute="top" secondItem="a4M-5i-R1F" secondAttribute="top" constant="16" id="Rfz-gT-r0D"/>
-                            <constraint firstItem="a4M-5i-R1F" firstAttribute="bottom" secondItem="j0B-QC-l0h" secondAttribute="bottom" constant="16" id="SRf-ZL-5r6"/>
-                            <constraint firstItem="j0B-QC-l0h" firstAttribute="leading" secondItem="a4M-5i-R1F" secondAttribute="leading" constant="16" id="eWa-GI-ofh"/>
-                            <constraint firstItem="a4M-5i-R1F" firstAttribute="trailing" secondItem="j0B-QC-l0h" secondAttribute="trailing" constant="16" id="vax-gk-yp2"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="TXY-nw-EQ7"/>
-                    <connections>
-                        <outlet property="episodeImageView" destination="Wk6-lp-pAb" id="UaT-kN-Bpx"/>
-                        <outlet property="episodeNameLabel" destination="VTa-T1-x14" id="w7D-OA-SHO"/>
-                        <outlet property="episodeOverView" destination="kcu-cW-Q38" id="h9q-f5-eOD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hg6-8O-Pmb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1917" y="29"/>
+            <point key="canvasLocation" x="1114" y="29"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="jLk-mc-ihH">

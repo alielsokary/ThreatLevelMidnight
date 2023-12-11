@@ -9,13 +9,17 @@
 import Foundation
 import Combine
 
-class EpisodeDetailsViewModel {
+class EpisodeDetailsViewModel: ObservableObject {
 
 	private let service: EpisodeService!
     private var cancellables = Set<AnyCancellable>()
 
     @Published var alertMessage: String?
     @Published var isLoading: Bool = false
+
+    @Published var episodeImage: String? = ""
+    @Published var episodeTitle: String? = ""
+    @Published var episodeOverView: String? = ""
 
     var episode: PassthroughSubject = PassthroughSubject<EpisodeViewModel, Error>()
 
@@ -34,6 +38,10 @@ class EpisodeDetailsViewModel {
         } receiveValue: { [weak self] episode in
 
             let episodeViewModel = EpisodeViewModel(episode: episode)
+            self?.episodeImage = episodeViewModel.image ?? ""
+            self?.episodeTitle = episodeViewModel.episodeTitle
+            self?.episodeOverView = episodeViewModel.overview
+
             self?.episode.send(episodeViewModel)
 
         }.store(in: &cancellables)

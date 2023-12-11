@@ -6,7 +6,7 @@
 //  Copyright © 2021 mag. All rights reserved.
 //
 
-import UIKit
+import SwiftUI
 
 class EpisodeDetailsCoordinator: Coordinator {
 
@@ -22,11 +22,11 @@ class EpisodeDetailsCoordinator: Coordinator {
 
     func start() {
 		let viewModel = EpisodeDetailsViewModel(service: service, season: episodeViewModel.seasonNumber, episode: episodeViewModel.number)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(identifier: "EpisodeDetailsViewController") { coder in
-			return EpisodeDetailsViewController(coder: coder, viewModel: viewModel)
-		}
 
-        navigationController.pushViewController(viewController, animated: true)
+        let view = EpisodeDetailsView(coordinator: self, viewModel: viewModel)
+
+        let hostingController = UIHostingController(rootView: view)
+        navigationController.pushViewController(hostingController, animated: false)
+
 	}
 }

@@ -6,7 +6,6 @@
 //  Copyright © 2021 mag. All rights reserved.
 //
 
-import UIKit
 import SwiftUI
 
 class SeasonsCoordinator: Coordinator {
