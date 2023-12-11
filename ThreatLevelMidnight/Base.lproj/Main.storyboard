@@ -61,37 +61,6 @@
             </objects>
             <point key="canvasLocation" x="1131.8840579710145" y="-642.1875"/>
         </scene>
-        <!--Seasons List View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="SeasonsListViewController" id="BYZ-38-t0r" customClass="SeasonsListViewController" customModule="TLM" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U2J-XQ-gl8">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U2J-XQ-gl8" secondAttribute="trailing" id="PPJ-hQ-tYS"/>
-                            <constraint firstItem="U2J-XQ-gl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eiD-ov-v7P"/>
-                            <constraint firstItem="U2J-XQ-gl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qEO-HW-UbQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U2J-XQ-gl8" secondAttribute="bottom" id="tmy-fV-f0B"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="YAb-dK-rmB"/>
-                    <connections>
-                        <outlet property="tableView" destination="U2J-XQ-gl8" id="sWR-QE-XPF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1133" y="29"/>
-        </scene>
         <!--Episode Details View Controller-->
         <scene sceneID="Nz1-pR-ETi">
             <objects>
@@ -145,38 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hg6-8O-Pmb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="716"/>
-        </scene>
-        <!--Episodes List View Controller-->
-        <scene sceneID="GiH-aT-Idq">
-            <objects>
-                <viewController storyboardIdentifier="EpisodesViewController" id="UWZ-M0-Lvk" customClass="EpisodesListViewController" customModule="TLM" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eGA-LJ-0h3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6xL-h7-B3h">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="d0p-rF-T2o"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6xL-h7-B3h" firstAttribute="leading" secondItem="d0p-rF-T2o" secondAttribute="leading" id="68b-DQ-qPb"/>
-                            <constraint firstItem="d0p-rF-T2o" firstAttribute="trailing" secondItem="6xL-h7-B3h" secondAttribute="trailing" id="C61-Sw-Pdd"/>
-                            <constraint firstItem="d0p-rF-T2o" firstAttribute="bottom" secondItem="6xL-h7-B3h" secondAttribute="bottom" id="hZ7-RS-Fa2"/>
-                            <constraint firstItem="6xL-h7-B3h" firstAttribute="top" secondItem="d0p-rF-T2o" secondAttribute="top" id="qCI-6l-A5T"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="ccs-af-9b6"/>
-                    <connections>
-                        <outlet property="tableView" destination="6xL-h7-B3h" id="CXV-L6-OQR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qa-pJ-w4n" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1132" y="716"/>
+            <point key="canvasLocation" x="1917" y="29"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="jLk-mc-ihH">

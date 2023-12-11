@@ -8,20 +8,22 @@
 
 import Foundation
 
-struct EpisodeViewModel {
+struct EpisodeViewModel: Hashable {
 
 	let seasonNumber: Int?
 	let number: Int?
 	let name: String?
-	let overview: String?
+	let overview: String
 	let image: String?
+    let episodeTitle: String
 
 	init(episode: Episode) {
 		self.seasonNumber = episode.seasonNumber
 		self.number = episode.episodeNumber
 		self.name = episode.name
-		self.overview = episode.overview
+		self.overview = episode.overview ?? ""
 		self.image = episode.posterUrl()
+        self.episodeTitle = "E\(self.number ?? 0): \(self.name ?? "")"
 	}
 
 }

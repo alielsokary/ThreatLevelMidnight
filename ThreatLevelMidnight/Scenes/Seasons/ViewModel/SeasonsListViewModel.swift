@@ -17,7 +17,6 @@ class SeasonsListViewModel: ObservableObject {
 
     @Published var isLoading: Bool = false
     @Published var showingAlert = false
-
     @Published var alertMessage: String = ""
 
     private var cancellables = Set<AnyCancellable>()
