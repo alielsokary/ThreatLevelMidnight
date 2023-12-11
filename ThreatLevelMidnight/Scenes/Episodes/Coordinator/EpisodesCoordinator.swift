@@ -26,6 +26,7 @@ class EpisodesCoordinator: Coordinator {
         let view = EpisodesListView(coordinator: self, viewModel: viewModel)
 
         let hostingController = UIHostingController(rootView: view)
+        hostingController.hidesBottomBarWhenPushed = true
         navigationController.pushViewController(hostingController, animated: true)
 	}
 

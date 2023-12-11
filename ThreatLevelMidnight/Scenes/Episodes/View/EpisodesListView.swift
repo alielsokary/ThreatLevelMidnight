@@ -24,6 +24,7 @@ struct EpisodesListView: View {
                 .progressViewStyle(.circular)
         }
 
+        NavigationView {
         ScrollView {
             ForEach( viewModel.episodesViewModel, id: \.self) { viewModel in
                 EpisodeView(viewModel: viewModel).onTapGesture {
@@ -33,5 +34,6 @@ struct EpisodesListView: View {
         }.alert(isPresented: $viewModel.showingAlert) {
             Alert(title: Text(viewModel.alertMessage))
         }
+        }.navigationTitle(Text("\(viewModel.seasonTitle)"))
     }
 }
