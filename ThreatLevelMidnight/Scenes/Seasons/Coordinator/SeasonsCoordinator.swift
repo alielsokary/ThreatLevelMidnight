@@ -23,7 +23,8 @@ class SeasonsCoordinator: Coordinator {
 		let viewModel = SeasonsListViewModel(service: service)
         let view = SeasonsListView(coordinator: self, viewModel: viewModel)
         let hostingController = UIHostingController(rootView: view)
-        hostingController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        let systemIcon = UIImage(systemName: "list.bullet.rectangle")
+        hostingController.tabBarItem = UITabBarItem(title: viewModel.title, image: systemIcon, tag: 1)
         navigationController.pushViewController(hostingController, animated: true)
 	}
 

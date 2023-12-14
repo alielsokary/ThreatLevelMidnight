@@ -25,7 +25,8 @@ class EpisodeOfTheDayCoordinator: Coordinator {
         let viewController = storyboard.instantiateViewController(identifier: "EpisodeOfTheDayViewController", creator: { coder in
             return EpisodeOfTheDayViewController(coder: coder, coordinator: self, viewModel: viewModel)
         })
-        viewController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        let systemIcon = UIImage(systemName: "doc.plaintext.fill")
+        viewController.tabBarItem = UITabBarItem(title: viewModel.title, image: systemIcon, tag: 0)
         navigationController.pushViewController(viewController, animated: false)
     }
 

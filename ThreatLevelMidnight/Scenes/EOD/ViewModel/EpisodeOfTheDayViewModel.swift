@@ -10,4 +10,5 @@ import Foundation
 
 class EpisodeOfTheDayViewModel {
 
+    var title: String { "EOD" }
 }
