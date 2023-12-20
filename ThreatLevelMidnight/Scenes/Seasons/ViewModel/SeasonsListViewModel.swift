@@ -19,6 +19,8 @@ class SeasonsListViewModel: ObservableObject {
     @Published var showingAlert = false
     @Published var alertMessage: String = ""
 
+    var title: String = "The Office"
+
     private var cancellables = Set<AnyCancellable>()
 
 	init(service: SeasonListService) {

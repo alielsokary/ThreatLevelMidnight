@@ -24,10 +24,8 @@
 		4114D5C32B192D7800BBF674 /* SeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5C22B192D7800BBF674 /* SeasonView.swift */; };
 		41157C4E2B26863C00FC393B /* EpisodesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41157C4D2B26863C00FC393B /* EpisodesListView.swift */; };
 		41157C502B26865600FC393B /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41157C4F2B26865600FC393B /* EpisodeView.swift */; };
-		4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4116C11F2B1628E200AA8328 /* Kingfisher */; };
 		41184C6425DFF63900B7A143 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6325DFF63900B7A143 /* Season.swift */; };
 		41184C6925E00A6900B7A143 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41184C6825E00A6900B7A143 /* Episode.swift */; };
-		411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */; };
 		411B46E12604F335002F3970 /* EpisodeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411B46E02604F335002F3970 /* EpisodeDetailsViewModel.swift */; };
 		411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F09271849BF0008B7AB /* EpisodeDetailsCoordinator.swift */; };
 		411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2F0B27184B340008B7AB /* EpisodeViewModel.swift */; };
@@ -37,6 +35,7 @@
 		41251D3227388FE60001362C /* SeasonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D3127388FE60001362C /* SeasonViewModelTests.swift */; };
 		41251D36273897670001362C /* EpisodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D35273897670001362C /* EpisodeViewModelTests.swift */; };
 		413A9CB42B16349C00625B1C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB32B16349C00625B1C /* PKHUD */; };
+		414789622B268F1F00E49F33 /* EpisodeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414789612B268F1F00E49F33 /* EpisodeDetailsView.swift */; };
 		4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163075E25DF3EFD009D4A4F /* APIConstants.swift */; };
 		4163076425DF3F0C009D4A4F /* TMDBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076325DF3F0C009D4A4F /* TMDBRouter.swift */; };
 		4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163076825DF3F1C009D4A4F /* APIClient.swift */; };
@@ -88,7 +87,6 @@
 		41157C4F2B26865600FC393B /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		41184C6325DFF63900B7A143 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		41184C6825E00A6900B7A143 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewController.swift; sourceTree = "<group>"; };
 		411B46E02604F335002F3970 /* EpisodeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewModel.swift; sourceTree = "<group>"; };
 		411C2F09271849BF0008B7AB /* EpisodeDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsCoordinator.swift; sourceTree = "<group>"; };
 		411C2F0B27184B340008B7AB /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
@@ -97,6 +95,7 @@
 		4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41251D3127388FE60001362C /* SeasonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModelTests.swift; sourceTree = "<group>"; };
 		41251D35273897670001362C /* EpisodeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModelTests.swift; sourceTree = "<group>"; };
+		414789612B268F1F00E49F33 /* EpisodeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsView.swift; sourceTree = "<group>"; };
 		4163075E25DF3EFD009D4A4F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		4163076325DF3F0C009D4A4F /* TMDBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBRouter.swift; sourceTree = "<group>"; };
 		4163076825DF3F1C009D4A4F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -127,7 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4116C1202B1628E200AA8328 /* Kingfisher in Frameworks */,
 				413A9CB42B16349C00625B1C /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +287,7 @@
 		411B46DE2604F311002F3970 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				411B46D92604F30D002F3970 /* EpisodeDetailsViewController.swift */,
+				414789612B268F1F00E49F33 /* EpisodeDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,7 +511,6 @@
 			);
 			name = ThreatLevelMidnight;
 			packageProductDependencies = (
-				4116C11F2B1628E200AA8328 /* Kingfisher */,
 				413A9CB32B16349C00625B1C /* PKHUD */,
 			);
 			productName = ThreatLevelMidnight;
@@ -568,7 +565,6 @@
 			);
 			mainGroup = 418B670024A8D71F00E857F7;
 			packageReferences = (
-				4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 418B670A24A8D71F00E857F7 /* Products */;
@@ -643,7 +639,6 @@
 				41157C502B26865600FC393B /* EpisodeView.swift in Sources */,
 				41157C4E2B26863C00FC393B /* EpisodesListView.swift in Sources */,
 				41184C6425DFF63900B7A143 /* Season.swift in Sources */,
-				411B46DA2604F30D002F3970 /* EpisodeDetailsViewController.swift in Sources */,
 				411C2F102718BEAF0008B7AB /* APIError.swift in Sources */,
 				419B488D264F6593001F1BB3 /* TMDBService.swift in Sources */,
 				41184C6925E00A6900B7A143 /* Episode.swift in Sources */,
@@ -666,6 +661,7 @@
 				411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */,
 				41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */,
 				4114D5A22B17A87000BBF674 /* HTTPClient.swift in Sources */,
+				414789622B268F1F00E49F33 /* EpisodeDetailsView.swift in Sources */,
 				4163086025DF54F1009D4A4F /* TVShow.swift in Sources */,
 				4163076925DF3F1C009D4A4F /* APIClient.swift in Sources */,
 				4114D5B92B191F7600BBF674 /* SeasonsListService.swift in Sources */,
@@ -951,14 +947,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.10.0;
-			};
-		};
 		413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pkluz/PKHUD.git";
@@ -970,11 +958,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4116C11F2B1628E200AA8328 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4116C11E2B1628E100AA8328 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
 		413A9CB32B16349C00625B1C /* PKHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 413A9CB22B16349C00625B1C /* XCRemoteSwiftPackageReference "PKHUD" */;

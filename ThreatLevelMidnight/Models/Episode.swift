@@ -42,7 +42,7 @@ struct Episode: Codable {
 }
 
 // MARK: - Crew
-struct Crew: Codable {
+struct Crew: Codable, Hashable {
 	let id: Int?
 	let name, originalName: String?
 	let department: String?

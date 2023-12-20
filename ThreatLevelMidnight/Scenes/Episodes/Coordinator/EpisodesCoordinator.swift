@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 class EpisodesCoordinator: Coordinator {
 
@@ -27,7 +26,8 @@ class EpisodesCoordinator: Coordinator {
         let view = EpisodesListView(coordinator: self, viewModel: viewModel)
 
         let hostingController = UIHostingController(rootView: view)
-        navigationController.pushViewController(hostingController, animated: false)
+        hostingController.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(hostingController, animated: true)
 	}
 
     func coordinateToEpisodeDetails(with viewModel: EpisodeViewModel) {

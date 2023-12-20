@@ -23,17 +23,18 @@ struct SeasonsListView: View {
             ProgressView()
                 .progressViewStyle(.circular)
         }
-
-        ScrollView {
-            ForEach( viewModel.seasonsViewModel, id: \.self) { viewModel in
-                SeasonView(viewModel: viewModel).onTapGesture {
-                    coordinator.coordinateToEpisodesList(with: viewModel)
+        NavigationView {
+            ScrollView {
+                ForEach( viewModel.seasonsViewModel, id: \.self) { viewModel in
+                    SeasonView(viewModel: viewModel).onTapGesture {
+                        coordinator.coordinateToEpisodesList(with: viewModel)
+                    }
+                }.onAppear {
+                    viewModel.start()
                 }
-            }.onAppear {
-                viewModel.start()
+            }.alert(isPresented: $viewModel.showingAlert) {
+                Alert(title: Text(viewModel.alertMessage))
             }
-        }.alert(isPresented: $viewModel.showingAlert) {
-            Alert(title: Text(viewModel.alertMessage))
-        }
+        }.navigationTitle(viewModel.title)
     }
 }

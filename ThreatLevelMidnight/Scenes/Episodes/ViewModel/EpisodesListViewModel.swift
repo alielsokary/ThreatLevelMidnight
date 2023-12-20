@@ -19,6 +19,8 @@ class EpisodesListViewModel: ObservableObject {
 
     @Published var isLoading: Bool = false
 
+    @Published var seasonTitle: String = ""
+
     var episodes: PassthroughSubject = PassthroughSubject<[EpisodeViewModel], Error>()
 
     private var _episodesViewModel: [EpisodeViewModel] = []
@@ -27,6 +29,7 @@ class EpisodesListViewModel: ObservableObject {
     }
 
 	init(service: EpisodesListService, season: Int?) {
+        seasonTitle = "Season \(season!)"
 		self.service = service
         isLoading = true
         showingAlert = false
