@@ -13,7 +13,6 @@
 		4114D5A22B17A87000BBF674 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5A12B17A87000BBF674 /* HTTPClient.swift */; };
 		4114D5A52B17F80B00BBF674 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5A42B17F80B00BBF674 /* MainTabBarController.swift */; };
 		4114D5A92B181EC900BBF674 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5A82B181EC900BBF674 /* TabBarCoordinator.swift */; };
-		4114D5AC2B18C50200BBF674 /* EpisodeOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5AB2B18C50200BBF674 /* EpisodeOfTheDayViewController.swift */; };
 		4114D5B02B18C54900BBF674 /* EpisodeOfTheDayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5AF2B18C54900BBF674 /* EpisodeOfTheDayCoordinator.swift */; };
 		4114D5B32B18C5C500BBF674 /* EpisodeOfTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5B22B18C5C500BBF674 /* EpisodeOfTheDayViewModel.swift */; };
 		4114D5B62B191EA200BBF674 /* SplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114D5B52B191EA200BBF674 /* SplashService.swift */; };
@@ -34,6 +33,7 @@
 		4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */; };
 		41251D3227388FE60001362C /* SeasonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D3127388FE60001362C /* SeasonViewModelTests.swift */; };
 		41251D36273897670001362C /* EpisodeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41251D35273897670001362C /* EpisodeViewModelTests.swift */; };
+		412956392B33A6EC00EFC279 /* EpisodeOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412956382B33A6EC00EFC279 /* EpisodeOfTheDayView.swift */; };
 		413A9CB42B16349C00625B1C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 413A9CB32B16349C00625B1C /* PKHUD */; };
 		414789622B268F1F00E49F33 /* EpisodeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414789612B268F1F00E49F33 /* EpisodeDetailsView.swift */; };
 		4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163075E25DF3EFD009D4A4F /* APIConstants.swift */; };
@@ -74,7 +74,6 @@
 		4114D5A12B17A87000BBF674 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		4114D5A42B17F80B00BBF674 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4114D5A82B181EC900BBF674 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
-		4114D5AB2B18C50200BBF674 /* EpisodeOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDayViewController.swift; sourceTree = "<group>"; };
 		4114D5AF2B18C54900BBF674 /* EpisodeOfTheDayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDayCoordinator.swift; sourceTree = "<group>"; };
 		4114D5B22B18C5C500BBF674 /* EpisodeOfTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDayViewModel.swift; sourceTree = "<group>"; };
 		4114D5B52B191EA200BBF674 /* SplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashService.swift; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		4120A8F92717ABFD003E2A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41251D3127388FE60001362C /* SeasonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewModelTests.swift; sourceTree = "<group>"; };
 		41251D35273897670001362C /* EpisodeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModelTests.swift; sourceTree = "<group>"; };
+		412956382B33A6EC00EFC279 /* EpisodeOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDayView.swift; sourceTree = "<group>"; };
 		414789612B268F1F00E49F33 /* EpisodeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsView.swift; sourceTree = "<group>"; };
 		4163075E25DF3EFD009D4A4F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		4163076325DF3F0C009D4A4F /* TMDBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBRouter.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 		4114D5AD2B18C50500BBF674 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4114D5AB2B18C50200BBF674 /* EpisodeOfTheDayViewController.swift */,
+				412956382B33A6EC00EFC279 /* EpisodeOfTheDayView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -627,7 +627,6 @@
 			files = (
 				4114D5B32B18C5C500BBF674 /* EpisodeOfTheDayViewModel.swift in Sources */,
 				419B4897264F667A001F1BB3 /* SplashViewModel.swift in Sources */,
-				4114D5AC2B18C50200BBF674 /* EpisodeOfTheDayViewController.swift in Sources */,
 				4120A8FA2717ABFD003E2A69 /* SceneDelegate.swift in Sources */,
 				4114D5A52B17F80B00BBF674 /* MainTabBarController.swift in Sources */,
 				4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */,
@@ -649,6 +648,7 @@
 				419B4892264F6641001F1BB3 /* SplashViewController.swift in Sources */,
 				4114D5BC2B19200800BBF674 /* EpisodesListService.swift in Sources */,
 				411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */,
+				412956392B33A6EC00EFC279 /* EpisodeOfTheDayView.swift in Sources */,
 				4114D5B62B191EA200BBF674 /* SplashService.swift in Sources */,
 				4114D5A92B181EC900BBF674 /* TabBarCoordinator.swift in Sources */,
 				4114D5B02B18C54900BBF674 /* EpisodeOfTheDayCoordinator.swift in Sources */,
