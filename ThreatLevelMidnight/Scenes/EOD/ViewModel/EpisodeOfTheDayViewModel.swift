@@ -29,9 +29,25 @@ class EpisodeOfTheDayViewModel: ObservableObject {
     }
 
     init(service: EpisodeService) {
+        let episodeOfTheDayService = EpisodeOfTheDayServiceImpl()
         self.service = service
         isLoading = true
-        let (season, episode) = getEpisodeDetails()
+        episodeOfTheDayService.getEpisodeOfTheDay()
+            .sink { [weak self] completion in
+                switch completion {
+                case .finished:
+                    break
+                case let .failure(error):
+                    self?.alertMessage = error.localizedDescription
+                }
+                self?.isLoading = false
+        } receiveValue: { [weak self] ep in
+            self?.getEpisodeDetails(season: ep.season, episode: ep.episode)
+
+        }.store(in: &cancellables)
+    }
+
+    func getEpisodeDetails(season: Int, episode: Int) {
         service.getEpisode(season: season, episode: episode)
             .sink { [weak self] completion in
                 switch completion {
@@ -47,38 +63,5 @@ class EpisodeOfTheDayViewModel: ObservableObject {
             self?.getEpisodeDetails(episode: episodeViewModel)
 
         }.store(in: &cancellables)
-    }
-
-}
-
-protocol EpisodeOfTheDayLogic {
-    var seasons: [Int] { get }
-    var episodes: [[Int]] { get }
-
-    func getEpisodeDetails() -> (Int, Int)
-}
-
-extension EpisodeOfTheDayViewModel: EpisodeOfTheDayLogic {
-    var seasons: [Int] {
-        [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    }
-
-    var episodes: [[Int]] {
-        [[1, 2, 3, 4, 5, 6],
-        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
-                                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
-                                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-                                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26],
-                                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-                                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-                                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-                                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]]
-    }
-
-    func getEpisodeDetails() -> (Int, Int) {
-        let season = seasons.randomElement()!
-        let episode = episodes[season-1].randomElement()!
-
-        return (season, episode)
     }
 }

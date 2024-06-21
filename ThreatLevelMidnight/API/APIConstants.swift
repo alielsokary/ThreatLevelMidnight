@@ -19,6 +19,10 @@ struct APIConstants {
 	static let episode = "episode"
 	static let tmdbURL = "https://api.themoviedb.org/\(version)"
 
+    static let episodeOfTheDay = "eod.json"
+
+    static let githubPagesURL = "https://alielsokary.github.io/ThreatLevelMidnight-Backend"
+
 	enum ParameterKey: String {
 		case id
 		case language

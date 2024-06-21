@@ -53,6 +53,11 @@
 		41B59306264FB4D50055DDA2 /* EpisodesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B59305264FB4D50055DDA2 /* EpisodesCoordinator.swift */; };
 		41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C02294264F5AC9004E8437 /* AppCoordinator.swift */; };
 		41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */; };
+		41C358A52C259614009320F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41C358A42C259614009320F7 /* GoogleService-Info.plist */; };
+		41C358B22C25B6A3009320F7 /* GithubPagesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C358B12C25B6A3009320F7 /* GithubPagesRouter.swift */; };
+		41C358B42C25B837009320F7 /* EpisodeOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C358B32C25B837009320F7 /* EpisodeOfTheDay.swift */; };
+		41C358B62C25B8DE009320F7 /* GithubPagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C358B52C25B8DE009320F7 /* GithubPagesService.swift */; };
+		41C358B92C25B9FD009320F7 /* EpisodeOfTheDayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C358B82C25B9FD009320F7 /* EpisodeOfTheDayService.swift */; };
 		41CB9EE4260441C3002D29FC /* EpisodesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB9EE3260441C3002D29FC /* EpisodesListViewModel.swift */; };
 		41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -117,6 +122,11 @@
 		41B59305264FB4D50055DDA2 /* EpisodesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesCoordinator.swift; sourceTree = "<group>"; };
 		41C02294264F5AC9004E8437 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsCoordinator.swift; sourceTree = "<group>"; };
+		41C358A42C259614009320F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41C358B12C25B6A3009320F7 /* GithubPagesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubPagesRouter.swift; sourceTree = "<group>"; };
+		41C358B32C25B837009320F7 /* EpisodeOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDay.swift; sourceTree = "<group>"; };
+		41C358B52C25B8DE009320F7 /* GithubPagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubPagesService.swift; sourceTree = "<group>"; };
+		41C358B82C25B9FD009320F7 /* EpisodeOfTheDayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfTheDayService.swift; sourceTree = "<group>"; };
 		41CB9EE3260441C3002D29FC /* EpisodesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListViewModel.swift; sourceTree = "<group>"; };
 		41F7D867264F935E00E076C6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +220,7 @@
 		4114D5AA2B18C47F00BBF674 /* EOD */ = {
 			isa = PBXGroup;
 			children = (
+				41C358B72C25B9E0009320F7 /* Service */,
 				4114D5AE2B18C50E00BBF674 /* Coordinator */,
 				4114D5B12B18C5AD00BBF674 /* ViewModel */,
 				4114D5AD2B18C50500BBF674 /* View */,
@@ -323,10 +334,12 @@
 				4163075E25DF3EFD009D4A4F /* APIConstants.swift */,
 				411C2F112718C0440008B7AB /* EndpointRouter.swift */,
 				4163076325DF3F0C009D4A4F /* TMDBRouter.swift */,
+				419B488C264F6593001F1BB3 /* TMDBService.swift */,
 				4163076825DF3F1C009D4A4F /* APIClient.swift */,
 				411C2F0F2718BEAF0008B7AB /* APIError.swift */,
 				4114D5A12B17A87000BBF674 /* HTTPClient.swift */,
-				419B488C264F6593001F1BB3 /* TMDBService.swift */,
+				41C358B12C25B6A3009320F7 /* GithubPagesRouter.swift */,
+				41C358B52C25B8DE009320F7 /* GithubPagesService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -338,6 +351,7 @@
 				4163085F25DF54F1009D4A4F /* TVShow.swift */,
 				41184C6325DFF63900B7A143 /* Season.swift */,
 				41184C6825E00A6900B7A143 /* Episode.swift */,
+				41C358B32C25B837009320F7 /* EpisodeOfTheDay.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +389,7 @@
 				418B671724A8D72000E857F7 /* LaunchScreen.storyboard */,
 				418B671A24A8D72000E857F7 /* Info.plist */,
 				4163079B25DF416D009D4A4F /* Localizable.strings */,
+				41C358A42C259614009320F7 /* GoogleService-Info.plist */,
 			);
 			path = ThreatLevelMidnight;
 			sourceTree = "<group>";
@@ -454,6 +469,14 @@
 				41C0229A264F5B04004E8437 /* SeasonsCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		41C358B72C25B9E0009320F7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				41C358B82C25B9FD009320F7 /* EpisodeOfTheDayService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		41CB9EE026044195002D29FC /* Episodes */ = {
@@ -584,6 +607,7 @@
 			files = (
 				418B671924A8D72000E857F7 /* LaunchScreen.storyboard in Resources */,
 				4163079C25DF416D009D4A4F /* Localizable.strings in Resources */,
+				41C358A52C259614009320F7 /* GoogleService-Info.plist in Resources */,
 				418B671624A8D72000E857F7 /* Assets.xcassets in Resources */,
 				418B671424A8D71F00E857F7 /* Main.storyboard in Resources */,
 			);
@@ -631,12 +655,14 @@
 				4114D5A52B17F80B00BBF674 /* MainTabBarController.swift in Sources */,
 				4163075F25DF3EFD009D4A4F /* APIConstants.swift in Sources */,
 				4114D5C32B192D7800BBF674 /* SeasonView.swift in Sources */,
+				41C358B22C25B6A3009320F7 /* GithubPagesRouter.swift in Sources */,
 				41B59306264FB4D50055DDA2 /* EpisodesCoordinator.swift in Sources */,
 				4114D5BF2B19218800BBF674 /* EpisodeService.swift in Sources */,
 				41C0229B264F5B04004E8437 /* SeasonsCoordinator.swift in Sources */,
 				419B4888264F651C001F1BB3 /* SplashCoordinator.swift in Sources */,
 				41157C502B26865600FC393B /* EpisodeView.swift in Sources */,
 				41157C4E2B26863C00FC393B /* EpisodesListView.swift in Sources */,
+				41C358B42C25B837009320F7 /* EpisodeOfTheDay.swift in Sources */,
 				41184C6425DFF63900B7A143 /* Season.swift in Sources */,
 				411C2F102718BEAF0008B7AB /* APIError.swift in Sources */,
 				419B488D264F6593001F1BB3 /* TMDBService.swift in Sources */,
@@ -646,6 +672,7 @@
 				418B670D24A8D71F00E857F7 /* AppDelegate.swift in Sources */,
 				41B592FE264FAA800055DDA2 /* SeasonViewModel.swift in Sources */,
 				419B4892264F6641001F1BB3 /* SplashViewController.swift in Sources */,
+				41C358B92C25B9FD009320F7 /* EpisodeOfTheDayService.swift in Sources */,
 				4114D5BC2B19200800BBF674 /* EpisodesListService.swift in Sources */,
 				411C2F0C27184B340008B7AB /* EpisodeViewModel.swift in Sources */,
 				412956392B33A6EC00EFC279 /* EpisodeOfTheDayView.swift in Sources */,
@@ -658,6 +685,7 @@
 				41C02295264F5AC9004E8437 /* AppCoordinator.swift in Sources */,
 				410B788D2B177E0800668FA7 /* Coordinator.swift in Sources */,
 				411C2F122718C0440008B7AB /* EndpointRouter.swift in Sources */,
+				41C358B62C25B8DE009320F7 /* GithubPagesService.swift in Sources */,
 				411C2F0A271849BF0008B7AB /* EpisodeDetailsCoordinator.swift in Sources */,
 				41F7D868264F935E00E076C6 /* UIViewController+Extensions.swift in Sources */,
 				4114D5A22B17A87000BBF674 /* HTTPClient.swift in Sources */,
